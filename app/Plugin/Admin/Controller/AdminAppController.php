@@ -1,7 +1,7 @@
 <?php
 /**
  * Admin AppController
- * @author Luís Fred G S <luis.fred.gs@gmail.com>
+ * @author Luis Fred G S <luis.fred.gs@gmail.com>
  * @category Controller
  * @package Plugin.Admin
  */
