@@ -1,0 +1,221 @@
+2015-04-16 20:15:21 Error: [MissingControllerException] Controller class AdminController could not be found.
+Exception Attributes: array (
+  'class' => 'AdminController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/admin
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-16 20:37:02 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /thietbidien/admin/users/register
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-16 20:40:41 Error: [MissingActionException] Action UsersController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'edit',
+)
+Request URL: /thietbidien/admin/users/edit/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-16 21:08:27 Error: [MissingActionException] Action PagesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'add',
+)
+Request URL: /thietbidien/admin/pages/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-16 21:14:53 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /thietbidien/admin/admin/pages/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-16 21:15:15 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /thietbidien/admin/admin/pages/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-16 21:15:15 Error: [MissingActionException] Action PagesController::admin_index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_index',
+)
+Request URL: /thietbidien/admin/admin/pages
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-16 21:15:19 Error: [MissingActionException] Action PagesController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'add',
+)
+Request URL: /thietbidien/admin/pages/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-16 21:17:29 Error: Fatal Error (1): Call to a member function create() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php, line 41]
+2015-04-16 21:17:29 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /thietbidien/admin/admin/pages/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 41, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 41, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-16 21:48:39 Error: [MissingHelperException] Helper class MediaHelper could not be found.
+Exception Attributes: array (
+  'class' => 'MediaHelper',
+  'plugin' => 'Admin',
+)
+Request URL: /thietbidien/admin/admin/pages/edit/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/HelperCollection.php(66): HelperCollection->load('Admin.Media')
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(848): HelperCollection->__isset('Media')
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_edit.ctp(33): View->__get('Media')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(961): include('/Users/hocvt/Do...')
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(923): View->_evaluate('/Users/hocvt/Do...', Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(473): View->_render('/Users/hocvt/Do...')
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-04-16 21:50:22 Error: [MissingHelperException] Helper class MediaHelper could not be found.
+Exception Attributes: array (
+  'class' => 'MediaHelper',
+  'plugin' => false,
+)
+Request URL: /thietbidien/admin/admin/pages/edit/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(897): HelperCollection->load('Media', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(PagesController))
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-04-16 21:50:33 Error: [MissingHelperException] Helper class MediaHelper could not be found.
+Exception Attributes: array (
+  'class' => 'MediaHelper',
+  'plugin' => false,
+)
+Request URL: /thietbidien/admin/admin/pages/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(897): HelperCollection->load('Media', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(PagesController))
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-04-16 21:51:56 Error: [MissingHelperException] Helper class MediaHelper could not be found.
+Exception Attributes: array (
+  'class' => 'MediaHelper',
+  'plugin' => false,
+)
+Request URL: /thietbidien/admin/admin/pages/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(897): HelperCollection->load('Media', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(PagesController))
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-04-16 21:52:11 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Controller/AppController.php, line 51]
+2015-04-16 21:52:11 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /thietbidien/media/medias/index/Page/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 51, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 51, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-16 21:52:35 Error: Fatal Error (1): Call to a member function read() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Controller/AppController.php, line 51]
+2015-04-16 21:52:35 Error: [FatalErrorException] Call to a member function read() on a non-object
+Request URL: /thietbidien/media/medias/index/Page/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 51, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 51, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-16 21:54:27 Error: [ForbiddenException] Forbidden
+Request URL: /thietbidien/media/medias/index/Page/1
+Stack Trace:
+#0 [internal function]: MediasController->index('Page', '1')
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MediasController), Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediasController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-16 21:54:35 Error: [ForbiddenException] Forbidden
+Request URL: /thietbidien/media/medias/index/Page/1
+Stack Trace:
+#0 [internal function]: MediasController->index('Page', '1')
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(MediasController), Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediasController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-16 21:56:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Media',
+)
+Request URL: /thietbidien/media/js/underscore-min.map
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-16 21:59:02 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'username'
+Request URL: /thietbidien/admin/admin/pages/edit/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(User), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php(64): Model->save(Array)
+#6 [internal function]: PagesController->admin_edit('1')
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

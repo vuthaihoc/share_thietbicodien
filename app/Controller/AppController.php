@@ -31,4 +31,27 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    public $components = array(
+        'Auth',
+        'Acl',
+        'Admin.AclPermissions',
+        'Session'
+    );
+    
+    public $helpers = array(
+        'Form', 'Html', 'Js', 'Time','Media.Media'
+    );
+
+
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->AclPermissions->filter();
+    }
+    
+    public function canUploadMedias($model, $id){
+        //if($model == 'User' & $id = $this->Session->read('Auth.User.id')){
+            return true; // Everyone can edit the medias for their own record
+        //}
+        //return $this->Session->read('Auth.User.role') == 'admin'; // Only admins can upload medias for everything else
+    }
 }
