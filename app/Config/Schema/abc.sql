@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Apr 16, 2015 at 10:10 PM
+-- Generation Time: Apr 17, 2015 at 05:41 PM
 -- Server version: 5.5.42
 -- PHP Version: 5.5.23
 
@@ -23,9 +23,9 @@ SET time_zone = "+00:00";
 CREATE TABLE `acos` (
   `id` int(10) NOT NULL,
   `parent_id` int(10) DEFAULT NULL,
-  `model` varchar(255) DEFAULT NULL,
+  `model` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `foreign_key` int(10) DEFAULT NULL,
-  `alias` varchar(255) DEFAULT NULL,
+  `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
@@ -82,12 +82,12 @@ INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `
 CREATE TABLE `aros` (
   `id` int(10) NOT NULL,
   `parent_id` int(10) DEFAULT NULL,
-  `model` varchar(255) DEFAULT NULL,
+  `model` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `foreign_key` int(10) DEFAULT NULL,
-  `alias` varchar(255) DEFAULT NULL,
+  `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `aros`
@@ -96,8 +96,7 @@ CREATE TABLE `aros` (
 INSERT INTO `aros` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `rght`) VALUES
 (1, NULL, 'Group', 1, NULL, 1, 2),
 (2, NULL, 'Group', 2, NULL, 3, 4),
-(3, NULL, 'Group', 3, NULL, 5, 6),
-(4, NULL, 'Group', 4, NULL, 7, 8);
+(3, NULL, 'Group', 3, NULL, 5, 6);
 
 -- --------------------------------------------------------
 
@@ -109,10 +108,10 @@ CREATE TABLE `aros_acos` (
   `id` int(10) NOT NULL,
   `aro_id` int(10) NOT NULL,
   `aco_id` int(10) NOT NULL,
-  `_create` varchar(2) NOT NULL DEFAULT '0',
-  `_read` varchar(2) NOT NULL DEFAULT '0',
-  `_update` varchar(2) NOT NULL DEFAULT '0',
-  `_delete` varchar(2) NOT NULL DEFAULT '0'
+  `_create` varchar(2) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `_read` varchar(2) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `_update` varchar(2) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `_delete` varchar(2) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
@@ -134,11 +133,11 @@ INSERT INTO `aros_acos` (`id`, `aro_id`, `aco_id`, `_create`, `_read`, `_update`
 
 CREATE TABLE `groups` (
   `id` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL,
-  `alias` varchar(20) DEFAULT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `alias` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `groups`
@@ -147,8 +146,7 @@ CREATE TABLE `groups` (
 INSERT INTO `groups` (`id`, `name`, `alias`, `created`, `modified`) VALUES
 (1, 'Superadmin', 'superadmin', '2015-04-16 18:31:52', '2015-04-16 18:31:52'),
 (2, 'Admin', 'admin', '2015-04-16 18:32:04', '2015-04-16 18:32:04'),
-(3, 'Registered', 'registered', '2015-04-16 18:33:02', '2015-04-16 18:33:02'),
-(4, 'Public', 'public', '2015-04-16 18:33:08', '2015-04-16 18:33:08');
+(3, 'Registered', 'registered', '2015-04-16 18:33:02', '2015-04-16 18:33:02');
 
 -- --------------------------------------------------------
 
@@ -158,10 +156,10 @@ INSERT INTO `groups` (`id`, `name`, `alias`, `created`, `modified`) VALUES
 
 CREATE TABLE `medias` (
   `id` int(10) NOT NULL,
-  `ref` varchar(60) DEFAULT NULL,
+  `ref` varchar(60) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `ref_id` int(11) DEFAULT NULL,
-  `file` varchar(255) DEFAULT NULL,
-  `name` varchar(255) DEFAULT NULL,
+  `file` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) DEFAULT '0',
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
@@ -184,8 +182,11 @@ INSERT INTO `medias` (`id`, `ref`, `ref_id`, `file`, `name`, `position`, `create
 
 CREATE TABLE `pages` (
   `id` int(11) NOT NULL,
+  `parent_id` int(11) NOT NULL DEFAULT '0',
   `title` tinytext COLLATE utf8_unicode_ci NOT NULL,
   `content` text COLLATE utf8_unicode_ci NOT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `editing` int(11) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -194,8 +195,8 @@ CREATE TABLE `pages` (
 -- Dumping data for table `pages`
 --
 
-INSERT INTO `pages` (`id`, `title`, `content`, `created_at`, `updated_at`) VALUES
-(1, 'd', 'hoho ho ho ho ho', '2015-04-16 19:18:22', '0000-00-00 00:00:00');
+INSERT INTO `pages` (`id`, `parent_id`, `title`, `content`, `deleted_at`, `editing`, `created_at`, `updated_at`) VALUES
+(1, 0, 'd', 'hoho ho ho ho ho', NULL, 0, '2015-04-16 19:18:22', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -205,8 +206,8 @@ INSERT INTO `pages` (`id`, `title`, `content`, `created_at`, `updated_at`) VALUE
 
 CREATE TABLE `settings` (
   `id` int(11) NOT NULL,
-  `setting` varchar(10) DEFAULT NULL,
-  `value` varchar(10) DEFAULT NULL
+  `setting` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `value` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 --
@@ -224,24 +225,24 @@ INSERT INTO `settings` (`id`, `setting`, `value`) VALUES
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
-  `password` varchar(40) NOT NULL,
+  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(40) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `group_id` int(11) NOT NULL,
-  `created` datetime DEFAULT NULL,
-  `modified` datetime DEFAULT NULL,
   `status` tinyint(1) DEFAULT '1',
-  `name` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+  `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL,
+  `modified` datetime DEFAULT NULL,
+  `created` datetime DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `group_id`, `created`, `modified`, `status`, `name`, `email`) VALUES
-(1, 'sadmin', 'e8c553411681cbd77adf93c92aaf557e41785830', 1, '2015-04-16 18:34:24', '2015-04-16 20:35:25', 1, 'Superadmin', 'sadmin@tera.vn'),
-(2, 'admin', 'd20274c604052d51ad2b443dc483aad312687fb2', 2, '2015-04-16 18:34:46', '2015-04-16 18:34:46', 1, NULL, NULL),
-(3, '', '', 0, '2015-04-16 21:57:16', '2015-04-16 21:57:16', 1, NULL, NULL);
+INSERT INTO `users` (`id`, `username`, `password`, `group_id`, `status`, `name`, `email`, `deleted_at`, `modified`, `created`) VALUES
+(1, 'sadmin', 'e8c553411681cbd77adf93c92aaf557e41785830', 1, 1, 'Superadmin', 'sadmin@tera.vn', '0000-00-00 00:00:00', '2015-04-16 20:35:25', '2015-04-16 18:34:24'),
+(2, 'admin', 'd20274c604052d51ad2b443dc483aad312687fb2', 2, 1, NULL, NULL, '0000-00-00 00:00:00', '2015-04-16 18:34:46', '2015-04-16 18:34:46');
 
 --
 -- Indexes for dumped tables
@@ -313,7 +314,7 @@ ALTER TABLE `acos`
 -- AUTO_INCREMENT for table `aros`
 --
 ALTER TABLE `aros`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `aros_acos`
 --
@@ -323,7 +324,7 @@ ALTER TABLE `aros_acos`
 -- AUTO_INCREMENT for table `groups`
 --
 ALTER TABLE `groups`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `medias`
 --
@@ -343,4 +344,4 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
