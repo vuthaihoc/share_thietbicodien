@@ -219,3 +219,265 @@ Stack Trace:
 #9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
 #10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #11 {main}
+2015-04-17 18:48:28 Error: [MissingActionException] Action PagesController::admin_delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_delete',
+)
+Request URL: /thietbidien/admin/admin/pages/delete/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-17 18:48:33 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Media',
+)
+Request URL: /thietbidien/media/js/underscore-min.map
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-17 18:53:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Media',
+)
+Request URL: /thietbidien/media/js/underscore-min.map
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-17 18:54:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => 'Media',
+)
+Request URL: /thietbidien/media/js/underscore-min.map
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-17 19:07:42 Error: [MissingControllerException] Controller class MediasController could not be found.
+Exception Attributes: array (
+  'class' => 'MediasController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/medias
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-17 19:07:52 Error: [MissingControllerException] Controller class MediaController could not be found.
+Exception Attributes: array (
+  'class' => 'MediaController',
+  'plugin' => 'Media',
+)
+Request URL: /thietbidien/media/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-17 19:08:07 Error: Fatal Error (1): Call to a member function loaded() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Controller/MediasController.php, line 36]
+2015-04-17 19:08:07 Error: [FatalErrorException] Call to a member function loaded() on a non-object
+Request URL: /thietbidien/media/medias
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 36, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 36, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:16:19 Error: Fatal Error (1): Call to a member function loaded() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Controller/MediasController.php, line 36]
+2015-04-17 19:16:19 Error: [FatalErrorException] Call to a member function loaded() on a non-object
+Request URL: /thietbidien/media/medias/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 36, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 36, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:16:34 Error: [MissingActionException] Action MediasController::pages() could not be found.
+Exception Attributes: array (
+  'controller' => 'MediasController',
+  'action' => 'pages',
+)
+Request URL: /thietbidien/media/medias/pages/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediasController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-17 19:16:57 Error: [MissingControllerException] Controller class IndexController could not be found.
+Exception Attributes: array (
+  'class' => 'IndexController',
+  'plugin' => 'Media',
+)
+Request URL: /thietbidien/media/index/pages/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-17 19:18:40 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 19:18:40 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:19:39 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 19:19:39 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:22:02 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 19:22:02 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:26:17 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 19:26:17 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:27:55 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 19:27:55 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:28:35 Error: [MissingActionException] Action MediasController::page() could not be found.
+Exception Attributes: array (
+  'controller' => 'MediasController',
+  'action' => 'page',
+)
+Request URL: /thietbidien/media/medias/page/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediasController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-17 19:28:42 Error: [MissingActionException] Action MediasController::page() could not be found.
+Exception Attributes: array (
+  'controller' => 'MediasController',
+  'action' => 'page',
+)
+Request URL: /thietbidien/media/medias/page/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediasController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-17 19:31:03 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 19:31:03 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:49:27 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 19:49:27 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 19:57:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/img/uploads/2015/04/Screen_Shot_2015_04_12_at_4_47_05_PM.png
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-17 20:26:03 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 20:26:03 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 20:28:21 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 20:28:21 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 20:28:35 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 20:28:35 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 20:28:39 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 20:28:39 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 20:29:26 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 20:29:26 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 20:29:27 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 20:29:27 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 20:29:27 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 20:29:27 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-17 20:29:27 Error: Fatal Error (4): syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/webroot/js/tinymce/tinymce.min.js, line 4]
+2015-04-17 20:29:27 Error: [FatalErrorException] syntax error, unexpected '",t,"' (T_CONSTANT_ENCAPSED_STRING)
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

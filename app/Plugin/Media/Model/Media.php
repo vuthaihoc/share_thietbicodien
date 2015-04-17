@@ -105,7 +105,11 @@ class Media extends AppModel{
 			if(!file_exists(dirname(WWW_ROOT.$file))){
 				mkdir(dirname(WWW_ROOT.$file),0777,true);
 			}
-			$this->move_uploaded_file($this->data['Media']['file']['tmp_name'], WWW_ROOT.$file);
+			$this->move_uploaded_file($this->data['Media']['file']['tmp_name'], 
+                                                    WWW_ROOT.$file, 
+                                                    $model->medias['resize_width'], 
+                                                    $model->medias['resize_height']
+                                                    );
 			chmod(WWW_ROOT.$file,0777);
 			$this->data['Media']['file'] = '/' . trim(str_replace(DS, '/', $file), '/');
 		}
@@ -115,8 +119,23 @@ class Media extends AppModel{
 	/**
 	 * Aliast for the move_uploaded_file function, so it can be mocked for testing purpose
 	 */
-	public function move_uploaded_file($filename, $destination){
-		return move_uploaded_file($filename, $destination);
+	public function move_uploaded_file($filename, $destination, $max_width = 0, $max_height = 0){
+            if($max_width != 0 && $max_height != 0){
+                try {
+                    if (!file_exists($destination)) {
+                        require_once APP . 'Plugin' . DS . 'Media' . DS . 'Vendor' . DS . 'imagine.phar';
+                        $imagine = new Imagine\Gd\Imagine();
+                        return $imagine->open($filename)->thumbnail(new Imagine\Image\Box($max_width, $max_height), Imagine\Image\ImageInterface::THUMBNAIL_INSET)->save($destination, array('quality' => 90));
+                    }
+                } catch (Exception $exc) {
+                    //echo $exc->getTraceAsString();
+
+                }
+            }else{
+                return move_uploaded_file($filename, $destination);
+            }
+            
+
 	}
 
 	/**

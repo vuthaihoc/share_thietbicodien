@@ -7,6 +7,8 @@ class MediaBehavior extends ModelBehavior{
 		'limit' => 0,
 		'max_width' => 0,
 		'max_height' => 0,
+                'resize_width' => 0,
+                'resize_height' => 0,
 		'size' => 0, // in KB (Ko)
 	);
 

@@ -28,6 +28,7 @@
             'named' => $this->params['named'],
           );
           echo $this->Html->scriptBlock('var App = ' . $this->Js->object($app) . ';');
+        echo $this->fetch('css');
      ?>
   </head>
 
@@ -37,12 +38,12 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
+              <span class="sr-only"><?php echo __d('admin', 'Mở menu') ?></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">CakePHP Admin Plugin</a>
+          <a class="navbar-brand" href="#"><?php echo __d('admin', 'TeraVN CMS') ?></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -69,6 +70,14 @@
                    ?>
                 </li>                
               </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __d('admin', 'Quản lý') ?><b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <?php echo $this->Html->link(__d('admin', 'Quản lý trang'), array('plugin' => 'admin', 'controller' => 'pages', 'action' => 'index', 'admin' => true)); ?>
+                    </li>
+                </ul>
             </li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __d('admin', 'User control'); ?> <b class="caret"></b></a>
@@ -104,6 +113,7 @@
     </div>
     <?php 
       echo $this->Html->script('/admin/js/bootstrap.min.js');
+      echo $this->fetch('script');
      ?>
      <script type="text/javascript">
       $(function(){

@@ -17,6 +17,14 @@ class PagesController extends AdminAppController
      **/
     public $uses = array('Admin.User', 'Admin.Group', 'Page');
 
+    public $paginate = array(
+        'Page' => array('limit' => 20,
+                    'order' => array(
+                        'Page.created_at' => 'desc'
+                    )
+            )
+    );
+    
     /**
      * Controller callback - beforeFilter()
      * 
@@ -32,7 +40,10 @@ class PagesController extends AdminAppController
      * admin_index
      */
     public function admin_index(){
-        
+        $this->Components->load('Paginator');
+        $page = 1;
+        $pages = $this->Paginator->paginate('Page');
+        $this->set('pages', $pages);
     }
     
     /**

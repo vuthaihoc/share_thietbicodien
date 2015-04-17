@@ -17,11 +17,12 @@
         <label class="col-sm-2 control-label"><?php echo __d('admin', 'Content'); ?></label>
         <div class="col-sm-10">
           <?php 
-            echo $this->Form->input('content', array(
-              'div' => false,
-              'label' => false,
-              'class' => 'form-control',
-              ));
+            echo $this->Media->tinymce('content', $options = array ( ));
+//            echo $this->Form->input('content', array(
+//              'div' => false,
+//              'label' => false,
+//              'class' => 'form-control',
+//              ));
            ?>
         </div>
       </div>

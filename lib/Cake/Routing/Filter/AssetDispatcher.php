@@ -154,11 +154,11 @@ class AssetDispatcher extends DispatcherFilter {
 		$response->send();
 		ob_clean();
 
-		if ($ext === 'css' || $ext === 'js') {
-			include $assetFile;
-		} else {
+		//if ($ext === 'css' || $ext === 'js') {
+		//	include $assetFile;
+		//} else {
 			readfile($assetFile);
-		}
+		//}
 
 		if ($compressionEnabled) {
 			ob_end_flush();
