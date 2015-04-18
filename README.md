@@ -1,3 +1,7 @@
+# Một trang làm bằng CakePHP 2.x
+
+Xây dựng admin và front end cho 1 website bán hàng cơ bản
+
 # CakePHP
 
 [![Latest Stable Version](https://poser.pugx.org/cakephp/cakephp/v/stable.svg)](https://packagist.org/packages/cakephp/cakephp)
