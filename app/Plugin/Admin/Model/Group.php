@@ -56,5 +56,15 @@ class Group extends AdminAppModel {
     public function parentNode() {
         return null;
     }
+    public function beforeDelete($cascade = true) {
+        parent::beforeDelete($cascade);
+        if($this->field('protecting') > 0){
+            return false;
+        }else if($this->User->find('count', array(
+            'conditions' => 'Group.id = '.$this->id
+        )) > 0){
+            return false;
+        }
+    }
 }
  ?>

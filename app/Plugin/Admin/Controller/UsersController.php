@@ -133,12 +133,43 @@ class UsersController extends AdminAppController
 	 * @return void
 	 */
 	public function admin_delete( $id = null ){
+            return false;//disable this function 
+            /** @todo Cần xử lý lại hàm này  */
 		if ( !$id ) {
 			$this->Session->setFlash(__d('admin', 'Invalid ID!'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
 		if ( $this->User->delete( $id ) ) {
 			$this->Session->setFlash(__d('admin', 'User was deleted.'), 'flash_success');
+			$this->redirect(array('action' => 'index'));
+		}
+	}
+        
+        /**
+         * Khóa người dùng
+         * @param type $id
+         */
+	public function admin_lock( $id = null ){
+		if ( !$id ) {
+			$this->Session->setFlash(__d('admin', 'Người dùng không hợp lệ!'), 'flash_error');
+			$this->redirect(array('action' => 'index'));
+		}
+		if ( $this->User->save(array('status' => 0, 'id' => $id)) ) {
+			$this->Session->setFlash(__d('admin', 'Đã khóa người dùng.'), 'flash_success');
+			$this->redirect(array('action' => 'index'));
+		}
+	}
+        /**
+         * Mở khóa người dùng
+         * @param type $id
+         */
+	public function admin_unlock( $id = null ){
+		if ( !$id ) {
+			$this->Session->setFlash(__d('admin', 'Người dùng không hợp lệ!'), 'flash_error');
+			$this->redirect(array('action' => 'index'));
+		}
+		if ( $this->User->save(array('status' => 1, 'id' => $id)) ) {
+			$this->Session->setFlash(__d('admin', 'Đã khóa người dùng.'), 'flash_success');
 			$this->redirect(array('action' => 'index'));
 		}
 	}

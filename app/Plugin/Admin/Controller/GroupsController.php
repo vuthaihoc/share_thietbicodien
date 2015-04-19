@@ -90,6 +90,9 @@ class GroupsController extends AdminAppController{
 		{
 			$this->Session->setFlash(__d('admin', 'The user was deleted.'), 'flash_success');
 			$this->redirect(array('action' => 'index'));
-		}
+		}  else {
+                    $this->Session->setFlash(__d('admin', 'Không thể xóa nhóm mặc định hoặc còn người dùng thuộc nhóm.'), 'flash_error');
+			$this->redirect(array('action' => 'index'));
+                }
 	}
 }

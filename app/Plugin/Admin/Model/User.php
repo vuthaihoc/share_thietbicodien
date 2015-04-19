@@ -23,12 +23,12 @@ class User extends AdminAppModel {
      *
      * @var array
      **/
-	public $belongsTo = array(
-        'Group' => array(
-            'className' => 'Admin.Group', 
-            'foreignKey' => 'group_id'
-            )
-        );
+    public $belongsTo = array(
+    'Group' => array(
+        'className' => 'Admin.Group', 
+        'foreignKey' => 'group_id'
+        )
+    );
     
     /**
      * validationDomain - for translated validations messages

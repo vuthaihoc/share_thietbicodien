@@ -481,3 +481,539 @@ Stack Trace:
 #3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-04-19 18:53:08 Error: Fatal Error (1): Call to a member function loaded() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Controller/MediasController.php, line 36]
+2015-04-19 18:53:08 Error: [FatalErrorException] Call to a member function loaded() on a non-object
+Request URL: /thietbidien/media/medias/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 36, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 36, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-19 19:16:11 Error: [MissingViewException] View file "Groups/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Groups/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/groups/delete/5
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(GroupsController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-19 19:22:53 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:54 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:56 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:57 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:58 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:22:59 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:00 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:10 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:19 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:25 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:29 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:31 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:23:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:24:07 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:24:09 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:25:43 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:26:48 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 19:26:49 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'aro_id' cannot be null
+Request URL: /thietbidien/admin/permissions/change
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(AclPermission), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PermissionsController.php(153): Model->save(Array)
+#6 [internal function]: PermissionsController->admin_change()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PermissionsController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PermissionsController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-19 20:26:23 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/UsersController.php, line 157]
+2015-04-19 20:26:23 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /thietbidien/admin/admin/users/lock/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 157)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 157, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 157, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-19 20:31:02 Error: Fatal Error (1): Class 'User' not found in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/UsersController.php, line 157]
+2015-04-19 20:31:02 Error: [FatalErrorException] Class 'User' not found
+Request URL: /thietbidien/admin/admin/users/lock/5
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'User' no...', '/Users/hocvt/Do...', 157)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'User' no...', '/Users/hocvt/Do...', 157, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'User' no...', '/Users/hocvt/Do...', 157, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-19 20:33:52 Error: Fatal Error (1): Call to undefined method UsersController::User() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/UsersController.php, line 157]
+2015-04-19 20:33:52 Error: [FatalErrorException] Call to undefined method UsersController::User()
+Request URL: /thietbidien/admin/admin/users/lock/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 157)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 157, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 157, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-19 20:37:15 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/UsersController.php, line 158]
+2015-04-19 20:37:15 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /thietbidien/admin/admin/users/lock/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 158)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 158, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 158, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-19 20:38:41 Error: [MissingViewException] View file "Users/admin_lock.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/admin_lock.ctp',
+)
+Request URL: /thietbidien/admin/admin/users/lock/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-04-19 20:39:03 Error: [MissingViewException] View file "Users/admin_lock.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/admin_lock.ctp',
+)
+Request URL: /thietbidien/admin/admin/users/lock/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

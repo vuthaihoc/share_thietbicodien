@@ -49,13 +49,24 @@
 		       			'admin' => true,
 		       			$user['User']['id']
 		       			), array('class' => 'btn btn-primary btn-xs'));
-		       		$actions.= '&nbsp;'. $this->Html->link(__d('admin', 'Delete'), array(
-		       			'plugin' => 'admin',
-		       			'controller' => 'users',
-		       			'action' => 'delete',
-		       			'admin' => true,
-		       			$user['User']['id']
-		       			), array('class' => 'btn btn-danger btn-xs'));
+                                if($user['User']['status'] > 0){
+                                    $actions.= '&nbsp;'. $this->Html->link(__d('admin', 'Khóa'), array(
+                                            'plugin' => 'admin',
+                                            'controller' => 'users',
+                                            'action' => 'lock',
+                                            'admin' => true,
+                                            $user['User']['id']
+                                            ), array('class' => 'btn btn-danger btn-xs'));
+                                }else{
+                                    $actions.= '&nbsp;'. $this->Html->link(__d('admin', 'Mở khóa'), array(
+                                            'plugin' => 'admin',
+                                            'controller' => 'users',
+                                            'action' => 'unlock',
+                                            'admin' => true,
+                                            $user['User']['id']
+                                            ), array('class' => 'btn btn-primary btn-xs'));
+                                }
+                                    
 		       		$rows[] = array(
 		       			$user['User']['name'],
 		       			$user['Group']['name'],
