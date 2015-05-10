@@ -46,6 +46,10 @@ class AppController extends Controller {
     public function beforeFilter() {
         parent::beforeFilter();
         $this->AclPermissions->filter();
+        
+        //assign some default value
+        $this->set("is_home_page", false);
+        
     }
     
     public function canUploadMedias($model, $id){
@@ -53,5 +57,9 @@ class AppController extends Controller {
             return true; // Everyone can edit the medias for their own record
         //}
         //return $this->Session->read('Auth.User.role') == 'admin'; // Only admins can upload medias for everything else
+    }
+    
+    public function beforeRender() {
+        parent::beforeRender();
     }
 }

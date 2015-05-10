@@ -40,6 +40,9 @@ if (!isset($cakeTitle)) {
 </head>
 <body>
     <?php echo $this->element('shared/header'); ?>
+    <?php if($is_home_page){
+        echo $this->element('shared/home_navi_slide');
+    } ?>
     <?php echo $this->element('shared/default_content_container'); ?>
     <?php echo $this->element('shared/footer'); ?>
 	<!--div id="container">
@@ -64,13 +67,14 @@ if (!isset($cakeTitle)) {
 			</p>
 		</div>
 	</div-->
+	<?php echo pr($this->request->params); ?>
 	<?php echo $this->element('sql_dump'); ?>
 <?php
     // include library
-    $this->Html->script('jquery');
-    $this->Html->script('bootstrap.min');
+    echo $this->Html->script('jquery1.11.3');
+    echo $this->Html->script('bootstrap.min');
     // include custom js file
-    $this->Html->script('site');
+    echo $this->Html->script('site');
 
     // include fly js assigned
     echo $this->fetch('script');

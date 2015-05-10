@@ -36,10 +36,31 @@
 <div class="container" id="top_banner">
     <div class="row">
         <div class="col-md-4">
-            <?php echo $this->Html->image('logo.png', array()); ?>
+            <?php echo $this->Html->image('logo_lagre.png', array("height" => 100)); ?>
+            <span id="site_slogan">thietbicodienSCT.com</span>
         </div>
-        <div class="col-md-8">
-            
+        <div class="col-md-8" id="top_flash_item">
+            <div class="col-md-3">
+                <?php echo $this->Html->image('muahang5.png'); ?>
+                Mua hàng linh hoạt
+            </div>
+            <div class="col-md-3">
+                <?php echo $this->Html->image('giaohang.png'); ?>
+                Giao hàng nhanh chóng
+            </div>
+            <div class="col-md-3">
+                <?php echo $this->Html->image('thanhtoan.png'); ?>
+                Thanh toán thông minh
+            </div>
+            <div class="col-md-3">
+                <?php echo $this->Html->image('baogia.png'); ?>
+                Báo giá
+            </div>
         </div>
     </div>
 </div>
+<?php if($is_home_page == true){ ?>
+<?php echo $this->element('shared/top_bottom_line'); ?>
+<?php }else{ ?>
+<?php echo $this->element('shared/top_menu'); ?>
+<?php }

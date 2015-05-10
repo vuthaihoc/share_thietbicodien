@@ -72,5 +72,15 @@ class HomeController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+                
+                
 	}
+        
+        public function beforeRender() {
+            parent::beforeRender();
+            if($this->request->params['action'] == "display"){
+                //mark this page as homepage
+                $this->set("is_home_page", true);
+            }
+        }
 }

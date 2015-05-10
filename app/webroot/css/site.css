@@ -1,5 +1,14 @@
+
+.clear{
+    clear: both;
+}
+.larger_icon{
+    line-height: 60px;
+    font-size: 60px;
+}
+
 #top_links{
-    background: #24c0e3;
+    background: #3199e3;
 }
 #top_links #top_links_container{
     height: 40px;
@@ -18,10 +27,124 @@
 #top_search_box{
     
 }
-.clear{
-    clear: both;
-}
 
 #top_banner{
     padding: 20px;
+}
+#top_flash_item{
+    font-size: 120%;
+    font-weight: bold;
+    padding-top: 30px;
+}
+#top_flash_item img{
+    float: left;
+}
+#top_flash_item .col-md-3{
+    cursor: pointer;
+}
+#site_slogan{
+    display: block;
+    text-align: left;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+#top_bottom_line{
+    height: 15px;
+    background-color: #5CCEEE;
+}
+
+#home_navi_slide{
+    padding: 5px 0;
+}
+
+
+/**  menu    **/
+/* make sidebar nav vertical */ 
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+/* end menu */
+
+/* a box style */
+.a_box{
+    
+}
+.a_box .box_header{
+    background: #5CCEEE;
+    min-height: 35px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.a_box .box_header h2{
+    font-size: 110%;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 5px 10px 15px;
+    margin: 0px;
+}
+.a_box .box_header h2 a{
+    color: #fff;
+    font-weight: bold;
+    line-height: 18px;
+}
+.a_box .box_header a.child_cat{
+    font-size: 100%;
+}
+.a_box .box_body{
+    border-left: 1px solid #EEE8E8;
+    border-right: 1px solid #EEE8E8;
+    border-bottom: 1px solid #EEE8E8;
+    padding: 10px 5px 0px 5px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.a_item{
+    
+}
+.a_item .a_item_container{
+    border-radius: 4px;
+    border: 1px solid #EEE8E8;
+    padding: 10px;
+    margin: 0 -10px 10px -10px;
+}
+.a_item .img{
+}
+.a_item .img img{
+    width: 100%;
+}
+.a_item .caption{
+    line-height: 18px;
+    height: 36px;
+    text-align: center;
+    display: block;
+    padding-top: 5px;
+}
+.a_item .price{
+    line-height: 18px;
+    height: 18px;
+    text-align: center;
+    display: block;
+    color: #f00;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.a_item{
 }

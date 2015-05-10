@@ -3,7 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/footer.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/database.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/css/site.css</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/header.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/.htaccess</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/top_menu.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/top_bottom_line.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/left_menu.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/home_navi_slide.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/AppController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/css/bootstrap.css</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/routes.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Layouts/default.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/default_content_container.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Home/home.ctp</file>
         </group>
     </open-files>
 </project-private>
