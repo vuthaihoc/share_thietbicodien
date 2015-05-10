@@ -14,16 +14,15 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
+if(!isset($cakeDescription))$cakeDescription = __('Thiết bị cơ điện SCT');
+if(!isset($cakeTitle))$cakeTitle = __('Thiết bị cơ điện SCT');
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
+		<?php echo $cakeTitle ?>:
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -32,7 +31,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
-		echo $this->fetch('script');
 	?>
 </head>
 <body>
@@ -59,5 +57,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
+<?php
+    // include library
+    //$this->Ht
+    // include custom js file
+
+    // include fly js assigned
+    echo $this->fetch('script');
+?>
 </body>
 </html>

@@ -1017,3 +1017,27 @@ Stack Trace:
 #3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
 #4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2015-05-10 05:02:23 Error: [MissingDispatcherFilterException] ImageCropResize
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(70): Dispatcher->_attachFilters(Object(CakeEventManager))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(147): Dispatcher->getEventManager()
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-10 05:02:24 Error: [MissingDispatcherFilterException] ImageCropResize
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(70): Dispatcher->_attachFilters(Object(CakeEventManager))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(147): Dispatcher->getEventManager()
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-10 05:02:24 Error: [MissingDispatcherFilterException] ImageCropResize
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(70): Dispatcher->_attachFilters(Object(CakeEventManager))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(147): Dispatcher->getEventManager()
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-10 05:03:55 Error: [MissingDispatcherFilterException] ImageCropResize
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(70): Dispatcher->_attachFilters(Object(CakeEventManager))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(147): Dispatcher->getEventManager()
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

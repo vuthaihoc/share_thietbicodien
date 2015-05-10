@@ -74,7 +74,8 @@ CakePlugin::load(array(
         'routes' => true,
         'bootstrap' => true
     ),
-    'Media'
+    'Media',
+    'ImageCropResize'
 ));
 /**
  * To prefer app translation over plugin translation, you can set
