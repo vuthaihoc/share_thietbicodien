@@ -1041,3 +1041,14 @@ Stack Trace:
 #1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(147): Dispatcher->getEventManager()
 #2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-05-10 09:03:59 Error: [MissingActionException] Action UsersController::admin_register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_register',
+)
+Request URL: /thietbidien/admin/admin/users/register
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

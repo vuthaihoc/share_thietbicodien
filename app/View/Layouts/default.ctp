@@ -14,8 +14,12 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-if(!isset($cakeDescription))$cakeDescription = __('Thiết bị cơ điện SCT');
-if(!isset($cakeTitle))$cakeTitle = __('Thiết bị cơ điện SCT');
+if(!isset($cakeDescription)){
+    $cakeDescription = __('Thiết bị cơ điện SCT');
+}
+if (!isset($cakeTitle)) {
+    $cakeTitle = __('Thiết bị cơ điện SCT');
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,14 +31,18 @@ if(!isset($cakeTitle))$cakeTitle = __('Thiết bị cơ điện SCT');
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('bootstrap.min');
+		echo $this->Html->css('site');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 	?>
 </head>
 <body>
-	<div id="container">
+    <?php echo $this->element('shared/header'); ?>
+    <?php echo $this->element('shared/default_content_container'); ?>
+    <?php echo $this->element('shared/footer'); ?>
+	<!--div id="container">
 		<div id="header">
 			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
 		</div>
@@ -55,12 +63,14 @@ if(!isset($cakeTitle))$cakeTitle = __('Thiết bị cơ điện SCT');
 				<?php echo $cakeVersion; ?>
 			</p>
 		</div>
-	</div>
+	</div-->
 	<?php echo $this->element('sql_dump'); ?>
 <?php
     // include library
-    //$this->Ht
+    $this->Html->script('jquery');
+    $this->Html->script('bootstrap.min');
     // include custom js file
+    $this->Html->script('site');
 
     // include fly js assigned
     echo $this->fetch('script');

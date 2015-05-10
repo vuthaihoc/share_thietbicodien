@@ -1,0 +1,27 @@
+#top_links{
+    background: #24c0e3;
+}
+#top_links #top_links_container{
+    height: 40px;
+}
+#top_links_container a{
+    color: #fff;
+    line-height: 40px;
+    margin-right: 20px;
+}
+#top_links #top_search_box{
+    
+}
+#top_search_box{
+    margin-top: 3px;
+}
+#top_search_box{
+    
+}
+.clear{
+    clear: both;
+}
+
+#top_banner{
+    padding: 20px;
+}
