@@ -1511,3 +1511,385 @@ Request URL: /thietbidien/...
 Stack Trace:
 #0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-05-11 15:13:46 Error: [MissingControllerException] Controller class ...Controller could not be found.
+Exception Attributes: array (
+  'class' => '...Controller',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/...
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-11 15:13:51 Error: [MissingActionException] Action UsersController::admin_register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_register',
+)
+Request URL: /thietbidien/admin/admin/users/register
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-11 15:14:01 Error: [MissingActionException] Action UsersController::admin_register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'admin_register',
+)
+Request URL: /thietbidien/admin/admin/users/register
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-11 15:29:52 Error: Fatal Error (1): Call to undefined function now() in [/Users/hocvt/Documents/webroot/thietbidien/app/Model/ContentModel.php, line 15]
+2015-05-11 15:29:52 Error: [FatalErrorException] Call to undefined function now()
+Request URL: /thietbidien/admin/admin/pages/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 15)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 15, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 15, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-11 15:49:27 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'username'
+Request URL: /thietbidien/admin/admin/pages/edit/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(User), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php(90): Model->save(Array)
+#6 [internal function]: PagesController->admin_edit('3')
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-05-11 15:49:42 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'username'
+Request URL: /thietbidien/admin/admin/pages/edit/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(User), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php(90): Model->save(Array)
+#6 [internal function]: PagesController->admin_edit('3')
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-05-11 15:50:04 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'username'
+Request URL: /thietbidien/admin/admin/pages/edit/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('INSERT INTO `th...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `th...')
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1928): DboSource->create(Object(User), Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1751): Model->_doSave(Array, Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php(90): Model->save(Array)
+#6 [internal function]: PagesController->admin_edit('3')
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-05-11 16:00:03 Error: [MissingActionException] Action PagesController::admin_delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_delete',
+)
+Request URL: /thietbidien/admin/admin/pages/delete/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-11 17:26:32 Error: [MissingHelperException] Helper class BoostCakeHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BoostCakeHelper',
+  'plugin' => false,
+)
+Request URL: /thietbidien/admin/admin/pages
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(897): HelperCollection->load('BoostCake', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(PagesController))
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-05-11 17:33:05 Error: [MissingActionException] Action PagesController::admin_delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_delete',
+)
+Request URL: /thietbidien/admin/admin/pages/delete/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-13 17:18:30 Error: [MissingControllerException] Controller class ...Controller could not be found.
+Exception Attributes: array (
+  'class' => '...Controller',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/...
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-13 17:21:47 Error: [MissingControllerException] Controller class ...Controller could not be found.
+Exception Attributes: array (
+  'class' => '...Controller',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/...
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-13 17:58:51 Error: [MissingControllerException] Controller class ...Controller could not be found.
+Exception Attributes: array (
+  'class' => '...Controller',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/...
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-13 18:27:40 Error: [MissingControllerException] Controller class ...Controller could not be found.
+Exception Attributes: array (
+  'class' => '...Controller',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/...
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-13 18:37:42 Error: [MissingControllerException] Controller class ...Controller could not be found.
+Exception Attributes: array (
+  'class' => '...Controller',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/...
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-13 18:37:47 Error: [MissingControllerException] Controller class ...Controller could not be found.
+Exception Attributes: array (
+  'class' => '...Controller',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/...
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-13 20:22:10 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /thietbidien/admin/categories
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('generateTreeLis...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(AdminAppModel))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(22): Model->__call('generateTreeLis...', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(22): AdminAppModel->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: CategoriesController->index()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-13 20:22:20 Error: [MissingActionException] Action CategoriesController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'index',
+)
+Request URL: /thietbidien/admin/categories
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-13 20:23:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /thietbidien/admin/admin/categories
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('generateTreeLis...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(AdminAppModel))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(22): Model->__call('generateTreeLis...', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(22): AdminAppModel->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: CategoriesController->admin_index()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-13 20:23:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /thietbidien/admin/admin/categories
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('generateTreeLis...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(AdminAppModel))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(22): Model->__call('generateTreeLis...', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(22): AdminAppModel->generateTreeList(NULL, NULL, NULL, '&nbsp;&nbsp;&nb...')
+#7 [internal function]: CategoriesController->admin_index()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-13 20:24:42 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'generateTreeList' at line 1
+Request URL: /thietbidien/admin/admin/categories
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('generateTreeLis...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('generateTreeLis...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('generateTreeLis...', Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(827): DboSource->query('generateTreeLis...', Array, Object(AdminAppModel))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(22): Model->__call('generateTreeLis...', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(22): AdminAppModel->generateTreeList(NULL, NULL, NULL, '+++')
+#7 [internal function]: CategoriesController->admin_index()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-13 20:37:47 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create_draft' at line 1
+Request URL: /thietbidien/admin/admin/categories/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('create_draft', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('create_draft', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('create_draft', Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(827): DboSource->query('create_draft', Array, Object(Category))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(28): Model->__call('create_draft', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(28): Category->create_draft('1')
+#7 [internal function]: CategoriesController->admin_add()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-13 20:38:07 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'create_draft' at line 1
+Request URL: /thietbidien/admin/admin/pages/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('create_draft', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('create_draft', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('create_draft', Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(827): DboSource->query('create_draft', Array, Object(Page))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php(61): Model->__call('create_draft', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php(61): Page->create_draft('1')
+#7 [internal function]: PagesController->admin_add()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-13 20:39:36 Error: Fatal Error (1): Call to undefined function _prepair_data() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php, line 22]
+2015-05-13 20:39:36 Error: [FatalErrorException] Call to undefined function _prepair_data()
+Request URL: /thietbidien/admin/admin/categories
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 22)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 22, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 22, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-13 20:39:37 Error: Fatal Error (1): Call to undefined function _prepair_data() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php, line 37]
+2015-05-13 20:39:37 Error: [FatalErrorException] Call to undefined function _prepair_data()
+Request URL: /thietbidien/admin/admin/categories/edit/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 37)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 37, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 37, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-13 20:40:41 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('asc')    LIMIT 1' at line 1
+Request URL: /thietbidien/admin/admin/categories/edit/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Category), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1659): Model->find('first', Array)
+#7 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(53): Model->field('all', Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(37): CategoriesController->_prepair_data()
+#9 [internal function]: CategoriesController->admin_edit('2')
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#11 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#13 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-05-13 20:42:06 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('lft asc')    LIMIT 1' at line 1
+Request URL: /thietbidien/admin/admin/categories/edit/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Category), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1659): Model->find('first', Array)
+#7 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(53): Model->field('all', Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(37): CategoriesController->_prepair_data()
+#9 [internal function]: CategoriesController->admin_edit('2')
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#11 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#13 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-05-13 20:42:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Category.all' in 'field list'
+Request URL: /thietbidien/admin/admin/categories/edit/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Categor...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Categor...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Categor...', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Category), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1659): Model->find('first', Array)
+#7 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(53): Model->field('all', Array)
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php(37): CategoriesController->_prepair_data()
+#9 [internal function]: CategoriesController->admin_edit('2')
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(CategoriesController), Array)
+#11 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#13 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-05-13 20:42:50 Error: [MissingViewException] View file "Categories/admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Categories/admin_edit.ctp',
+)
+Request URL: /thietbidien/admin/admin/categories/edit/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-13 20:42:51 Error: [MissingViewException] View file "Categories/admin_edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Categories/admin_edit.ctp',
+)
+Request URL: /thietbidien/admin/admin/categories/edit/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

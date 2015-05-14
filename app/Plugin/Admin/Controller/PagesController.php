@@ -57,27 +57,43 @@ class PagesController extends AdminAppController
      * admin_add
      */
     public function admin_add(){
-        if ( !empty( $this->request->data ) ) {
-			$this->Page->create();			
-			if ( $this->Page->save( $this->request->data ) ) {
-				$this->Session->setFlash(__d('admin', 'Page saved.'), 'flash_success');
-				$this->redirect(array('action' => 'index'));
-			}
-		}
+        //create new page with an id and mark as draft
+        $this->Page->create_draft($this->Auth->user('id'));
+        
+        $inserted_id = $this->Page->getInsertID();
+        
+        $this->redirect(array('action' => 'edit', 'admin' => true,$inserted_id));
+        
+        return;
+        
+//        if ( !empty( $this->request->data ) ) {
+//			$this->Page->create();			
+//			if ( $this->Page->save( $this->request->data ) ) {
+//				$this->Session->setFlash(__d('admin', 'Page saved.'), 'flash_success');
+//				$this->redirect(array('action' => 'index'));
+//			}
+//		}
     }
     
     public function admin_edit($id = null){
+        
+        $all_page = $this->Page->find('list', array(
+            'conditions' => array('is_draft' => 0),
+                'field' => array('title')
+        ));
+        
         if ( !$id ) {
 			$this->Session->setFlash(__d('admin', 'Invalid ID'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
-		if ( !empty( $this->request->data ) ) {
-			if ( $this->User->save($this->request->data) ) {
-				$this->Session->setFlash(__d('admin', 'Page was saved.'), 'flash_success');
-			}
-		}
+        if ( !empty( $this->request->data ) ) {
+                if ($this->Page->save($this->request->data) ) {
+                        $this->Session->setFlash(__d('admin', 'Page was saved.'), 'flash_success');
+                }
+        }
         $this->request->data = $this->Page->read(null, $id);
         $this->set('page_id', $id);
+        $this->set('all_page', $all_page);
     }
 }
 

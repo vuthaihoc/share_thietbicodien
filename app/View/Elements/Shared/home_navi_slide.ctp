@@ -15,18 +15,23 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="..." alt="...">
+                        <img src="http://lorempixel.com/1000/400/technics" alt="Sản phẩm nổi bật 1">
                         <div class="carousel-caption">
-                            ...
+                            Sản phẩm nổi bật 1
                         </div>
                     </div>
                     <div class="item">
-                        <img src="..." alt="...">
+                        <img src="http://lorempixel.com/1000/400/food" alt="Sản phẩm nổi bật 2">
                         <div class="carousel-caption">
-                            ...
+                            Sản phẩm nổi bật 2
                         </div>
                     </div>
-                    ...
+                    <div class="item">
+                        <img src="http://lorempixel.com/1000/400/animals" alt="Sản phẩm nổi bật 2">
+                        <div class="carousel-caption">
+                            Sản phẩm nổi bật 3
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Controls -->

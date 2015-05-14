@@ -12,7 +12,7 @@
         '/admin/css/bootstrap.min.css',
         '/admin/css/dashboard.css',
         ));
-      echo $this->Html->script('//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js');
+      echo $this->Html->script('jquery1.11.3');
      ?>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

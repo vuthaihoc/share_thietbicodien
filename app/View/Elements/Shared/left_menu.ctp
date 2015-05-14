@@ -11,7 +11,7 @@
         </div>
         <div class="navbar-collapse collapse sidebar-navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li class="">
                     <a href="#">Dây & Cáp điện</a>
                 </li>
                 <li>

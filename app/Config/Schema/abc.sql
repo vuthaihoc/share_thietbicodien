@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Apr 19, 2015 at 08:47 PM
+-- Generation Time: May 14, 2015 at 02:05 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.5.23
 
@@ -28,18 +28,18 @@ CREATE TABLE `acos` (
   `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=48 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `acos`
 --
 
 INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `rght`) VALUES
-(1, NULL, NULL, NULL, 'controllers', 1, 94),
+(1, NULL, NULL, NULL, 'controllers', 1, 118),
 (2, 1, NULL, NULL, 'Home', 2, 7),
 (3, 2, NULL, NULL, 'display', 3, 4),
 (4, 2, NULL, NULL, 'canUploadMedias', 5, 6),
-(5, 1, NULL, NULL, 'Admin', 8, 73),
+(5, 1, NULL, NULL, 'Admin', 8, 83),
 (6, 5, NULL, NULL, 'Dashboard', 9, 14),
 (7, 6, NULL, NULL, 'admin_index', 10, 11),
 (8, 6, NULL, NULL, 'canUploadMedias', 12, 13),
@@ -63,7 +63,7 @@ INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `
 (26, 24, NULL, NULL, 'admin_change', 48, 49),
 (27, 24, NULL, NULL, 'admin_sync', 50, 51),
 (28, 24, NULL, NULL, 'canUploadMedias', 52, 53),
-(29, 5, NULL, NULL, 'Users', 55, 72),
+(29, 5, NULL, NULL, 'Users', 55, 76),
 (30, 29, NULL, NULL, 'admin_index', 56, 57),
 (31, 29, NULL, NULL, 'admin_add', 58, 59),
 (32, 29, NULL, NULL, 'admin_edit', 60, 61),
@@ -72,16 +72,28 @@ INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `
 (35, 29, NULL, NULL, 'admin_reset_password', 66, 67),
 (36, 29, NULL, NULL, 'admin_delete', 68, 69),
 (37, 29, NULL, NULL, 'canUploadMedias', 70, 71),
-(38, 1, NULL, NULL, 'Media', 74, 93),
-(39, 38, NULL, NULL, 'Medias', 75, 92),
-(40, 39, NULL, NULL, 'isAuthorized', 76, 77),
-(41, 39, NULL, NULL, 'canUploadMedias', 78, 79),
-(42, 39, NULL, NULL, 'index', 80, 81),
-(43, 39, NULL, NULL, 'upload', 82, 83),
-(44, 39, NULL, NULL, 'delete', 84, 85),
-(45, 39, NULL, NULL, 'thumb', 86, 87),
-(46, 39, NULL, NULL, 'update', 88, 89),
-(47, 39, NULL, NULL, 'order', 90, 91);
+(38, 1, NULL, NULL, 'Media', 84, 103),
+(39, 38, NULL, NULL, 'Medias', 85, 102),
+(40, 39, NULL, NULL, 'isAuthorized', 86, 87),
+(41, 39, NULL, NULL, 'canUploadMedias', 88, 89),
+(42, 39, NULL, NULL, 'index', 90, 91),
+(43, 39, NULL, NULL, 'upload', 92, 93),
+(44, 39, NULL, NULL, 'delete', 94, 95),
+(45, 39, NULL, NULL, 'thumb', 96, 97),
+(46, 39, NULL, NULL, 'update', 98, 99),
+(47, 39, NULL, NULL, 'order', 100, 101),
+(48, 29, NULL, NULL, 'admin_lock', 72, 73),
+(49, 29, NULL, NULL, 'admin_unlock', 74, 75),
+(50, 1, NULL, NULL, 'ImageCropResize', 104, 105),
+(51, 5, NULL, NULL, 'Categories', 77, 82),
+(52, 51, NULL, NULL, 'index', 78, 79),
+(53, 51, NULL, NULL, 'canUploadMedias', 80, 81),
+(54, 1, NULL, NULL, 'BoostCake', 106, 117),
+(55, 54, NULL, NULL, 'BoostCake', 107, 116),
+(56, 55, NULL, NULL, 'index', 108, 109),
+(57, 55, NULL, NULL, 'bootstrap2', 110, 111),
+(58, 55, NULL, NULL, 'bootstrap3', 112, 113),
+(59, 55, NULL, NULL, 'canUploadMedias', 114, 115);
 
 -- --------------------------------------------------------
 
@@ -97,7 +109,7 @@ CREATE TABLE `aros` (
   `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `aros`
@@ -148,6 +160,33 @@ INSERT INTO `aros_acos` (`id`, `aro_id`, `aco_id`, `_create`, `_read`, `_update`
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `categories`
+--
+
+CREATE TABLE `categories` (
+  `id` int(10) unsigned NOT NULL,
+  `parent_id` int(10) DEFAULT NULL,
+  `lft` int(10) DEFAULT NULL,
+  `rght` int(10) DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT '',
+  `meta_title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `meta_description` tinytext COLLATE utf8_unicode_ci NOT NULL,
+  `is_draft` int(1) NOT NULL DEFAULT '0',
+  `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `categories`
+--
+
+INSERT INTO `categories` (`id`, `parent_id`, `lft`, `rght`, `name`, `meta_title`, `meta_description`, `is_draft`, `updated_at`, `created_at`) VALUES
+(1, NULL, 1, 2, 'Root', '', '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(2, NULL, 3, 4, '', '', '', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `groups`
 --
 
@@ -158,7 +197,7 @@ CREATE TABLE `groups` (
   `protecting` int(11) NOT NULL DEFAULT '0' COMMENT 'can not delete if protected > 0',
   `created` datetime DEFAULT NULL,
   `modified` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `groups`
@@ -216,16 +255,19 @@ CREATE TABLE `pages` (
   `media_id` int(11) NOT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL,
   `editing` int(11) NOT NULL,
+  `is_draft` int(1) NOT NULL DEFAULT '1',
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `pages`
 --
 
-INSERT INTO `pages` (`id`, `user_id`, `parent_id`, `title`, `content`, `media_id`, `deleted_at`, `editing`, `created_at`, `updated_at`) VALUES
-(1, 1, 0, 'd', 'hoho ho ho ho ho', 28, NULL, 0, '2015-04-16 19:18:22', '0000-00-00 00:00:00');
+INSERT INTO `pages` (`id`, `user_id`, `parent_id`, `title`, `content`, `media_id`, `deleted_at`, `editing`, `is_draft`, `created_at`, `updated_at`) VALUES
+(1, 1, 0, 'd', 'hoho ho ho ho ho', 28, NULL, 0, 0, '2015-04-16 19:18:22', '0000-00-00 00:00:00'),
+(2, 0, 0, 'gggg', '<p>hhh</p>', 0, NULL, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(3, 1, 1, '123 sa vdsa vdsa vdsa vds fffff', '<p>123</p>', 0, NULL, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -270,10 +312,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `group_id`, `status`, `name`, `email`, `deleted_at`, `modified`, `created`) VALUES
-(1, 'sadmin', 'e8c553411681cbd77adf93c92aaf557e41785830', 1, 1, 'Superadmin', 'sadmin@tera.vn', '0000-00-00 00:00:00', '2015-04-19 20:45:17', '2015-04-16 18:34:24'),
+(1, 'sadmin', 'e8c553411681cbd77adf93c92aaf557e41785830', 1, 1, 'Superadmin', 'sadmin@tera.vn', '0000-00-00 00:00:00', '2015-05-10 04:12:00', '2015-04-16 18:34:24'),
 (2, 'demo 2', '4bd716cd925a538cc3435a9518675d345d8dbf6b', 2, 1, 'Demo 2', 'demo2@gmail.com', '0000-00-00 00:00:00', '2015-04-19 20:45:08', '2015-04-16 18:34:46'),
 (3, 'demo1', '', 2, 1, 'User demo', 'demo@gmail.com', NULL, '2015-04-19 20:45:09', '2015-04-17 19:26:17'),
-(5, 'admod', '31e8315ee69589e315f80eca4608e1cae7e23e5b', 4, 1, 'admod', 'admod@gmail.com', NULL, '2015-04-19 20:03:05', '2015-04-19 20:03:05');
+(5, 'admod', 'd20274c604052d51ad2b443dc483aad312687fb2', 4, 1, 'admod', 'admod@gmail.com', NULL, '2015-05-10 04:13:15', '2015-04-19 20:03:05'),
+(6, '', '', 0, 1, NULL, NULL, NULL, '2015-05-11 15:48:45', '2015-05-11 15:48:45');
 
 --
 -- Indexes for dumped tables
@@ -297,6 +340,12 @@ ALTER TABLE `aros`
 ALTER TABLE `aros_acos`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `ARO_ACO_KEY` (`aro_id`,`aco_id`);
+
+--
+-- Indexes for table `categories`
+--
+ALTER TABLE `categories`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `groups`
@@ -340,22 +389,27 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `acos`
 --
 ALTER TABLE `acos`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
 --
 -- AUTO_INCREMENT for table `aros`
 --
 ALTER TABLE `aros`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `aros_acos`
 --
 ALTER TABLE `aros_acos`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
+-- AUTO_INCREMENT for table `categories`
+--
+ALTER TABLE `categories`
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
 -- AUTO_INCREMENT for table `groups`
 --
 ALTER TABLE `groups`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `medias`
 --
@@ -365,7 +419,7 @@ ALTER TABLE `medias`
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `settings`
 --

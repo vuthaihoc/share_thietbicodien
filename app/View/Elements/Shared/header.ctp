@@ -1,32 +1,32 @@
 <div class="container-fluid" id="top_links">
     <div class="container">
-        <div id="top_links_container">
-            <div class="col-md-6">
+        <div id="top_links_container" class="row">
+            <div class="col-md-5 col-sm-6 col-xs-12">
                 <a href="javascript:void(0);" class="">
                     <span class="glyphicon glyphicon-phone-alt"></span>
-                    0123 456 789
+                    04.62539598
                 </a>
 
                 <a href="javascript:void(0);" class="">
                     <span class="glyphicon glyphicon-envelope"></span>
-                    info@thietbicodien.com
+                    infoscttech@gmail.com
                 </a>
 
-                <a href="javascript:void(0);" class="">
+                <!--a href="javascript:void(0);" class="">
                     <span class="glyphicon glyphicon-time"></span>
                     Hỗ trợ khách hàng 24/7
-                </a>
+                </a-->
             </div>
-            <div class="col-md-4" id="top_search_box">
+            <div class="col-md-5 col-sm-5 col-xs-12" id="top_search_box">
                 <div class="input-group">
                     <span class="input-group-addon" id="basic-addon1">Tìm kiếm</span>
                     <input type="text" class="form-control" placeholder="Nhập từ khóa rồi ấn Enter" aria-describedby="basic-addon1">
                 </div>
             </div>
-            <div class="col-md-2 text-right">
+            <div class="col-md-2 text-right col-sm-1 col-xs-12">
                 <a href="javascript:void(0);">
                     <span class="glyphicon glyphicon-user"></span>
-                    Đăng nhập/Đăng ký
+                    <span class="hidden-sm">Đăng nhập</span>
                 </a>
             </div>
             <div class="clear"></div>
@@ -35,26 +35,38 @@
 </div>
 <div class="container" id="top_banner">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
             <?php echo $this->Html->image('logo_lagre.png', array("height" => 100)); ?>
             <span id="site_slogan">thietbicodienSCT.com</span>
         </div>
-        <div class="col-md-8" id="top_flash_item">
-            <div class="col-md-3">
-                <?php echo $this->Html->image('muahang5.png'); ?>
-                Mua hàng linh hoạt
+        <div class="col-md-8 col-sm-6" id="top_flash_item">
+            <div class="col-md-3 col-xs-6">
+                <div class="item_border">
+                    <?php echo $this->Html->image('muahang5.png'); ?>
+                    <span>Mua hàng linh hoạt</span>
+                </div>
+                
             </div>
-            <div class="col-md-3">
-                <?php echo $this->Html->image('giaohang.png'); ?>
-                Giao hàng nhanh chóng
+            <div class="col-md-3 col-xs-6">
+                <div class="item_border">
+                    <?php echo $this->Html->image('giaohang.png'); ?>
+                    <span>Giao hàng nhanh chóng</span>
+                </div>
+                
             </div>
-            <div class="col-md-3">
-                <?php echo $this->Html->image('thanhtoan.png'); ?>
-                Thanh toán thông minh
+            <div class="col-md-3 col-xs-6">
+                <div class="item_border">
+                    <?php echo $this->Html->image('thanhtoan.png'); ?>
+                    <span>Thanh toán thông minh</span>
+                </div>
+                
             </div>
-            <div class="col-md-3">
-                <?php echo $this->Html->image('baogia.png'); ?>
-                Báo giá
+            <div class="col-md-3 col-xs-6">
+                <div class="item_border">
+                    <?php echo $this->Html->image('baogia.png'); ?>
+                    <span>Báo giá</span>
+                </div>
+                
             </div>
         </div>
     </div>

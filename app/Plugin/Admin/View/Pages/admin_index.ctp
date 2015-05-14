@@ -56,6 +56,9 @@
 		</div>
 	</div>
 </div>
+<?php echo $this->Paginator->pagination(array(
+	'ul' => 'pagination'
+)); ?>
 <?php echo $this->Html->script('/admin/js/acl.js'); ?>
 <script type="text/javascript">
 	$(function(){
