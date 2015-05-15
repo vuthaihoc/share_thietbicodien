@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="col-md-2 text-right col-sm-1 col-xs-12">
-                <a href="javascript:void(0);">
+                <a href="<?php echo $this->Html->url(array('controller'=>'dashboard', 'plugin' => 'admin', 'admin' => true)); ?>">
                     <span class="glyphicon glyphicon-user"></span>
                     <span class="hidden-sm">Đăng nhập</span>
                 </a>
