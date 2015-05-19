@@ -87,7 +87,10 @@ class UsersController extends AdminAppController
 		$this->layout = 'admin_login';
 		if ( $this->request->is('post') ) {
 			if ( $this->Auth->login() ) {
-				return $this->redirect($this->Auth->redirect());
+                            if($this->Auth->user('Group.alias') == "registered"){
+                                $this->redirect('/');
+                            }
+                            return $this->redirect($this->Auth->redirect());
 			}else{
 				return $this->redirect($this->Auth->redirect());
 			}

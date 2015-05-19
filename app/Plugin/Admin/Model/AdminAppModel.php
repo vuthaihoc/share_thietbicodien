@@ -12,10 +12,31 @@ App::uses('AclBehavior', 'Model/Behavior');
 class AdminAppModel extends AppModel{
 	
     public function create_draft($user_id){
-        $init_data = array('created_at' => date('UTC', time()), 'user_id' => $user_id);
+        $init_data = [];
+        if($this->hasField('created_at')){
+                $init_data['created_at'] = date('UTC', time());
+            }
+        if($this->hasField('user_id')){
+                $init_data['user_id'] = $user_id;
+            }
+        if($this->hasField('is_draft')){
+                $init_data['is_draft'] = 1;
+            }
         $this->save($init_data, FALSE);
     }
     
+    public function afterSave($created, $options = array()) {
+        parent::afterSave($created, $options);
+        $this->read();
+        if(!$created){
+            if($this->hasField('is_draft') 
+                    && $this->data[$this->name]['is_draft'] == 1){
+                    $this->data[$this->name]['is_draft'] = 0;
+                    $this->save();
+                }
+        }
+            
+    }
 }
 
  ?>

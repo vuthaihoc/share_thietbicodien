@@ -77,6 +77,18 @@
                     <li>
                         <?php echo $this->Html->link(__d('admin', 'Quản lý trang'), array('plugin' => 'admin', 'controller' => 'pages', 'action' => 'index', 'admin' => true)); ?>
                     </li>
+                    <li>
+                        <?php echo $this->Html->link(__d('admin', 'Quản lý sản phẩm'), array('plugin' => 'admin', 
+                                    'controller' => 'categories', 
+                                    'action'=>'index', 
+                                    'admin' => true)); ?>
+                    </li>
+                    <li>
+                        <?php echo $this->Html->link(__d('admin', 'Quản lý bài viết'), array('plugin' => 'admin', 
+                                    'controller' => 'categories', 
+                                    'action'=>'index', 
+                                    'admin' => true)); ?>
+                    </li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -123,5 +135,6 @@
         });
       });
      </script>
+     <?php pr($this->params); ?>
   </body>
 </html>

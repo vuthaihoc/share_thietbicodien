@@ -43,8 +43,11 @@
         </div>
       </div>
       <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
+        <div class="col-sm-offset-2 col-xs-5">
            <?php echo $this->Form->end(array('label' => __d('admin', 'Save'), 'class' => 'btn btn-success')); ?>
+        </div>
+        <div class="col-xs-5">
+           <?php echo $this->Html->link(__d('admin', 'Cancel'), array('action' => 'index') ,array('class' => 'btn btn-primary')); ?>
         </div>
       </div>
 

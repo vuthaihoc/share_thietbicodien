@@ -24,10 +24,17 @@
                 </div>
             </div>
             <div class="col-md-2 text-right col-sm-1 col-xs-12">
-                <a href="<?php echo $this->Html->url(array('controller'=>'dashboard', 'plugin' => 'admin', 'admin' => true)); ?>">
+                <?php if($this->Session->read('Auth.User.id') != null && $this->Session->read('Auth.User.id') > 0){ ?>
+                <a href="<?php echo $this->Html->url("/"); ?>">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="hidden-sm"><?php echo $this->Session->read('Auth.User.name') ?></span>
+                </a>
+                <?php } else { ?>
+                <a href="<?php echo $this->Html->url(array('controller'=>'users', 'action' => 'login', 'plugin' => 'admin', 'admin' => true)); ?>">
                     <span class="glyphicon glyphicon-user"></span>
                     <span class="hidden-sm">Đăng nhập</span>
                 </a>
+                <?php } ?>
             </div>
             <div class="clear"></div>
         </div>
