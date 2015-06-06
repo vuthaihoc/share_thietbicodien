@@ -14,7 +14,7 @@ class AdminAppModel extends AppModel{
     public function create_draft($user_id){
         $init_data = [];
         if($this->hasField('created_at')){
-                $init_data['created_at'] = date(time());
+                $init_data['created_at'] = date('Y-m-d H:i:s');
             }
         if($this->hasField('user_id')){
                 $init_data['user_id'] = $user_id;
@@ -32,8 +32,11 @@ class AdminAppModel extends AppModel{
             if($this->hasField('is_draft') 
                     && $this->data[$this->name]['is_draft'] == 1){
                     $this->data[$this->name]['is_draft'] = 0;
-                    $this->save();
                 }
+//            if($this->hasField('created_at')){
+//                $this->data[$this->name]['is_draft'] = date('Y-m-d H:i:s');
+//            }
+            $this->save();
         }
             
     }
