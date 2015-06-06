@@ -14,7 +14,7 @@ class AdminAppModel extends AppModel{
     public function create_draft($user_id){
         $init_data = [];
         if($this->hasField('created_at')){
-                $init_data['created_at'] = date('UTC', time());
+                $init_data['created_at'] = date(time());
             }
         if($this->hasField('user_id')){
                 $init_data['user_id'] = $user_id;

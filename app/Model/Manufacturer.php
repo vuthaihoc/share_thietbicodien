@@ -9,17 +9,16 @@
 
 App::uses('AdminAppModel', 'Admin.Model');
 
-class Category extends AdminAppModel{
+class Manufacturer extends AdminAppModel{
     
     public $actsAs = array(
-                        'Tree',
                         'Containable',
                         'Media.Media' => array(
                             // You can set up the path where your medias will be saved (optional)
-                            'path' => 'img/uploads/%y/%m/%f',
+                            'path' => 'img/manufacturer/%id',
 
-                                'resize_width' => 1200,
-                                'resize_height' => 1200,
+                                'resize_width' => 200,
+                                'resize_height' => 200,
                         )
                     );
     

@@ -1,0 +1,332 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: Plugin/Admin/Controller/CategoriesController.php:36
+#: Plugin/Admin/Controller/GroupsController.php:61
+#: Plugin/Admin/Controller/PagesController.php:86
+#: Plugin/Admin/Controller/SlidesController.php:79
+#: Plugin/Admin/Controller/UsersController.php:67;121
+msgid "Invalid ID"
+msgstr "ID không hợp lệ"
+
+#: Plugin/Admin/Controller/CategoriesController.php:41
+msgid "Category was saved."
+msgstr ""
+
+#: Plugin/Admin/Controller/DashboardController.php:20
+#: Plugin/Admin/View/Layouts/admin.ctp:50
+msgid "Dashboard"
+msgstr "Bảng điều khiển"
+
+#: Plugin/Admin/Controller/GroupsController.php:21
+#: Plugin/Admin/View/Users/admin_index.ctp:24
+msgid "Groups"
+msgstr ""
+
+#: Plugin/Admin/Controller/GroupsController.php:45
+msgid "Group created."
+msgstr ""
+
+#: Plugin/Admin/Controller/GroupsController.php:68
+msgid "The Group was saved."
+msgstr ""
+
+#: Plugin/Admin/Controller/GroupsController.php:86
+msgid "Invalid ID."
+msgstr ""
+
+#: Plugin/Admin/Controller/GroupsController.php:91
+msgid "The user was deleted."
+msgstr ""
+
+#: Plugin/Admin/Controller/GroupsController.php:94
+msgid "Không thể xóa nhóm mặc định hoặc còn người dùng thuộc nhóm."
+msgstr ""
+
+#: Plugin/Admin/Controller/PagesController.php:36
+#: Plugin/Admin/Controller/SlidesController.php:35
+msgid "Pages"
+msgstr ""
+
+#: Plugin/Admin/Controller/PagesController.php:91
+msgid "Page was saved."
+msgstr ""
+
+#: Plugin/Admin/Controller/PermissionsController.php:40
+#: Plugin/Admin/View/Users/admin_index.ctp:15
+msgid "Permissions"
+msgstr ""
+
+#: Plugin/Admin/Controller/PermissionsController.php:167
+msgid "All Controllers was sincronized."
+msgstr ""
+
+#: Plugin/Admin/Controller/SlidesController.php:84
+msgid "Slide was saved."
+msgstr ""
+
+#: Plugin/Admin/Controller/UsersController.php:28
+#: Plugin/Admin/View/Layouts/admin.ctp:98
+msgid "Users"
+msgstr ""
+
+#: Plugin/Admin/Controller/UsersController.php:51
+msgid "User saved."
+msgstr ""
+
+#: Plugin/Admin/Controller/UsersController.php:72
+msgid "User was saved."
+msgstr ""
+
+#: Plugin/Admin/Controller/UsersController.php:126
+msgid "password was saved."
+msgstr ""
+
+#: Plugin/Admin/Controller/UsersController.php:142
+msgid "Invalid ID!"
+msgstr ""
+
+#: Plugin/Admin/Controller/UsersController.php:146
+msgid "User was deleted."
+msgstr ""
+
+#: Plugin/Admin/Controller/UsersController.php:157;171
+msgid "Người dùng không hợp lệ!"
+msgstr ""
+
+#: Plugin/Admin/Controller/UsersController.php:161;175
+msgid "Đã khóa người dùng."
+msgstr ""
+
+#: Plugin/Admin/Controller/Component/AclPermissionsComponent.php:96
+msgid "You have no authority to access this router."
+msgstr ""
+
+#: Plugin/Admin/View/Categories/admin_edit.ctp:7
+#: Plugin/Admin/View/Pages/admin_edit.ctp:7
+msgid "Parent"
+msgstr ""
+
+#: Plugin/Admin/View/Categories/admin_edit.ctp:21
+#: Plugin/Admin/View/Pages/admin_add.ctp:3
+#: Plugin/Admin/View/Pages/admin_edit.ctp:21
+#: Plugin/Admin/View/Slides/admin_add.ctp:3
+msgid "Title"
+msgstr ""
+
+#: Plugin/Admin/View/Categories/admin_index.ctp:5
+#: Plugin/Admin/View/Pages/admin_index.ctp:5
+#: Plugin/Admin/View/Slides/admin_index.ctp:5
+msgid "Thêm mới"
+msgstr ""
+
+#: Plugin/Admin/View/Categories/admin_index.ctp:32
+#: Plugin/Admin/View/Groups/admin_index.ctp:22
+#: Plugin/Admin/View/Pages/admin_index.ctp:28
+#: Plugin/Admin/View/Slides/admin_index.ctp:28
+#: Plugin/Admin/View/Users/admin_index.ctp:45
+msgid "Edit"
+msgstr ""
+
+#: Plugin/Admin/View/Categories/admin_index.ctp:39
+#: Plugin/Admin/View/Groups/admin_index.ctp:29
+#: Plugin/Admin/View/Pages/admin_index.ctp:35
+#: Plugin/Admin/View/Slides/admin_index.ctp:35
+msgid "Delete"
+msgstr ""
+
+#: Plugin/Admin/View/Groups/admin_add.ctp:3
+#: Plugin/Admin/View/Groups/admin_edit.ctp:6
+msgid "Name:"
+msgstr ""
+
+#: Plugin/Admin/View/Groups/admin_add.ctp:17
+#: Plugin/Admin/View/Groups/admin_edit.ctp:20
+#: Plugin/Admin/View/Pages/admin_add.ctp:28
+#: Plugin/Admin/View/Pages/admin_edit.ctp:47
+#: Plugin/Admin/View/Slides/admin_add.ctp:28
+#: Plugin/Admin/View/Slides/admin_edit.ctp:35
+#: Plugin/Admin/View/Users/admin_add.ctp:85
+#: Plugin/Admin/View/Users/admin_edit.ctp:89
+#: Plugin/Admin/View/Users/admin_reset_password.ctp:32
+msgid "Save"
+msgstr ""
+
+#: Plugin/Admin/View/Groups/admin_index.ctp:12
+#: Plugin/Admin/View/Users/admin_add.ctp:15
+#: Plugin/Admin/View/Users/admin_edit.ctp:32
+#: Plugin/Admin/View/Users/admin_index.ctp:32
+msgid "Name"
+msgstr ""
+
+#: Plugin/Admin/View/Groups/admin_index.ctp:13
+#: Plugin/Admin/View/Users/admin_index.ctp:36
+msgid "Actions"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:41
+msgid "Mở menu"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:46
+msgid "TeraVN CMS"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:52
+msgid "Languages"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:57
+msgid "Brazilian"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:66
+msgid "English"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:75
+msgid "Quản lý"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:78
+msgid "Quản lý trang"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:81
+msgid "Quản lý sản phẩm"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:87
+msgid "Quản lý bài viết"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:95
+msgid "User control"
+msgstr ""
+
+#: Plugin/Admin/View/Layouts/admin.ctp:102
+msgid "Logout"
+msgstr ""
+
+#: Plugin/Admin/View/Pages/admin_add.ctp:15
+#: Plugin/Admin/View/Pages/admin_edit.ctp:33
+#: Plugin/Admin/View/Slides/admin_add.ctp:15
+msgid "Content"
+msgstr ""
+
+#: Plugin/Admin/View/Pages/admin_edit.ctp:50
+#: Plugin/Admin/View/Slides/admin_edit.ctp:38
+msgid "Cancel"
+msgstr ""
+
+#: Plugin/Admin/View/Pages/index.ctp:2
+#: Plugin/Admin/View/Slides/index.ctp:2
+#: Plugin/Admin/View/Users/admin_index.ctp:4
+msgid "Add"
+msgstr ""
+
+#: Plugin/Admin/View/Permissions/admin_index.ctp:5
+msgid "Sincronize"
+msgstr ""
+
+#: Plugin/Admin/View/Permissions/admin_index.ctp:20
+msgid "Section"
+msgstr ""
+
+#: Plugin/Admin/View/Permissions/admin_index.ctp:66
+msgid "alowed"
+msgstr ""
+
+#: Plugin/Admin/View/Permissions/admin_index.ctp:74
+msgid "denied"
+msgstr ""
+
+#: Plugin/Admin/View/Permissions/admin_index.ctp:83
+msgid "allowed"
+msgstr ""
+
+#: Plugin/Admin/View/Slides/admin_edit.ctp:7
+msgid "Position"
+msgstr ""
+
+#: Plugin/Admin/View/Slides/admin_edit.ctp:21
+msgid "Slide name"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_add.ctp:3
+#: Plugin/Admin/View/Users/admin_edit.ctp:20
+#: Plugin/Admin/View/Users/admin_index.ctp:33
+msgid "Group"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_add.ctp:41
+#: Plugin/Admin/View/Users/admin_edit.ctp:58
+#: Plugin/Admin/View/Users/admin_index.ctp:35
+#: Plugin/Admin/View/Users/admin_login.ctp:10
+msgid "Username"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_add.ctp:54
+#: Plugin/Admin/View/Users/admin_login.ctp:16
+msgid "Password"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_add.ctp:67
+#: Plugin/Admin/View/Users/admin_edit.ctp:71
+msgid "status"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_add.ctp:76
+#: Plugin/Admin/View/Users/admin_edit.ctp:80
+msgid "Active"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_add.ctp:77
+#: Plugin/Admin/View/Users/admin_edit.ctp:81
+msgid "Unactive"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_edit.ctp:4
+msgid "Reset password"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_index.ctp:53
+msgid "Khóa"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_index.ctp:61
+msgid "Mở khóa"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_login.ctp:7
+msgid "username"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_login.ctp:13
+msgid "password"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_login.ctp:20
+msgid "Login"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_reset_password.ctp:7
+msgid "Password:"
+msgstr ""
+
+#: Plugin/Admin/View/Users/admin_reset_password.ctp:19
+msgid "Password again:"
+msgstr ""
+

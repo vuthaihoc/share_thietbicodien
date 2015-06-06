@@ -8,22 +8,23 @@
 
 App::uses('AdminAppController', 'Admin.Controller');
 
-class PagesController extends AdminAppController
+class ManufacturersController extends AdminAppController
 {
+
+
+    public $positions = array(
+        'no' => 'No',
+        'home_main' => 'HomeMain'
+    );
+
+
     /**
      * Models
      *
      * @var array
      **/
-    public $uses = array('Admin.User', 'Admin.Group', 'Page');
+    public $uses = array('Admin.User', 'Admin.Group', 'Manufacturer');
 
-    public $paginate = array(
-        'Page' => array('limit' => 20,
-                    'order' => array(
-                        'Page.created_at' => 'desc'
-                    )
-            )
-    );
     
     /**
      * Controller callback - beforeFilter()
@@ -33,17 +34,16 @@ class PagesController extends AdminAppController
     public function beforeFilter()
     {
             parent::beforeFilter();
-            $this->set('title_for_layout', __d('admin', 'Pages'));
+            $this->main_model = $this->Manufacturer;
+            $this->set('title_for_layout', __d('admin', 'Hãng sản xuất'));
     }
     
     /**
      * admin_index
      */
     public function admin_index(){
-        $this->Components->load('Paginator');
-        $page = 1;
-        $pages = $this->Paginator->paginate('Page');
-        $this->set('pages', $pages);
+        $manufacturers = $this->Manufacturer->find('all');
+        $this->set('manufacturers', $manufacturers);
     }
     
     /**
@@ -58,9 +58,9 @@ class PagesController extends AdminAppController
      */
     public function admin_add(){
         //create new page with an id and mark as draft
-        $this->Page->create_draft($this->Auth->user('id'));
+        $this->Manufacturer->create_draft($this->Auth->user('id'));
         
-        $inserted_id = $this->Page->getInsertID();
+        $inserted_id = $this->Manufacturer->getInsertID();
         
         $this->redirect(array('action' => 'edit', 'admin' => true,$inserted_id));
         
@@ -77,25 +77,24 @@ class PagesController extends AdminAppController
     
     public function admin_edit($id = null){
         
-        $all_page = $this->Page->find('list', array(
-            'conditions' => array('is_draft' => 0),
-                'field' => array('title')
-        ));
-        
         if ( !$id ) {
-			$this->Session->setFlash(__d('admin', 'Invalid ID'), 'flash_error');
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
         if ( !empty( $this->request->data ) ) {
-                if ($this->Page->save($this->request->data) ) {
-                        $this->Session->setFlash(__d('admin', 'Page was saved.'), 'flash_success');
+                if ($this->Manufacturer->save($this->request->data) ) {
+                        $this->Session->setFlash(__d('admin', 'Thông tin nhà sản xuất đã được lưu.'), 'flash_success');
+                        $this->redirect(array('action' => 'index', 'admin' => true));
                 }
         }  else {
-            $this->request->data = $this->Page->read(null, $id);
+            $this->request->data = $this->Manufacturer->read(null, $id);
         }
         
-        $this->set('page_id', $id);
-        $this->set('all_page', $all_page);
+        $this->set('manufacturer_id', $id);
+    }
+    
+    public function _can_delete($id) {
+        return true;
     }
 }
 

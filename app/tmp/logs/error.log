@@ -1959,3 +1959,272 @@ Stack Trace:
 #1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
 #2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-05-21 20:01:53 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes) in [phar:///Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Vendor/imagine.phar/Gd/Image.php, line 2]
+2015-05-21 20:01:53 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes)
+Request URL: /thietbidien/media/medias/upload/Page/5/editor:tinymce?id=PageContent
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'phar:///Users/h...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 20:01:53 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes) in [phar:///Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Vendor/imagine.phar/Gd/Image.php, line 2]
+2015-05-21 20:01:53 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes)
+Request URL: /thietbidien/media/medias/upload/Page/5/editor:tinymce?id=PageContent
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'phar:///Users/h...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 20:02:02 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes) in [phar:///Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Vendor/imagine.phar/Gd/Image.php, line 2]
+2015-05-21 20:02:02 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes)
+Request URL: /thietbidien/media/medias/upload/Page/5/editor:tinymce?id=PageContent
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'phar:///Users/h...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 20:02:03 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes) in [phar:///Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Vendor/imagine.phar/Gd/Image.php, line 2]
+2015-05-21 20:02:03 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes)
+Request URL: /thietbidien/media/medias/upload/Page/5/editor:tinymce?id=PageContent
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'phar:///Users/h...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 20:02:38 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes) in [phar:///Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Vendor/imagine.phar/Gd/Image.php, line 2]
+2015-05-21 20:02:38 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes)
+Request URL: /thietbidien/media/medias/upload/Page/5/editor:tinymce?id=PageContent
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'phar:///Users/h...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 20:02:38 Error: Fatal Error (1): Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes) in [phar:///Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Vendor/imagine.phar/Gd/Image.php, line 2]
+2015-05-21 20:02:38 Error: [FatalErrorException] Allowed memory size of 134217728 bytes exhausted (tried to allocate 39367681 bytes)
+Request URL: /thietbidien/media/medias/upload/Page/5/editor:tinymce?id=PageContent
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Allowed memory ...', 'phar:///Users/h...', 2)
+#1 [internal function]: ErrorHandler::handleError(1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Allowed memory ...', 'phar:///Users/h...', 2, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-25 18:26:07 Error: [MissingActionException] Action CategoriesController::admin_delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'CategoriesController',
+  'action' => 'admin_delete',
+)
+Request URL: /thietbidien/admin/admin/categories/delete/5
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CategoriesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-31 11:09:23 Error: [MissingActionException] Action PagesController::admin_slide() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_slide',
+)
+Request URL: /thietbidien/admin/admin/pages/slide
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-31 11:09:25 Error: [MissingActionException] Action PagesController::admin_slides() could not be found.
+Exception Attributes: array (
+  'controller' => 'PagesController',
+  'action' => 'admin_slides',
+)
+Request URL: /thietbidien/admin/admin/pages/slides
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-06-06 14:10:45 Error: [MissingActionException] Action SlidesController::admin_delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'SlidesController',
+  'action' => 'admin_delete',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-06-06 15:02:11 Error: [MissingViewException] View file "Slides/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Slides/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-06 15:02:46 Error: [MissingViewException] View file "Slides/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Slides/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-06 15:02:47 Error: [MissingViewException] View file "Slides/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Slides/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-06 15:03:11 Error: [MissingViewException] View file "Slides/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Slides/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-06 15:03:19 Error: [MissingViewException] View file "Slides/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Slides/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-06 15:09:02 Error: [MissingViewException] View file "Slides/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Slides/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-06 15:13:03 Error: [MissingViewException] View file "Slides/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Slides/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-06 15:15:10 Error: [MissingViewException] View file "Slides/admin_delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Slides/admin_delete.ctp',
+)
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-06 15:20:14 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete_all' at line 1
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('delete_all', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('delete_all', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('delete_all', Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(827): DboSource->query('delete_all', Array, Object(Slide))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/AdminAppController.php(80): Model->__call('delete_all', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/AdminAppController.php(80): Slide->delete_all('2')
+#7 [internal function]: AdminAppController->admin_delete('2')
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SlidesController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-06-06 15:23:04 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'delete_all' at line 1
+Request URL: /thietbidien/admin/admin/slides/delete/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('delete_all', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('delete_all', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(611): DboSource->fetchAll('delete_all', Array, Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(827): DboSource->query('delete_all', Array, Object(Slide))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/AdminAppController.php(80): Model->__call('delete_all', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/AdminAppController.php(80): Slide->delete_all('2')
+#7 [internal function]: AdminAppController->admin_delete('2')
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SlidesController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-06-06 18:38:37 Error: Fatal Error (1): Call to a member function create_draft() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/ManufacturersController.php, line 61]
+2015-06-06 18:38:37 Error: [FatalErrorException] Call to a member function create_draft() on a non-object
+Request URL: /thietbidien/admin/admin/manufacturers/add
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 61)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 61, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 61, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-06 18:54:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/img/slide/1.jpg
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-06 18:55:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/img/slide/1.jpg
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-06 18:55:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/img/slide/1.jpg
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

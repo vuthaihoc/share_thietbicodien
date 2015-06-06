@@ -92,6 +92,30 @@
                 </ul>
             </li>
             <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __d('admin', 'Cài đặt') ?><b class="caret"></b></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <?php echo $this->Html->link(__d('admin', 'Slide'), 
+                                array('plugin' => 'admin', 
+                                    'controller' => 'slides', 
+                                    'action' => 'index', 
+                                    'admin' => true)); ?>
+                    </li>
+                    <li>
+                        <?php echo $this->Html->link(__d('admin', 'Hãng sản xuất'), array('plugin' => 'admin', 
+                                    'controller' => 'manufacturers', 
+                                    'action'=>'index', 
+                                    'admin' => true)); ?>
+                    </li>
+                    <li>
+                        <?php echo $this->Html->link(__d('admin', 'Cài đặt hệ thống'), array('plugin' => 'admin', 
+                                    'controller' => 'categories', 
+                                    'action'=>'index', 
+                                    'admin' => true)); ?>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __d('admin', 'User control'); ?> <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
                 <li>

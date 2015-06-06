@@ -18,7 +18,10 @@ class AdminAppController extends AppController{
 		"limit" => 10
 		);
 
-	/**
+        public $main_model = null;
+
+
+                /**
 	 * Helpers
 	 *
 	 * @var array
@@ -43,20 +46,66 @@ class AdminAppController extends AppController{
 
 	public function beforeFilter()
 	{
-		parent::beforeFilter();
-		if ( $this->params['plugin'] == 'admin' ) {
-			$this->layout = 'admin';
-		}
+            parent::beforeFilter();
+            if ( $this->params['plugin'] == 'admin' ) {
+                    $this->layout = 'admin';
+            }
 
-		if ( ( $settings = Cache::read('settings', "admin") ) === false ) {
-			 $settings = ClassRegistry::init('Admin.Setting')->find('all');
-			 Cache::write('settings', $settings, "admin");
-		}
-		foreach( $settings AS $setting )
-		{
-			Configure::write('Config.'.$setting['Setting']['setting'], $setting['Setting']['value']);
-		}	
+            if ( ( $settings = Cache::read('settings', "admin") ) === false ) {
+                     $settings = ClassRegistry::init('Admin.Setting')->find('all');
+                     Cache::write('settings', $settings, "admin");
+            }
+            foreach( $settings AS $setting )
+            {
+                    Configure::write('Config.'.$setting['Setting']['setting'], $setting['Setting']['value']);
+            }	
 	}
+        
+        public function admin_delete(){
+            
+            $id = $this->request->param('id');
+            
+            if($id === FALSE){
+                $id = $this->request->params['pass'][0];
+            }
+            
+            if($this->main_model == NULL){
+                echo "Please define a main model for delete action";
+                exit();
+            }  
+            
+            try{
+                
+                if ($this->_can_delete($id)) {
+                    $check = $this->main_model->delete($id);
+                    if($check){
+                        $this->Session->setFlash(__('Đã xóa bản ghi!'),'alert', array(
+                                                    'plugin' => 'BoostCake',
+                                                    'class' => 'alert-success'
+                                            ));
+                    }  else {
+                        $this->Session->setFlash(__('Có lỗi khi xóa!'),'alert', array(
+                                                    'plugin' => 'BoostCake',
+                                                    'class' => 'alert-danger'
+                                            ));
+                    }
+                }  else {
+                    $this->Session->setFlash(__('Không thể xóa bản ghi này!'),'alert', array(
+                                                    'plugin' => 'BoostCake',
+                                                    'class' => 'alert-warning'
+                                            ));
+                }
+            }  catch (ErrorException $ex){
+                echo $ex->getMessage();
+            }
+            
+            $this->render('adminapp/admin_delete');
+            
+        }
+
+        public function _can_delete($id){
+            return FALSE;
+        }
 }
 
  

@@ -33,17 +33,18 @@ class CategoriesController extends AdminAppController{
     public function admin_edit($id){
         
         if ( !$id ) {
-			$this->Session->setFlash(__d('admin', 'Invalid ID'), 'flash_error');
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
         if ( !empty( $this->request->data ) ) {
                 if ($this->Category->save($this->request->data) ) {
-                        $this->Session->setFlash(__d('admin', 'Category was saved.'), 'flash_success');
+                        $this->Session->setFlash(__d('admin', 'Nhóm sản phẩm đã được lưu.'), 'flash_success');
                 }
+        }  else {
+            $this->request->data = $this->Category->read(null, $id);
         }
         
         $this->set('category_id', $id);
-        $this->request->data = $this->Category->read(null, $id);
         $this->_prepair_data($id);
     }
     
@@ -85,6 +86,10 @@ class CategoriesController extends AdminAppController{
             $flag++;
         }
         $this->set('options_categories', $options_categories);
+    }
+    
+    public function _can_delete($id) {
+        // check products
     }
     
 }

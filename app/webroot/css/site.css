@@ -67,7 +67,9 @@
 #home_navi_slide{
     padding: 5px 0;
 }
-
+.form-error{
+    border-color: #a94442;
+}
 
 /**  menu    **/
 /* make sidebar nav vertical */ 
