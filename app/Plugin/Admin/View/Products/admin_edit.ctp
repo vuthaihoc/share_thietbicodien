@@ -78,7 +78,7 @@
                 'type' => 'textarea'
 	)); ?>
 
-    <?php echo $this->Media->tinymce('introduction', $options = array (
+    <?php echo $this->Media->ckeditor('introduction', $options = array (
         'placeholder' => __('Giới thiệu'),
         'label' => __('Giới thiệu'),
         'type' => 'textarea' ));

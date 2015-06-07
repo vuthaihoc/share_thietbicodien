@@ -33,6 +33,7 @@
         
         Router::connectNamed(
             array('cat' => array('controller' => 'products')),
+            array('editor' => array('controller' => 'medias')),
             array('default' => true, 'greedy' => false)
         );
 
