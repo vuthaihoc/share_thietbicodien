@@ -75,8 +75,20 @@ class AdminAppController extends AppController{
             }  
             
             try{
-                
-                if ($this->_can_delete($id)) {
+                if($this->_can_delete($id) === "tree"){
+                    $check = $this->main_model->removeFromTree($id, true);
+                    if($check){
+                        $this->Session->setFlash(__('Đã xóa bản ghi!'),'alert', array(
+                                                    'plugin' => 'BoostCake',
+                                                    'class' => 'alert-success'
+                                            ));
+                    }  else {
+                        $this->Session->setFlash(__('Có lỗi khi xóa!'),'alert', array(
+                                                    'plugin' => 'BoostCake',
+                                                    'class' => 'alert-danger'
+                                            ));
+                    }
+                }elseif ($this->_can_delete($id)) {
                     $check = $this->main_model->delete($id);
                     if($check){
                         $this->Session->setFlash(__('Đã xóa bản ghi!'),'alert', array(

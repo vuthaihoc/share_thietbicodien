@@ -40,6 +40,7 @@ class CategoriesController extends AdminAppController{
         if ( !empty( $this->request->data ) ) {
                 if ($this->Category->save($this->request->data) ) {
                         $this->Session->setFlash(__d('admin', 'Nhóm sản phẩm đã được lưu.'), 'flash_success');
+                        $this->redirect(array('action' => 'index'));
                 }
         }  else {
             $this->request->data = $this->Category->read(null, $id);
@@ -97,7 +98,7 @@ class CategoriesController extends AdminAppController{
         )) > 0){
             return false;
         }else{
-            return true;
+            return 'tree';
         }
     }
     

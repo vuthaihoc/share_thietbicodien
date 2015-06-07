@@ -29,6 +29,12 @@
  * ...and connect the rest of 'Pages' controller's URLs.
  */
 	Router::connect('/home/*', array('controller' => 'home', 'action' => 'display'));
+        
+        
+        Router::connectNamed(
+            array('cat' => array('controller' => 'products')),
+            array('default' => true, 'greedy' => false)
+        );
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on

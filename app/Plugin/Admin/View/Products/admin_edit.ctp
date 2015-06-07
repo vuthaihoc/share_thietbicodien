@@ -18,6 +18,28 @@
 		'label' => __('Tên sản phẩm'),
 	)); ?>
 
+    <?php echo $this->Form->input('code', array(
+                'type' => 'text',
+		'placeholder' => __('Mã sản phẩm'),
+		'label' => __('Mã sản phẩm'),
+	)); ?>
+
+    <?php echo $this->Form->input('category_id', array(
+		'label' => array(
+			'text' => 'Nhóm sản phẩm'
+		),
+		'empty' => __("Chưa chọn"),
+		'options' => $options_categories
+	)); ?>
+
+    <?php echo $this->Form->input('manufacturer_id', array(
+		'label' => array(
+			'text' => 'Hãng sản xuất'
+		),
+		'empty' => __("Chưa chọn"),
+		'options' => $manufacturers
+	)); ?>
+
     <?php echo $this->Form->input('hight_light', array(
 		'placeholder' => __('Mô tả nổi bật'),
 		'label' => __('Mô tả nổi bật'),
@@ -52,24 +74,19 @@
 
     <?php echo $this->Form->input('other_spec', array(
 		'placeholder' => __('Thông số kỹ thuật khác'),
-        'type' => 'textarea'
+		'label' => __('Thông số kỹ thuật khác'),
+                'type' => 'textarea'
 	)); ?>
 
-    <?php echo $this->Form->input('category_id', array(
-		'label' => array(
-			'text' => 'Nhóm sản phẩm'
-		),
-		'empty' => __("Chưa chọn"),
-		'options' => $options_categories
-	)); ?>
-
-    <?php echo $this->Form->input('manufacturer_id', array(
-		'label' => array(
-			'text' => 'Hãng sản xuất'
-		),
-		'empty' => __("Chưa chọn"),
-		'options' => $manufacturers
-	)); ?>
+    <?php echo $this->Media->tinymce('introduction', $options = array (
+        'placeholder' => __('Giới thiệu'),
+        'label' => __('Giới thiệu'),
+        'type' => 'textarea' ));
+//    echo $this->Form->input('introduction', array(
+//		'placeholder' => __('Giới thiệu'),
+//		'label' => __('Giới thiệu'),
+//                'type' => 'textarea'
+//	)); ?>
       
       <div class="form-group">
         <div class="col-sm-offset-2 col-xs-5">

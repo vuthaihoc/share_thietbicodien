@@ -18,16 +18,9 @@ class ProductsController extends AdminAppController
      * @var array
      **/
     public $uses = array('Admin.User', 'Admin.Group', 'Product', 'Category', 'Manufacturer');
-    
-    public $paginate = array(
-        'Product' => array('limit' => 20,
-                    'order' => array(
-                        'Product.created_at' => 'desc',
-                        'Product.updated_at' => 'desc'
-                    )
-            )
-    );
-    
+    private $cat = null;
+
+
     /**
      * Controller callback - beforeFilter()
      * 
@@ -37,6 +30,8 @@ class ProductsController extends AdminAppController
     {
             parent::beforeFilter();
             $this->main_model = $this->Product;
+            $this->_get_cat();
+            $this->set('cat', $this->cat);
             $this->set('title_for_layout', __d('admin', 'Sản phẩm'));
             $this->_prepair_data();
     }
@@ -45,7 +40,24 @@ class ProductsController extends AdminAppController
      * admin_index
      */
     public function admin_index(){
-        $this->Components->load('Paginator');
+        
+        $conditions = array();
+        
+        $named_params = $this->request->param('named');
+        
+        if(isset($named_params['cat'])){
+            $conditions['category_id'] = $named_params['cat'];
+            $cat_name = $this->Category->field('name', array('id' => $named_params['cat']));
+            $this->set('title_for_layout', __d('admin', 'Sản phẩm :: ' . $cat_name));
+        }
+        
+        $this->Paginator->settings = array('limit' => 2,
+                    'order' => array(
+                        'Product.created_at' => 'desc',
+                        'Product.updated_at' => 'desc'
+                    ),
+                    'conditions' => $conditions
+            );
         $products = $this->Paginator->paginate('Product');
         $this->set('products', $products);
     }
@@ -66,7 +78,7 @@ class ProductsController extends AdminAppController
         
         $inserted_id = $this->Product->getInsertID();
         
-        $this->redirect(array('action' => 'edit', 'admin' => true,$inserted_id));
+        $this->redirect(array('action' => 'edit', 'admin' => true,$inserted_id, 'cat' => $this->cat));
         
         return;
         
@@ -81,6 +93,8 @@ class ProductsController extends AdminAppController
     
     public function admin_edit($id = null){
         
+        
+        
         if ( !$id ) {
 			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
@@ -88,10 +102,16 @@ class ProductsController extends AdminAppController
         if ( !empty( $this->request->data ) ) {
                 if ($this->Product->save($this->request->data) ) {
                         $this->Session->setFlash(__d('admin', 'Đã lưu thông tin sản phẩm.'), 'flash_success');
-                        $this->redirect(array('action' => 'index'));
+                        if($this->cat){
+                            $this->redirect(array('action' => 'index', 'cat' => $this->cat));
+                        }else{
+                            $this->redirect(array('action' => 'index'));
+                        }
                 }
         }  else {
-            $this->request->data = $this->Product->read(null, $id);
+            $new_roduct = $this->Product->read(null, $id);
+            if($this->cat)$new_roduct['Product']['category_id'] = $this->cat;
+            $this->request->data = $new_roduct;
         }
         
         $this->set('product_id', $id);
@@ -126,6 +146,17 @@ class ProductsController extends AdminAppController
         $this->set('manufacturers', $this->Manufacturer->find('list', array(
             'conditions' => array('is_draft' => 0)
         )));
+    }
+    
+    public function _get_cat(){
+        $named_params = $this->request->param('named');
+        
+        if(isset($named_params['cat'])){
+            $this->cat = $named_params['cat'];
+        }else{
+            $this->cat = null;
+        }
+        return $this->cat;
     }
 }
 
