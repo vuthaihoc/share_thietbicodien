@@ -85,7 +85,10 @@
   </div>
 </div>
 <div class="form-group">
-<div class="col-sm-offset-2 col-sm-10">
-   <?php echo $this->Form->end(array('label' => __d('admin', 'Save'), 'class' => 'btn btn-success')); ?>
+<div class="col-sm-offset-2 col-sm-6">
+   <?php echo $this->Form->end(array('label' => __d('admin', 'Lưu'), 'class' => 'btn btn-success')); ?>
+</div>
+<div class="col-sm-4">
+    <?php echo $this->Html->link(__d('admin', 'Hủy'), array('action' => 'index') ,array('class' => 'btn btn-primary')); ?>
 </div>
 </div>

@@ -3,44 +3,59 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Slide.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/Component/AclUtilityComponent.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/AdminAppController.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Utility/Hash.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/a_cat_on_home.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/footer.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/css/site.css</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/CategoriesController.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/SlidesController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/AdminAppController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Page.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/ContentModel.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/AppModel.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Locale/eng/LC_MESSAGES/cake.pot</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Slides/index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Category.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Model/AdminAppModel.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Categories/admin_edit.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_add.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/add.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_edit.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/header.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Users/admin_add.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/UsersController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/LanguagesController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/AppController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Component/AuthComponent.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Utility/Hash.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Categories/admin_index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Layouts/admin.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Locale/pt_br/LC_MESSAGES/empty</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Locale/pt_br/LC_MESSAGES/model_validation.pot</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/Component/AclPermissionsComponent.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Categories/admin_edit.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Users/admin_add.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/LanguagesController.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/add.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Locale/admin.pot</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Category.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Layouts/admin.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/footer.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/Component/AclUtilityComponent.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Slide.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/SlidesController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Slides/admin_edit.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/css/site.css</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/header.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/Schema/abc.sql</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/UsersController.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_edit.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Locale/pt_br/LC_MESSAGES/empty</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/AppController.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_add.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Layouts/default.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Model/AdminAppModel.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Slides/index.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Locale/eng/LC_MESSAGES/admin.po</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Component/AuthComponent.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_index.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/ContentModel.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Categories/admin_index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Locale/admin.pot</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Locale/eng/LC_MESSAGES/cake.pot</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Layouts/default.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/webroot/css/dashboard.css</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/AdminApp/admin_delete.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Helper/AppHelper.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/core.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Product.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Manufacturer.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/ManufacturersController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Manufacturers/admin_index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Slides/admin_index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Manufacturers/admin_edit.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/ProductsController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Groups/admin_edit.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Users/admin_edit.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Products/admin_index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Products/admin_edit.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/Schema/abc.sql</file>
         </group>
     </open-files>
 </project-private>

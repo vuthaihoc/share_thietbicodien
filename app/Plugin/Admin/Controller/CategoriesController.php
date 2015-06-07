@@ -15,6 +15,7 @@ class CategoriesController extends AdminAppController{
     public function beforeFilter() {
         parent::beforeFilter();
         //$this->loadModel("Category");
+        $this->main_model = $this->Category;
     }
 
     public function admin_index(){
@@ -90,6 +91,14 @@ class CategoriesController extends AdminAppController{
     
     public function _can_delete($id) {
         // check products
+        $this->loadModel('Product');
+        if($this->Product->find('count', array(
+            'conditions' => array('category_id' => $id)
+        )) > 0){
+            return false;
+        }else{
+            return true;
+        }
     }
     
 }

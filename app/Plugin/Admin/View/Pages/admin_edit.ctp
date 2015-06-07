@@ -44,13 +44,14 @@
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-xs-5">
-           <?php echo $this->Form->end(array('label' => __d('admin', 'Save'), 'class' => 'btn btn-success')); ?>
+           <?php echo $this->Form->end(array('label' => __d('admin', 'Lưu'), 'class' => 'btn btn-success')); ?>
         </div>
         <div class="col-xs-5">
-           <?php echo $this->Html->link(__d('admin', 'Cancel'), array('action' => 'index') ,array('class' => 'btn btn-primary')); ?>
+           <?php echo $this->Html->link(__d('admin', 'Hủy'), array('action' => 'index') ,array('class' => 'btn btn-primary')); ?>
         </div>
       </div>
 
         <div class="form-group">
+            <div><?php echo __("Quản lý hình ảnh") ?></div>
             <?php echo $this->Media->iframe('Page',$page_id); ?>
         </div>

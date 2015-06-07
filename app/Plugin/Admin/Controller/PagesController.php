@@ -40,8 +40,8 @@ class PagesController extends AdminAppController
      * admin_index
      */
     public function admin_index(){
-        $this->Components->load('Paginator');
         $page = 1;
+        $this->Components->load('Paginator');
         $pages = $this->Paginator->paginate('Page');
         $this->set('pages', $pages);
     }

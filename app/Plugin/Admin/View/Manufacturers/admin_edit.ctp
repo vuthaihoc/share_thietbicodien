@@ -27,5 +27,6 @@
       </div>
 
         <div class="form-group">
+            <div><?php echo __("Quản lý hình ảnh") ?></div>
             <?php echo $this->Media->iframe('Manufacturer',$manufacturer_id); ?>
         </div>

@@ -11,6 +11,11 @@ App::uses('AdminAppModel', 'Admin.Model');
 
 class Category extends AdminAppModel{
     
+    public $hasMany = array(
+        'Product'
+    );
+
+
     public $actsAs = array(
                         'Tree',
                         'Containable',

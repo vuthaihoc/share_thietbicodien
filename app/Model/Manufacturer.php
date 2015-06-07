@@ -11,6 +11,10 @@ App::uses('AdminAppModel', 'Admin.Model');
 
 class Manufacturer extends AdminAppModel{
     
+    public $hasMany = array(
+        'Product'
+    );
+    
     public $actsAs = array(
                         'Containable',
                         'Media.Media' => array(

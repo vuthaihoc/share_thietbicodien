@@ -11,6 +11,12 @@ App::uses('AdminAppModel', 'Admin.Model');
 
 class Product extends AdminAppModel{
     
+//    public $belongsTo = array(
+//        'Category',
+//        'Manufacturer'
+//    );
+
+
     public $actsAs = array(
                         'Containable',
                         'Media.Media' => array(
@@ -26,8 +32,13 @@ class Product extends AdminAppModel{
         'name' => array(
             'notEmpty' => array(
 				'rule' => 'notEmpty',
-				'message' => 'Name fields is required.',
-				'last' => true,
+				'message' => 'Tên sản phẩm không được bỏ trống.'
+			)
+        ),
+        'category_id' => array(
+            'notEmpty' => array(
+				'rule' => 'notEmpty',
+				'message' => 'Hãy chọn một nhóm sản phẩm.'
 			)
         )
     );
