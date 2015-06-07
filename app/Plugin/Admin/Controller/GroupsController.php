@@ -18,7 +18,7 @@ class GroupsController extends AdminAppController{
 	public function beforeFilter()
 	{
 		parent::beforeFilter();
-		$this->set('title_for_layout', __d('admin', 'Groups'));
+		$this->set('title_for_layout', __d('admin', 'Nhóm'));
 	}
 	
 	/**
@@ -42,7 +42,7 @@ class GroupsController extends AdminAppController{
 		if ( !empty( $this->request->data ) ) {
 			$this->Group->create();
 			if ( $this->Group->save( $this->request->data ) ) {
-				$this->Session->setFlash(__d('admin', 'Group created.'), 'flash_success');
+				$this->Session->setFlash(__d('admin', 'Đã tạo nhóm.'), 'flash_success');
 				$this->redirect(array('action' => 'index'));
 			}
 		}
@@ -58,14 +58,14 @@ class GroupsController extends AdminAppController{
 	{
 		if( !$id )
 		{
-			$this->Session->setFlash(__d('admin', "Invalid ID"), 'flash_error');
+			$this->Session->setFlash(__d('admin', "ID không hợp lệ"), 'flash_error');
 			$this->redirect(array("action" => 'index'));			
 		}
 		if( !empty( $this->request->data ) )
 		{
 			if( $this->Group->save( $this->request->data ) )
 			{
-				$this->Session->setFlash(__d('admin', "The Group was saved."), 'flash_success');
+				$this->Session->setFlash(__d('admin', "Thông tin nhóm đã được lưu."), 'flash_success');
 				$this->redirect(array("action" => 'index'));		
 			}			
 		}
@@ -83,12 +83,12 @@ class GroupsController extends AdminAppController{
 	{
 		if( !$id )
 		{
-			$this->Session->setFlash(__d('admin', 'Invalid ID.'), 'flash_error');
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ.'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
 		if( $this->Group->delete( $id ) )
 		{
-			$this->Session->setFlash(__d('admin', 'The user was deleted.'), 'flash_success');
+			$this->Session->setFlash(__d('admin', 'Người dùng đã xóa.'), 'flash_success');
 			$this->redirect(array('action' => 'index'));
 		}  else {
                     $this->Session->setFlash(__d('admin', 'Không thể xóa nhóm mặc định hoặc còn người dùng thuộc nhóm.'), 'flash_error');

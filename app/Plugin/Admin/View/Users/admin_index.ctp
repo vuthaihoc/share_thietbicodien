@@ -1,7 +1,7 @@
 <ul class="nav nav-pills">
   <li class="active">
   	<?php 
-  	echo $this->Html->link(__d('admin', 'Add'), array(
+  	echo $this->Html->link(__d('admin', 'Thêm'), array(
   		'plugin' => 'admin', 
   		'controller' => 'users', 
   		'action' => 'add', 
@@ -12,7 +12,7 @@
   </li>
   <li>
   	<?php 
-  		echo $this->Html->link(__d('admin', 'Permissions'), array(
+  		echo $this->Html->link(__d('admin', 'Quyền truy cập'), array(
   			'plugin' => 'admin',
   			'controller' => 'permissions',
   			'action' => 'index',
@@ -21,7 +21,7 @@
   	 ?>
   </li>
   <li>
-  <?php echo $this->Html->link(__d('admin', 'Groups'), '/admin/groups'); ?>
+  <?php echo $this->Html->link(__d('admin', 'Nhóm'), '/admin/groups'); ?>
 </li>
 </ul>
 <div class="row">
@@ -29,11 +29,11 @@
 		<table class="table table-hover">
 		      <?php 
 		      	$tableHeaders = array(
-		      		__d('admin', 'Name'),
-		      		__d('admin', "Group"),
-		      		'Email',
-		      		__d('admin', 'Username'),
-		      		__d('admin', 'Actions')
+		      		__d('admin', 'Tên'),
+		      		__d('admin', "Nhóm"),
+		      		__('Email'),
+		      		__d('admin', 'Tên truy cập'),
+		      		__d('admin', 'Thao tác')
 		      	);
 		      	$tableHeaders =  $this->Html->tableHeaders($tableHeaders);
 		      	echo $this->Html->tag('thead', $tableHeaders);
@@ -42,7 +42,7 @@
 		       <?php 
 		       	$rows = array();
 		       	foreach ($users as $user) {
-		       		$actions = $this->Html->link(__d('admin', 'Edit'), array(
+		       		$actions = $this->Html->link(__d('admin', 'Sửa'), array(
 		       			'plugin' => 'admin',
 		       			'controller' => 'users',
 		       			'action' => 'edit',

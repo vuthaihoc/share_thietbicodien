@@ -33,7 +33,7 @@ class PagesController extends AdminAppController
     public function beforeFilter()
     {
             parent::beforeFilter();
-            $this->set('title_for_layout', __d('admin', 'Pages'));
+            $this->set('title_for_layout', __d('admin', 'Trang'));
     }
     
     /**
@@ -72,7 +72,7 @@ class PagesController extends AdminAppController
 //        if ( !empty( $this->request->data ) ) {
 //			$this->Page->create();			
 //			if ( $this->Page->save( $this->request->data ) ) {
-//				$this->Session->setFlash(__d('admin', 'Page saved.'), 'flash_success');
+//				$this->Session->setFlash(__d('admin', 'Đã luu trang.'), 'flash_success');
 //				$this->redirect(array('action' => 'index'));
 //			}
 //		}
@@ -86,12 +86,12 @@ class PagesController extends AdminAppController
         ));
         
         if ( !$id ) {
-			$this->Session->setFlash(__d('admin', 'Invalid ID'), 'flash_error');
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
         if ( !empty( $this->request->data ) ) {
                 if ($this->Page->save($this->request->data) ) {
-                        $this->Session->setFlash(__d('admin', 'Page was saved.'), 'flash_success');
+                        $this->Session->setFlash(__d('admin', 'Đã lưu trang.'), 'flash_success');
                 }
         }  else {
             $this->request->data = $this->Page->read(null, $id);

@@ -17,7 +17,7 @@ class DashboardController extends AdminAppController{
 	 */
 	public function admin_index()
 	{
-		$this->set('title_for_layout', __d('admin', 'Dashboard'));
+		$this->set('title_for_layout', __d('admin', 'Bảng điều khiển'));
 	}
 }
 ?>

@@ -25,7 +25,7 @@ class UsersController extends AdminAppController
 	public function beforeFilter()
 	{
 		parent::beforeFilter();
-		$this->set('title_for_layout', __d('admin', 'Users'));
+		$this->set('title_for_layout', __d('admin', 'Người dùng'));
 	}
 	
 	/**
@@ -48,7 +48,7 @@ class UsersController extends AdminAppController
 		if ( !empty( $this->request->data ) ) {
 			$this->User->create();			
 			if ( $this->User->save( $this->request->data ) ) {
-				$this->Session->setFlash(__d('admin', 'User saved.'), 'flash_success');
+				$this->Session->setFlash(__d('admin', 'Đã lưu người dùng.'), 'flash_success');
 				$this->redirect(array('action' => 'index'));
 			}
 		}
@@ -64,12 +64,12 @@ class UsersController extends AdminAppController
 	 */
 	public function admin_edit( $id = null ){
 		if ( !$id ) {
-			$this->Session->setFlash(__d('admin', 'Invalid ID'), 'flash_error');
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
 		if ( !empty( $this->request->data ) ) {
 			if ( $this->User->save($this->request->data) ) {
-				$this->Session->setFlash(__d('admin', 'User was saved.'), 'flash_success');
+				$this->Session->setFlash(__d('admin', 'Đã lưu người dùng.'), 'flash_success');
 			}
 		}
 		$this->request->data = $this->User->read(null, $id);
@@ -118,12 +118,12 @@ class UsersController extends AdminAppController
 	public function admin_reset_password( $id = null )
 	{
 		if ( !$id ) {
-			$this->Session->setFlash(__d('admin', 'Invalid ID'), 'flash_error');
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
 		if ( !empty( $this->request->data ) ) {
 			if ( $this->User->save($this->request->data) ) {
-				$this->Session->setFlash(__d('admin', 'password was saved.'), 'flash_success');
+				$this->Session->setFlash(__d('admin', 'Mật khẩu đã được lưu.'), 'flash_success');
 				$this->redirect(array('action' => 'index'));
 			}
 		}
@@ -139,11 +139,11 @@ class UsersController extends AdminAppController
             return false;//disable this function 
             /** @todo Cần xử lý lại hàm này  */
 		if ( !$id ) {
-			$this->Session->setFlash(__d('admin', 'Invalid ID!'), 'flash_error');
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ!'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
 		if ( $this->User->delete( $id ) ) {
-			$this->Session->setFlash(__d('admin', 'User was deleted.'), 'flash_success');
+			$this->Session->setFlash(__d('admin', 'Đã xóa người dùng.'), 'flash_success');
 			$this->redirect(array('action' => 'index'));
 		}
 	}

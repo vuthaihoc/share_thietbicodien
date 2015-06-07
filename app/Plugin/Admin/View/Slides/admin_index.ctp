@@ -25,14 +25,14 @@
                                 <?php
                                     foreach ($slides as $key => $value) {
                                         $content_preview = "";
-                                        $actions = $this->Html->link(__d('admin', 'Edit'), array(
+                                        $actions = $this->Html->link(__d('admin', 'Sửa'), array(
 						'plugin' => 'admin',
 						'controller' => 'slides',
 						'action' => 'edit',
 						'admin' => true,
 						$value['Slide']['id']
 					), array('class' => 'btn btn-primary btn-xs'));
-					$actions .= '&nbsp;'.$this->Html->link(__d('admin', 'Delete'), array(
+					$actions .= '&nbsp;'.$this->Html->link(__d('admin', 'Xóa'), array(
 						'plugin' => 'admin',
 						'controller' => 'slides',
 						'action' => 'delete',

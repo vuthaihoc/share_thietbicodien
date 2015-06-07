@@ -2,7 +2,7 @@
 	<div class="col-md-12">
 		<ul class="nav nav-pills">
 		  <li class="active">
-			<?php echo $this->Html->link(__d('admin', 'Sincronize'), array('plugin' => 'admin', 'controller' => 'permissions', 'action'=>'sync', 'admin' => true)); ?>
+			<?php echo $this->Html->link(__d('admin', 'Đồng bộ'), array('plugin' => 'admin', 'controller' => 'permissions', 'action'=>'sync', 'admin' => true)); ?>
 		  </li>
 		</ul>
 	</div>
@@ -17,7 +17,7 @@
 				$groupIds   = array_keys($groups);
 
 				$tableHeaders = array(
-					__d('admin', 'Section')
+					__d('admin', 'Khu vực')
 				);
 				$tableHeaders = array_merge($tableHeaders, $groupTitles);
 				$tableHeaders =  $this->Html->tag('thead', $this->Html->tableHeaders($tableHeaders));
@@ -63,7 +63,7 @@
 						if ($level != 0) {
 							if ($groupId != 1) {
 								if ($permissions[$id][$groupId] === 1) {
-									$row[] = $this->Html->tag('span', __d('admin', 'alowed'), array(
+									$row[] = $this->Html->tag('span', __d('admin', 'Cho phép'), array(
 										'class' => 'label label-success permission-toggle', 
 										'data-aco_id' => $id, 
 										'data-aro_id' => $groupsAros[$groupId],
@@ -71,7 +71,7 @@
 										'data-original-title'=>$groupTitle
 									));
 								} else {
-									$row[] = $this->Html->tag('span', __d('admin', 'denied'), array(
+									$row[] = $this->Html->tag('span', __d('admin', 'Không cho phép'), array(
 										'class' => 'label label-danger permission-toggle', 
 										'data-aco_id' => $id, 
 										'data-aro_id' => $groupsAros[$groupId],
@@ -80,7 +80,7 @@
 										));
 								}
 							} else {
-								$row[] = $this->Html->tag('span', __d('admin', 'allowed'), array('class' => 'permission-disabled label label-default'));
+								$row[] = $this->Html->tag('span', __d('admin', 'Cho phép'), array('class' => 'permission-disabled label label-default'));
 							}
 						} else {
 							$row[] = '';

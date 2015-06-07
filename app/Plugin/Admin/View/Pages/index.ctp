@@ -1,5 +1,5 @@
 <?php
-    echo $this->Html->link(__d('admin', 'Add'), array(
+    echo $this->Html->link(__d('admin', 'Thêm'), array(
             'plugin' => 'admin', 
             'controller' => 'pages', 
             'action' => 'add', 

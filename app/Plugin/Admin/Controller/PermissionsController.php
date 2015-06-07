@@ -37,7 +37,7 @@ class PermissionsController extends AdminAppController
 	public function beforeFilter()
 	{
 		parent::beforeFilter();
-		$this->set('title_for_layout', __d('admin', 'Permissions'));
+		$this->set('title_for_layout', __d('admin', 'Quyền truy cập'));
 	}
 	
 	/**
@@ -164,7 +164,7 @@ class PermissionsController extends AdminAppController
 	public function admin_sync()
 	{
 		if ( $this->AclUtility->aco_sync() ) {
-			$this->Session->setFlash(__d('admin', 'All Controllers was sincronized.'), 'flash_success');
+			$this->Session->setFlash(__d('admin', 'Tất cả quyền đã được đồng bộ.'), 'flash_success');
 			$this->redirect(array('action' => 'index'));
 		}
 		$this->render(false);

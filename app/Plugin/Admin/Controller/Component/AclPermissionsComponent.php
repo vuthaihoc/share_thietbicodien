@@ -93,7 +93,7 @@ class AclPermissionsComponent extends Component
 		 	);
 
 		 $this->_controller->Auth->flash['element'] = 'flash_warning';
-		 $this->_controller->Auth->authError = __d('admin', 'You have no authority to access this router.');
+		 $this->_controller->Auth->authError = __d('admin', 'Bạn không có quyền truy cập tính năng này.');
 		if ( $this->_controller->Auth->user() && $this->_controller->Auth->user('group_id') == 1 )
 		{						
 		    $this->_controller->Auth->allow();		    

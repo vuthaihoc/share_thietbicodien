@@ -7,13 +7,13 @@
               'div' => false,
               'label' => false,
               'class' => 'form-control',
-              'placeholder' => 'Name'
+              'placeholder' => __("Tên")
               ));
            ?>
         </div>
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-           <?php echo $this->Form->end(array('label' => __d('admin', 'Save'), 'class' => 'btn btn-success')); ?>
+           <?php echo $this->Form->end(array('label' => __d('admin', 'Lưu'), 'class' => 'btn btn-success')); ?>
         </div>
       </div>

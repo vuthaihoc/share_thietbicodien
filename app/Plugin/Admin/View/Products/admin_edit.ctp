@@ -93,7 +93,7 @@
            <?php echo $this->Form->end(array('label' => __d('admin', 'Lưu'), 'class' => 'btn btn-success')); ?>
         </div>
         <div class="col-xs-5">
-           <?php echo $this->Html->link(__d('admin', 'Cancel'), array('action' => 'index') ,array('class' => 'btn btn-primary')); ?>
+           <?php echo $this->Html->link(__d('admin', 'Hủy/Quay lại'), array('action' => 'index') ,array('class' => 'btn btn-primary')); ?>
         </div>
       </div>
 

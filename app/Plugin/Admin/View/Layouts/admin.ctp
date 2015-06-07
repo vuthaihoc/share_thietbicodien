@@ -47,19 +47,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><?php echo $this->Html->link(__d('admin', 'Dashboard'), '/admin'); ?></li>
+            <li><?php echo $this->Html->link(__d('admin', 'Bảng điều khiển'), '/admin'); ?></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __d('admin', 'Languages'); ?> <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __d('admin', 'Ngôn ngữ'); ?> <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
-                <li>
-                  <?php
-                   echo $this->Html->image("Admin.flags/por.png", array(
-                       "alt" => __d('admin', "Brazilian"),
-                       'url' => '/admin/languages/pt-br',
-                       'class' => 'lang-flag'
-                   ));
-                   ?>
-                </li>
                 <li>
                   <?php 
                     echo $this->Html->image("Admin.flags/eng.png", array(
@@ -116,14 +107,14 @@
                 </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __d('admin', 'User control'); ?> <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __d('admin', 'Người dùng'); ?> <b class="caret"></b></a>
               <ul class="dropdown-menu" role="menu">
                 <li>
-                  <?php echo $this->Html->link(__d('admin', 'Users'), array('plugin' => 'admin', 'controller' => 'users', 'action' => 'index', 'admin' => true)); ?>
+                  <?php echo $this->Html->link(__d('admin', 'Quản lý người dùng'), array('plugin' => 'admin', 'controller' => 'users', 'action' => 'index', 'admin' => true)); ?>
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <?php echo $this->Html->link(__d('admin', 'Logout'), array('plugin' => 'admin', 'controller' => 'users', 'action' => 'logout', 'admin' => true)); ?>
+                  <?php echo $this->Html->link(__d('admin', 'Đăng xuất'), array('plugin' => 'admin', 'controller' => 'users', 'action' => 'logout', 'admin' => true)); ?>
                 </li>
               </ul>
             </li>

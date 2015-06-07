@@ -9,8 +9,8 @@
 		<table class="table table-hover table-bordered">
 		      <?php 
 		      	$tableHeaders = array(
-		      		__d('admin', 'Name'),
-					__d('admin', 'Actions')
+		      		__d('admin', 'Tên'),
+					__d('admin', 'Thao tác')
 		      	);
 		      	$tableHeaders =  $this->Html->tableHeaders($tableHeaders);
 		      	echo $this->Html->tag('thead', $tableHeaders);
@@ -19,14 +19,14 @@
 		       <?php 
 		       	$rows = array();
 		       	foreach ($groups as $group) {
-					$actions = $this->Html->link(__d('admin', 'Edit'), array(
+					$actions = $this->Html->link(__d('admin', 'Sửa'), array(
 						'plugin' => 'admin',
 						'controller' => 'groups',
 						'action' => 'edit',
 						'admin' => true,
 						$group['Group']['id']
 					), array('class' => 'btn btn-primary btn-xs'));
-					$actions .= '&nbsp;'.$this->Html->link(__d('admin', 'Delete'), array(
+					$actions .= '&nbsp;'.$this->Html->link(__d('admin', 'Xóa'), array(
 						'plugin' => 'admin',
 						'controller' => 'groups',
 						'action' => 'delete',

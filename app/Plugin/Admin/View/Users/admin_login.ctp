@@ -4,20 +4,20 @@
 			<?php echo $this->Form->create('User', array('role' => 'form', 'class' => 'form-signin')); ?>
 			  <?php 
 				echo $this->Form->input('username', array(
-						'label' =>  __d('admin', 'username') . $this->Html->tag('span', ' *', array('class' => 'asterisk')),
+						'label' =>  __d('admin', 'Tên truy cập') . $this->Html->tag('span', ' *', array('class' => 'asterisk')),
 						'div' => 'form-group',
 						'class' => 'form-control',
-						'placeholder' => __d('admin', 'Username')
+						'placeholder' => __d('admin', 'Tên truy cập')
 					));
 					echo $this->Form->input('password', array(
-							'label' => __d('admin','password') . $this->Html->tag('span', ' *', array('class' => 'asterisk')),
+							'label' => __d('admin','Mật khẩu') . $this->Html->tag('span', ' *', array('class' => 'asterisk')),
 							'div' => 'form-group',
 							'class' => 'form-control',
-							'placeholder' => __d('admin', 'Password'),
+							'placeholder' => __d('admin', 'Mật khẩu'),
 							'type' => 'password'
 						));
 			   ?>
-			<?php echo $this->Form->end(array('label' => __d('admin', 'Login'), 'class' => 'btn btn-lg btn-primary btn-block')); ?>
+			<?php echo $this->Form->end(array('label' => __d('admin', 'Đăng nhập'), 'class' => 'btn btn-lg btn-primary btn-block')); ?>
 			</div>
 	</div>
 </div>

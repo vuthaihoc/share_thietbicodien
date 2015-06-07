@@ -4,7 +4,7 @@
         //pr($this->validationErrors);
 ?>
     <div class="form-group">
-        <label class="col-sm-2 control-label"><?php echo __d('admin', 'Position'); ?></label>
+        <label class="col-sm-2 control-label"><?php echo __d('admin', 'Vị trí'); ?></label>
         <div class="col-sm-10">
           <?php 
             echo $this->Form->select('position',
@@ -18,7 +18,7 @@
       </div>
 
       <div class="form-group">
-        <label class="col-sm-2 control-label"><?php echo __d('admin', 'Slide name'); ?></label>
+        <label class="col-sm-2 control-label"><?php echo __d('admin', 'Tên Slide'); ?></label>
         <div class="col-sm-10">
           <?php 
             echo $this->Form->input('name', array(

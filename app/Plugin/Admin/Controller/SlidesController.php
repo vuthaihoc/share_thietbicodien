@@ -79,12 +79,12 @@ class SlidesController extends AdminAppController
     public function admin_edit($id = null){
         
         if ( !$id ) {
-			$this->Session->setFlash(__d('admin', 'Invalid ID'), 'flash_error');
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
 			$this->redirect(array('action' => 'index'));
 		}
         if ( !empty( $this->request->data ) ) {
                 if ($this->Slide->save($this->request->data) ) {
-                        $this->Session->setFlash(__d('admin', 'Slide was saved.'), 'flash_success');
+                        $this->Session->setFlash(__d('admin', 'Slide đã được lưu.'), 'flash_success');
                 }
         }  else {
             $this->request->data = $this->Slide->read(null, $id);

@@ -69,7 +69,7 @@ class ManufacturersController extends AdminAppController
 //        if ( !empty( $this->request->data ) ) {
 //			$this->Page->create();			
 //			if ( $this->Page->save( $this->request->data ) ) {
-//				$this->Session->setFlash(__d('admin', 'Page saved.'), 'flash_success');
+//				$this->Session->setFlash(__d('admin', 'Đã lưu trang.'), 'flash_success');
 //				$this->redirect(array('action' => 'index'));
 //			}
 //		}
