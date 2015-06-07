@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jun 07, 2015 at 03:08 AM
+-- Generation Time: Jun 07, 2015 at 11:10 AM
 -- Server version: 5.5.42
 -- PHP Version: 5.5.23
 
@@ -188,18 +188,28 @@ CREATE TABLE `categories` (
   `is_draft` int(1) NOT NULL DEFAULT '0',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `categories`
 --
 
 INSERT INTO `categories` (`id`, `parent_id`, `lft`, `rght`, `name`, `category_type_id`, `meta_title`, `meta_description`, `is_draft`, `updated_at`, `created_at`) VALUES
-(1, NULL, 1, 10, 'hello', 0, '', '', 0, '2015-06-06 23:35:52', '0000-00-00 00:00:00'),
-(2, 1, 2, 9, 'AAAAA', 0, '', '', 0, '2015-06-06 23:35:52', '0000-00-00 00:00:00'),
-(3, 2, 3, 8, 'BBBBBB', 0, '', '', 0, '2015-06-06 23:35:52', '0000-00-00 00:00:00'),
-(4, 3, 4, 7, 'CCCCCCC', 0, '', '', 0, '2015-06-06 23:35:52', '0000-00-00 00:00:00'),
-(5, 4, 5, 6, 'EEEEEE', 0, '', '', 0, '2015-05-19 18:20:00', '0000-00-00 00:00:00');
+(1, NULL, 1, 10, 'Dây và cáp điện', 0, '', '', 0, '2015-06-07 08:22:56', '0000-00-00 00:00:00'),
+(2, 1, 2, 3, 'Dây điện dân dụng', 0, '', '', 0, '2015-06-07 08:23:28', '0000-00-00 00:00:00'),
+(3, 1, 4, 5, 'Cáp treo hạ thế', 0, '', '', 0, '2015-06-07 08:23:57', '0000-00-00 00:00:00'),
+(4, 1, 6, 7, 'Cáp ngầm hạ thế', 0, '', '', 0, '2015-06-07 08:24:21', '0000-00-00 00:00:00'),
+(5, 1, 8, 9, 'Cáp sao su', 0, '', '', 0, '2015-06-07 08:24:21', '0000-00-00 00:00:00'),
+(6, NULL, 11, 12, 'TB điện dân dụng', 0, '', '', 0, '2015-06-07 08:24:36', '2015-06-07 03:24:25'),
+(7, NULL, 13, 14, 'TB điện công nghiệp', 0, '', '', 0, '2015-06-07 08:26:00', '2015-06-07 03:25:42'),
+(8, NULL, 15, 16, 'Gen chống cháy', 0, '', '', 0, '2015-06-07 08:26:12', '2015-06-07 03:26:04'),
+(9, NULL, 17, 18, 'Thiết bị chiếu sáng', 0, '', '', 0, '2015-06-07 08:26:23', '2015-06-07 03:26:14'),
+(10, NULL, 19, 20, 'Tủ điện và Thang cáp', 0, '', '', 0, '2015-06-07 08:26:40', '2015-06-07 03:26:24'),
+(11, NULL, 21, 22, 'Quạt diện', 0, '', '', 0, '2015-06-07 08:26:56', '2015-06-07 03:26:49'),
+(12, NULL, 23, 24, 'Thiết bị điện gia dụng', 0, '', '', 0, '2015-06-07 08:27:05', '2015-06-07 03:26:58'),
+(13, NULL, 25, 26, 'Ổn áp & Lưu điện', 0, '', '', 0, '2015-06-07 08:27:21', '2015-06-07 03:27:10'),
+(14, NULL, 27, 28, 'Smart House', 0, '', '', 0, '2015-06-07 08:27:32', '2015-06-07 03:27:24'),
+(15, NULL, 29, 30, 'Vật tư phụ', 0, '', '', 0, '2015-06-07 08:27:45', '2015-06-07 03:27:33');
 
 -- --------------------------------------------------------
 
@@ -260,7 +270,7 @@ CREATE TABLE `manufacturers` (
 --
 
 INSERT INTO `manufacturers` (`id`, `user_id`, `name`, `slug`, `is_draft`, `updated_at`, `media_id`) VALUES
-(4, 1, 'Cadisun', 0, 0, '2015-06-06 23:56:16', 0),
+(4, 1, 'Cadisun', 0, 0, '2015-06-07 01:40:33', 0),
 (5, 1, 'Sino', 0, 0, '2015-06-06 23:56:30', 0),
 (6, 1, 'SP', 0, 0, '2015-06-06 23:56:30', 0),
 (7, 1, 'Lioa', 0, 0, '2015-06-06 23:56:30', 0),
@@ -286,7 +296,7 @@ CREATE TABLE `medias` (
   `name` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `position` int(11) DEFAULT '0',
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `medias`
@@ -306,7 +316,16 @@ INSERT INTO `medias` (`id`, `ref`, `ref_id`, `file`, `name`, `position`, `create
 (31, 'Slide', 1, '/img/slide/1.png', 'Screen Shot 2015-05-30 at 04.19.12.png', 1, '2015-05-31 04:10:19'),
 (32, 'Slide', 1, '/img/slide/1-1.png', 'Screen Shot 2015-05-30 at 04.19.21.png', 2, '2015-05-31 04:10:20'),
 (33, 'Slide', 1, '/img/slide/1-2.png', 'Screen Shot 2015-05-30 at 04.28.38.png', 0, '2015-05-31 04:10:21'),
-(34, NULL, NULL, NULL, NULL, 3, '2015-05-31 04:23:00');
+(34, NULL, NULL, NULL, NULL, 3, '2015-05-31 04:23:00'),
+(35, 'Page', 2, '/img/uploads/2015/06/11334208_1114919915189859_1943877366604103972_o.jpg', '11334208_1114919915189859_1943877366604103972_o.jpg', 0, '2015-06-06 20:42:18'),
+(36, 'Slide', 3, '/img/slide/3.jpg', '10988504_791413490945453_2280876142787128140_n copy.jpg', 0, '2015-06-06 20:43:50'),
+(37, 'Slide', 3, '/img/slide/3-1.jpg', '11334208_1114919915189859_1943877366604103972_o.jpg', 0, '2015-06-06 20:43:51'),
+(38, 'Product', 1, '/img/product/1.jpg', '11350535_10203096559853743_5478276917340721300_n.jpg', 0, '2015-06-06 20:55:11'),
+(39, 'Product', 1, '/img/product/1-1.jpg', '10988504_791413490945453_2280876142787128140_n copy.jpg', 0, '2015-06-06 20:57:02'),
+(41, 'Product', 2, '/img/product/2.jpg', 'f38b30b0-3e98-45a8-86d9-d06fda3ef4ba.jpg', 0, '2015-06-06 20:57:52'),
+(42, 'Product', 5, '/img/product/5.jpg', 'MCB - 3P - LS.jpg', 0, '2015-06-07 03:48:02'),
+(43, 'Product', 4, '/img/product/4.png', 'day cung 3 soi boc cu.xlpe.pvc.png', 0, '2015-06-07 03:51:59'),
+(44, 'Page', 2, '/img/uploads/2015/06/Day_mềm_tron_1_sợi_Cadisun.png', 'Dây mềm tròn 1 sợi - Cadisun.png', 0, '2015-06-07 04:07:14');
 
 -- --------------------------------------------------------
 
@@ -333,12 +352,12 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`id`, `user_id`, `parent_id`, `title`, `content`, `media_id`, `deleted_at`, `editing`, `is_draft`, `created_at`, `updated_at`) VALUES
-(1, 1, 0, 'd', 'hoho ho ho ho ho', 28, NULL, 0, 0, '2015-04-16 19:18:22', '0000-00-00 00:00:00'),
-(2, 0, 0, 'gggg', '<p>hhh</p>', 0, NULL, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(1, 1, 0, 'dggggg', '<p><a title="Screen Shot 2015-04-12 at 4.47.05 PM.png" href="/thietbidien/img/uploads/2015/04/Screen_Shot_2015_04_12_at_4_47_05_PM-1.png"><img src="/thietbidien/img/uploads/2015/04/Screen_Shot_2015_04_12_at_4_47_05_PM-1.png" alt="" width="141" height="129" /></a>hoho ho ho ho ho</p>', 28, NULL, 0, 0, '2015-04-16 19:18:22', '0000-00-00 00:00:00'),
+(2, 0, 0, 'gggg', '<p><a title="11334208_1114919915189859_1943877366604103972_o.jpg" href="/thietbidien/img/uploads/2015/06/11334208_1114919915189859_1943877366604103972_o.jpg"><img src="/thietbidien/img/uploads/2015/06/11334208_1114919915189859_1943877366604103972_o.jpg" alt="" /></a>hhh</p>', 35, NULL, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (3, 1, 1, '123 sa vdsa vdsa vdsa vds fffff', '<p>123</p>', 0, NULL, 0, 1, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (4, 1, 0, 'hjhj', '<p>gggggg</p>', 0, NULL, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (5, 1, 0, 'hello all to my website', '<p>the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;<span style="line-height: 1.42857143;">the hello page content&nbsp;the hello page content&nbsp;the hello page content&nbsp;</span></p>', 0, NULL, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(6, 1, 0, '', '', 0, NULL, 0, 1, '2015-06-06 20:04:47', '0000-00-00 00:00:00');
+(6, 1, 1, 'hhhhhhhhhhh', '<p>jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;<span style="line-height: 1.42857143;">jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;</span><span style="line-height: 1.42857143;">jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;</span><span style="line-height: 1.42857143;">jjjjjjjjjj&nbsp;jjjjjjjjjj&nbsp;</span></p>', 0, NULL, 0, 0, '2015-06-06 20:04:47', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -349,8 +368,9 @@ INSERT INTO `pages` (`id`, `user_id`, `parent_id`, `title`, `content`, `media_id
 CREATE TABLE `products` (
   `id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `hight_light` text COLLATE utf8_unicode_ci NOT NULL,
-  `code` int(11) NOT NULL,
+  `code` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `manufacturer_id` int(11) NOT NULL,
   `category_id` int(11) NOT NULL,
   `media_id` int(11) NOT NULL,
@@ -361,17 +381,22 @@ CREATE TABLE `products` (
   `intensity` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `voltage` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `other_spec` text COLLATE utf8_unicode_ci NOT NULL,
+  `introduction` text COLLATE utf8_unicode_ci NOT NULL,
   `is_draft` int(2) NOT NULL DEFAULT '1',
   `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`id`, `user_id`, `hight_light`, `code`, `manufacturer_id`, `category_id`, `media_id`, `made_from`, `amount`, `color`, `capacity`, `intensity`, `voltage`, `other_spec`, `is_draft`, `updated_at`, `created_at`) VALUES
-(1, 1, '', 0, 0, 0, 0, '', 0, '', '', '', '', '', 1, '2015-06-07 00:19:12', '2015-06-06 19:19:12');
+INSERT INTO `products` (`id`, `user_id`, `name`, `hight_light`, `code`, `manufacturer_id`, `category_id`, `media_id`, `made_from`, `amount`, `color`, `capacity`, `intensity`, `voltage`, `other_spec`, `introduction`, `is_draft`, `updated_at`, `created_at`) VALUES
+(1, 1, 'Hello', '', '0', 4, 2, 39, '', 0, '', '', '', '', '', '', 0, '2015-06-07 01:57:07', '2015-06-06 19:19:12'),
+(2, 1, 'Ho ho', '', '0', 5, 1, 0, '', 0, '', '', '', '', '', '', 0, '2015-06-07 01:57:56', '2015-06-06 20:57:16'),
+(3, 1, 'bababababab', '', '0', 0, 4, 0, '', 0, '', '', '', '', '', '', 0, '2015-06-07 01:58:15', '2015-06-06 20:58:08'),
+(4, 1, 'Cáp mạng CAT5E ', '', 'CAT5E', 5, 1, 43, '', 0, '', '', '', '', '', '', 0, '2015-06-07 08:58:43', '2015-06-06 21:25:34'),
+(5, 1, 'Áp to mát', 'ds avdsa vdsa vds avsd', '0', 6, 6, 0, '', 100, 'Trắng', '', '10A', '~230V', 'Làm bằng nhựa, cứng cáp, chịu nhiệt', '', 0, '2015-06-07 08:49:54', '2015-06-06 21:32:12');
 
 -- --------------------------------------------------------
 
@@ -404,7 +429,7 @@ CREATE TABLE `slides` (
   `position` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `slides`
@@ -412,7 +437,7 @@ CREATE TABLE `slides` (
 
 INSERT INTO `slides` (`id`, `name`, `position`, `created_at`, `updated_at`) VALUES
 (1, 'cds avds avdsavdsavd', 'no', '0000-00-00 00:00:00', '2015-05-31 09:12:19'),
-(2, '', '', '2015-06-07 02:24:27', '0000-00-00 00:00:00');
+(3, 'HihI', 'no', '2015-06-07 03:43:15', '2015-06-07 01:43:53');
 
 -- --------------------------------------------------------
 
@@ -548,7 +573,7 @@ ALTER TABLE `aros_acos`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT for table `groups`
 --
@@ -563,7 +588,7 @@ ALTER TABLE `manufacturers`
 -- AUTO_INCREMENT for table `medias`
 --
 ALTER TABLE `medias`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=35;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=45;
 --
 -- AUTO_INCREMENT for table `pages`
 --
@@ -573,7 +598,7 @@ ALTER TABLE `pages`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `settings`
 --
@@ -583,7 +608,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT for table `slides`
 --
 ALTER TABLE `slides`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `users`
 --
