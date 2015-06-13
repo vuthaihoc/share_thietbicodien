@@ -35,7 +35,9 @@ class HomeController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+	public $uses = array(
+            'Category'
+        );
 
 /**
  * Displays a view
@@ -82,5 +84,16 @@ class HomeController extends AppController {
                 //mark this page as homepage
                 $this->set("is_home_page", true);
             }
+            //menu
+            $categories = $this->Category->find('threaded', array(
+                'recursive' => -1
+            ));
+            $this->set('categories', $categories);
+            //new product
+            
+            
+            //first level product sample
+            
+            
         }
 }

@@ -125,7 +125,25 @@ class Media extends AppModel{
                     if (!file_exists($destination)) {
                         require_once APP . 'Plugin' . DS . 'Media' . DS . 'Vendor' . DS . 'imagine.phar';
                         $imagine = new Imagine\Gd\Imagine();
-                        return $imagine->open($filename)->thumbnail(new Imagine\Image\Box($max_width, $max_height), Imagine\Image\ImageInterface::THUMBNAIL_INSET)->save($destination, array('quality' => 90));
+                        $open_image = $imagine->open($filename);
+                        $current_size = $open_image->getSize();
+                        $a = $current_size->getWidth();
+                        $b = $current_size->getHeight();
+                        $new_box = $current_size;
+                        if($max_width/$max_height >= $a/$b){
+                            if($a >= $max_width){
+                                $new_box = new Imagine\Image\Box($max_width, $max_height);
+                            }else{
+                                $new_box = new Imagine\Image\Box($a, $a*$max_height/$max_width);
+                            }
+                        }else{
+                            if($b >= $max_height){
+                                $new_box = new Imagine\Image\Box($max_width, $max_height);
+                            }else{
+                                $new_box = new Imagine\Image\Box($b*$max_width/$max_height, $b);
+                            }
+                        }
+                        return $imagine->open($filename)->thumbnail($new_box, Imagine\Image\ImageInterface::THUMBNAIL_INSET)->save($destination, array('quality' => 90));
                     }
                 } catch (Exception $exc) {
                     //echo $exc->getTraceAsString();

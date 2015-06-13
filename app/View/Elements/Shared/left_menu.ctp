@@ -11,6 +11,44 @@
         </div>
         <div class="navbar-collapse collapse sidebar-navbar-collapse">
             <ul class="nav navbar-nav">
+            <?php
+            foreach ($categories as $key1 => $value1) {
+                $t_child_class = "";
+                $t_caret = '';
+                $t_link_options = array(
+                    'class' => 'dropdown-toggle',
+                    'data-toggle' => 'dropdown',
+                    'escapeTitle' => false
+                );
+                $t_list_open = "";
+                $t_list_close = "";
+                if(count($value1['children']))
+                {
+                    $t_child_class = "dropdown";
+                    $t_caret = '<b class="caret"></b>';
+                    $t_list_open = '<ul class="dropdown-menu">';
+                    $t_list_close = "</ul>";
+                }
+                $t_link = $this->Html->link($value1['Category']['name'] . $t_caret, array(), $t_link_options);
+                ?>
+                <li class="<?php echo $t_child_class; ?>">
+                    <?php echo $t_link; ?>
+                    <?php 
+                    echo $t_list_open;
+                    foreach ($value1['children'] as $key2 => $value2) {
+                    $t_link = $this->Html->link($value2['Category']['name'] , array());
+                        ?>
+                    <li> <?php echo $t_link; ?> </li>
+                    <?php
+                    }
+                    echo $t_list_close;
+                    ?>
+                </li>
+                <?php
+            }
+            ?>
+            </ul>
+            <!--ul class="nav navbar-nav">
                 <li class="">
                     <a href="#">Dây & Cáp điện</a>
                 </li>
@@ -50,7 +88,7 @@
                         <li><a href="#">Quạt làm mát</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul-->
         </div><!--/.nav-collapse -->
     </div>
 </div>

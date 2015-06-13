@@ -396,3 +396,15 @@ Configure::write('form_input_option', array(
 		'wrapInput' => false,
 		'class' => 'form-control'
 	)));
+
+        Configure::write('admin_image_preview', array(
+		'width'				=> 100,	//Width of the new Image, Default is Original Width
+		'height'			=> 50,	//Height of the new Image, Default is Original Height
+		'aspect'			=> true,	//Keep aspect ratio
+		'crop'				=> false,	//Crop the Image
+		'cropvars'			=> array(), //How to crop the image, array($startx, $starty, $endx, $endy);
+		'autocrop'			=> false,	//Auto crop the image, calculate the crop according to the size and crop from the middle
+		'htmlAttributes'	=> array(),	//Html attributes for the image tag
+		'quality'			=> 100,		//Quality of the image
+		'urlOnly'			=> false	//Return only the URL or return the Image tag
+        ));

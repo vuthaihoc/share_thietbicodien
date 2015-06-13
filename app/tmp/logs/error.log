@@ -16201,3 +16201,158 @@ Stack Trace:
 #18 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(MediasController), Object(CakeRequest))
 #19 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #20 {main}
+2015-06-11 22:19:36 Error: Fatal Error (4): syntax error, unexpected '}', expecting ')' in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_index.ctp, line 60]
+2015-06-11 22:19:36 Error: [FatalErrorException] syntax error, unexpected '}', expecting ')'
+Request URL: /thietbidien/admin/admin/pages
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 60)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 60, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 60, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 22:22:30 Error: [MissingHelperException] Helper class ImageHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ImageHelper',
+  'plugin' => false,
+)
+Request URL: /thietbidien/admin/admin/pages
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(897): HelperCollection->load('Image', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(PagesController))
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-06-11 23:04:21 Error: Fatal Error (1): Call to undefined method Imagine\Gd\Image::get_Size() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 129]
+2015-06-11 23:04:21 Error: [FatalErrorException] Call to undefined method Imagine\Gd\Image::get_Size()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 129)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 129, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 129, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:05:22 Error: Fatal Error (1): Call to undefined function getWidth() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:05:22 Error: [FatalErrorException] Call to undefined function getWidth()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:07:05 Error: Fatal Error (1): Call to undefined function getWidth() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 131]
+2015-06-11 23:07:05 Error: [FatalErrorException] Call to undefined function getWidth()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 131)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 131, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 131, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:10:31 Error: Fatal Error (1): Call to undefined function getWidth() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 131]
+2015-06-11 23:10:31 Error: [FatalErrorException] Call to undefined function getWidth()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 131)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 131, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 131, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:10:59 Error: Fatal Error (1): Call to undefined function getHeight() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:10:59 Error: [FatalErrorException] Call to undefined function getHeight()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:15:54 Error: Fatal Error (1): Call to undefined function __toString() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:15:54 Error: [FatalErrorException] Call to undefined function __toString()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:16:14 Error: Fatal Error (1): Call to undefined function __toString() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:16:14 Error: [FatalErrorException] Call to undefined function __toString()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:17:52 Error: Fatal Error (1): Call to undefined function __toString() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:17:52 Error: [FatalErrorException] Call to undefined function __toString()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:19:37 Error: Fatal Error (1): Call to undefined function __toString() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 132]
+2015-06-11 23:19:37 Error: [FatalErrorException] Call to undefined function __toString()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 132)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 132, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 132, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:23:42 Error: Fatal Error (1): Call to undefined function getWidth() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:23:42 Error: [FatalErrorException] Call to undefined function getWidth()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:35:24 Error: Fatal Error (1): Call to undefined function getWidth() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:35:24 Error: [FatalErrorException] Call to undefined function getWidth()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:36:28 Error: Fatal Error (1): Call to undefined function getWidth() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:36:28 Error: [FatalErrorException] Call to undefined function getWidth()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-11 23:37:45 Error: Fatal Error (1): Call to undefined function getWidth() in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php, line 130]
+2015-06-11 23:37:45 Error: [FatalErrorException] Call to undefined function getWidth()
+Request URL: /thietbidien/media/medias/upload/Page/4?id=
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 130, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
