@@ -44,6 +44,8 @@ if (!isset($cakeTitle)) {
         echo $this->element('shared/home_navi_slide');
     } ?>
     <?php echo $this->element('shared/default_content_container'); ?>
+    
+    <?php echo $this->element('shared/bottom_menu'); ?>
     <?php echo $this->element('shared/footer'); ?>
 	<!--div id="container">
 		<div id="header">

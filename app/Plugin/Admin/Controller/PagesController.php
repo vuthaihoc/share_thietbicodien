@@ -10,6 +10,13 @@ App::uses('AdminAppController', 'Admin.Controller');
 
 class PagesController extends AdminAppController
 {
+    
+    public $positions = array(
+                                'no' => 'Không dùng',
+                                'home_bottom' => "Menu chân trang chủ"
+                            );
+    
+    
     /**
      * Models
      *
@@ -34,6 +41,7 @@ class PagesController extends AdminAppController
     {
             parent::beforeFilter();
             $this->set('title_for_layout', __d('admin', 'Trang'));
+            $this->set('positions', $this->positions);
     }
     
     /**
@@ -81,9 +89,12 @@ class PagesController extends AdminAppController
     public function admin_edit($id = null){
         
         $all_page = $this->Page->find('list', array(
-            'conditions' => array('is_draft' => 0),
+            'conditions' => array('is_draft' => 0,
+                'id !=' => $id),
                 'field' => array('title')
         ));
+        
+        
         
         if ( !$id ) {
 			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
