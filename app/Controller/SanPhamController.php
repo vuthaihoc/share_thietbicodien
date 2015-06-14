@@ -67,6 +67,7 @@ class SanPhamController extends FrontController {
         if(!$product)return $this->_not_found ();
         
         $product_category = $product['Product']['category_id'];
+        $category = $this->Category->findById($product_category);
         
         $relative_products = $this->Product->find('all', array(
             'conditions' => array(
@@ -78,6 +79,7 @@ class SanPhamController extends FrontController {
         ));
         
         $this->set('product' , $product);
+        $this->set('category' , $category);
         $this->set('relative_products', $relative_products);
     }
     

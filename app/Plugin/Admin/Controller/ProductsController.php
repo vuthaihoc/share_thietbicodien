@@ -51,7 +51,7 @@ class ProductsController extends AdminAppController
             $this->set('title_for_layout', __d('admin', 'Sản phẩm :: ' . $cat_name));
         }
         
-        $this->Paginator->settings = array('limit' => 2,
+        $this->Paginator->settings = array('limit' => 10,
                     'order' => array(
                         'Product.created_at' => 'desc',
                         'Product.updated_at' => 'desc'

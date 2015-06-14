@@ -79,7 +79,6 @@ class HomeController extends FrontController {
             }
             throw new NotFoundException();
         }
-        
     }
 
     public function beforeRender() {
@@ -106,7 +105,39 @@ class HomeController extends FrontController {
             )
         ));
         $this->set("slides", $slides);
-        
+        // category
+        $root_categories = $this->Category->find("all", array(
+            'conditions' => array(
+                'OR' => array(
+                    "Category.parent_id" => 0,
+                    "Category.parent_id is NULL"
+                ),
+                "is_draft" => 0
+            ),
+            'contain' => "Media",
+            'recursive' => -1,
+        ));
+        $total_root_cat = count($root_categories);
+        for ($i = 0; $i < $total_root_cat; $i++) {
+            $curent_cat = $root_categories[$i];
+            $_cat_ids = array($curent_cat['Category']['id']);
+            $cat_childrent = $this->Category->children($curent_cat['Category']['id'], false, "id");
+            //pr($cat_childrent);die();
+            foreach ($cat_childrent as $key => $value) {
+                $_cat_ids[] = $value['Category']['id'];
+            }
+            $cat_products = $this->Product->find("all", array(
+                'conditions' => array(
+                    "is_draft" => 0,
+                    "category_id" => $_cat_ids
+                ),
+                "order" => array("updated_at" => "desc"),
+                "limit" => 12
+            ));
+            $root_categories[$i]['products'] = $cat_products;
+        }
+
+        $this->set("root_categories", $root_categories);
     }
 
 }

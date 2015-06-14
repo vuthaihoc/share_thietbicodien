@@ -1,10 +1,11 @@
 <?php 
 if(isset($cat_info)):
-    $cat_title = $cat_info['Category']['title'];
-    $cat_products = $cat_info['Category']['products'];
+    $cat_title = $cat_info['Category']['name'];
+    //pr($cat_info);
+    $cat_products = $cat_info['products'];
     $cat_cover = "";
-    if(isset($cat_info['Category'][thumb])){
-        $cat_cover = $cat_info['Category'][thumb];
+    if(isset($cat_info['Category']["thumb"])){
+        $cat_cover = $cat_info['Category']["thumb"];
     }elseif(count($cat_info['Media'])){
         $cat_media = reset($cat_info['Media']);
         $cat_cover = $cat_media['file'];
@@ -16,7 +17,7 @@ if(isset($cat_info)):
 
 <div class="a_box">
     <div class="box_header">
-        <h2> <span class="glyphicon glyphicon-th"></span><?php echo $cat_title; ?></h2>
+        <h2> <span class="glyphicon glyphicon-th"></span> <?php echo $cat_title; ?></h2>
     </div>
     <div class="box_body">
         <?php if($cat_cover != ""){ ?>

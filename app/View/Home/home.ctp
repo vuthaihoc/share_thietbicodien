@@ -1,3 +1,4 @@
+<?php //pr($root_categories); ?>
 <div id="body_home" class="row">
     <?php if(count($new_products)){ ?>
     <div class="a_box">
@@ -14,7 +15,8 @@
         </div>
     </div>
     <?php } ?>
-    <?php echo $this->element('shared/a_cat_on_home'); ?>
-    <?php echo $this->element('shared/a_cat_on_home'); ?>
-    <?php echo $this->element('shared/a_cat_on_home'); ?>
+    <?php foreach($root_categories as $value){
+        echo $this->element('shared/show_a_cat', array('cat_info'=> $value));
+    }?>
+    
 </div>

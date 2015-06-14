@@ -277,3 +277,27 @@
   }
 }
 /* end navbar */
+
+/* product detail */
+.product_detail{
+    
+}
+.product_detail h1{
+    margin: 10px 0;
+}
+.product_detail h4{
+    margin: 5px 0;
+}
+.product_detail .product_image_container .thumb{
+    width: 100%;
+}
+.product_detail .product_image_container{
+    padding: 20px;
+}
+.product_detail dt,.product_detail dd{
+    margin-bottom: 10px;
+}
+.product_detail{
+    
+}
+/* end product detail */
