@@ -16356,3 +16356,435 @@ Stack Trace:
 #3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-06-13 13:40:13 Error: [CakeException] Method params does not exist
+Request URL: /thietbidien/bai_viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->__call('params', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->params('id')
+#2 [internal function]: BaiVietController->index()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-06-13 13:40:19 Error: [MissingControllerException] Controller class Bai-vietController could not be found.
+Exception Attributes: array (
+  'class' => 'Bai-vietController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/bai-viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-13 13:40:24 Error: [CakeException] Method params does not exist
+Request URL: /thietbidien/bai_viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->__call('params', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->params('id')
+#2 [internal function]: BaiVietController->index()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-06-13 13:40:30 Error: [CakeException] Method params does not exist
+Request URL: /thietbidien/bai_viet/index
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->__call('params', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->params('id')
+#2 [internal function]: BaiVietController->index()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-06-13 13:41:00 Error: [MissingActionException] Action PageController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PageController',
+  'action' => '1',
+)
+Request URL: /thietbidien/bai_viet/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-06-13 13:41:08 Error: [MissingActionException] Action PageController::1() could not be found.
+Exception Attributes: array (
+  'controller' => 'PageController',
+  'action' => '1',
+)
+Request URL: /thietbidien/bai_viet/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-06-13 13:41:09 Error: [CakeException] Method params does not exist
+Request URL: /thietbidien/bai_viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->__call('params', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->params('id')
+#2 [internal function]: BaiVietController->index()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-06-13 13:42:59 Error: [CakeException] Method params does not exist
+Request URL: /thietbidien/bai_viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->__call('params', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->params('id')
+#2 [internal function]: BaiVietController->index()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-06-13 13:43:02 Error: [CakeException] Method params does not exist
+Request URL: /thietbidien/bai_viet/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->__call('params', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->params('id')
+#2 [internal function]: BaiVietController->index()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-06-13 13:43:03 Error: [CakeException] Method params does not exist
+Request URL: /thietbidien/bai_viet/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->__call('params', Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(59): CakeRequest->params('id')
+#2 [internal function]: BaiVietController->index()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-06-13 13:43:46 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /thietbidien/bai_viet/3
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Page`.`...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Page`.`...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Page`.`...', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Page), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(65): Model->find('first', Array)
+#7 [internal function]: BaiVietController->index()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-06-13 13:44:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /thietbidien/bai_viet/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Page`.`...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Page`.`...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Page`.`...', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Page), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(65): Model->find('first', Array)
+#7 [internal function]: BaiVietController->index()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-06-13 13:44:33 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /thietbidien/bai_viet/1
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Page`.`...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Page`.`...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Page`.`...', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Page), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(65): Model->find('first', Array)
+#7 [internal function]: BaiVietController->index()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-06-13 13:44:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+Request URL: /thietbidien/bai_viet/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Page`.`...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Page`.`...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Page`.`...', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Page), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php(65): Model->find('first', Array)
+#7 [internal function]: BaiVietController->index()
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(BaiVietController), Array)
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-06-13 13:46:26 Error: [MissingViewException] View file "Page/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Page/index.ctp',
+)
+Request URL: /thietbidien/bai_viet/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-13 13:46:35 Error: [MissingViewException] View file "Page/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Page/index.ctp',
+)
+Request URL: /thietbidien/bai_viet/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-13 13:47:06 Error: [MissingViewException] View file "Page/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Page/index.ctp',
+)
+Request URL: /thietbidien/bai_viet/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-06-13 14:28:29 Error: [MissingActionException] Action BaiVietController::...() could not be found.
+Exception Attributes: array (
+  'controller' => 'BaiVietController',
+  'action' => '...',
+)
+Request URL: /thietbidien/bai_viet/...
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-06-13 15:34:16 Error: [MissingActionException] Action BaiVietController::AAAA() could not be found.
+Exception Attributes: array (
+  'controller' => 'BaiVietController',
+  'action' => 'AAAA',
+)
+Request URL: /thietbidien/bai_viet/AAAA
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-06-14 02:48:09 Error: Fatal Error (4): syntax error, unexpected '}' in [/Users/hocvt/Documents/webroot/thietbidien/app/Controller/FrontController.php, line 49]
+2015-06-14 02:48:09 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 49, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 49, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-14 03:09:18 Error: Fatal Error (1): Call to undefined method View::url() in [/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/shared/header.ctp, line 46]
+2015-06-14 03:09:18 Error: [FatalErrorException] Call to undefined method View::url()
+Request URL: /thietbidien/bai_viet/8/Tai-sao-nhung-chuyen-di-luot-ve-luon-co-cam-giac-nhanh-hon-so-voi-luot-di
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 46, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 46, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-14 03:09:21 Error: Fatal Error (1): Call to undefined method View::url() in [/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/shared/header.ctp, line 46]
+2015-06-14 03:09:21 Error: [FatalErrorException] Call to undefined method View::url()
+Request URL: /thietbidien/bai_viet/8/Tai-sao-nhung-chuyen-di-luot-ve-luon-co-cam-giac-nhanh-hon-so-voi-luot-di
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 46)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 46, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 46, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-14 03:10:52 Error: Fatal Error (1): Call to undefined method View::url() in [/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/shared/footer.ctp, line 4]
+2015-06-14 03:10:52 Error: [FatalErrorException] Call to undefined method View::url()
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 4, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 4, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-14 03:23:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Page.is_draft' in 'where clause'
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Product...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Product...', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Product...', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Product), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('all', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(96): Model->find('all', Array)
+#7 [internal function]: HomeController->beforeRender(Object(CakeEvent))
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(933): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(75): Controller->render('home')
+#11 [internal function]: HomeController->display('home')
+#12 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#13 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#15 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-06-14 03:34:34 Error: Fatal Error (1): Call to undefined function price_format() in [/Users/hocvt/Documents/webroot/thietbidien/app/View/Helper/TeraHelper.php, line 36]
+2015-06-14 03:34:34 Error: [FatalErrorException] Call to undefined function price_format()
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/hocvt/Do...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/hocvt/Do...', 36, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/hocvt/Do...', 36, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-14 03:39:10 Error: [MissingControllerException] Controller class ThietbidienController could not be found.
+Exception Attributes: array (
+  'class' => 'ThietbidienController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/thietbidien/img/updating.gif
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-14 03:50:10 Error: [MissingPluginException] Plugin ImageCropResize could not be found.
+Exception Attributes: array (
+  'plugin' => 'ImageCropResize',
+)
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(227): CakePlugin::path('ImageCropResize')
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(549): App::path('View/Helper', 'ImageCropResize')
+#2 [internal function]: App::load('ImageHelper')
+#3 [internal function]: spl_autoload_call('ImageHelper')
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/HelperCollection.php(130): class_exists('ImageHelper')
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(897): HelperCollection->load('ImageCropResize...', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(354): View->loadHelpers()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(HomeController))
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#9 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(75): Controller->render('home')
+#10 [internal function]: HomeController->display('home')
+#11 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#12 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#14 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-06-14 03:53:53 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/Users/hocvt/Documents/webroot/thietbidien/app/View/Helper/TeraHelper.php, line 36]
+2015-06-14 03:53:53 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 36, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 36, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-14 03:54:29 Error: Fatal Error (4): syntax error, unexpected 'e' (T_STRING) in [/Users/hocvt/Documents/webroot/thietbidien/app/View/Helper/TeraHelper.php, line 36]
+2015-06-14 03:54:29 Error: [FatalErrorException] syntax error, unexpected 'e' (T_STRING)
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 36, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 36, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-14 04:19:59 Error: [MissingPluginException] Plugin ImageCropResize could not be found.
+Exception Attributes: array (
+  'plugin' => 'ImageCropResize',
+)
+Request URL: /thietbidien/admin/admin/slides
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(227): CakePlugin::path('ImageCropResize')
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(549): App::path('View/Helper', 'ImageCropResize')
+#2 [internal function]: App::load('ImageHelper')
+#3 [internal function]: spl_autoload_call('ImageHelper')
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/HelperCollection.php(130): class_exists('ImageHelper')
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(897): HelperCollection->load('Image', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(354): View->loadHelpers()
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(SlidesController))
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SlidesController), Object(CakeRequest))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-06-14 04:33:00 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order = ('desc')    LIMIT 1' at line 1
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Slide`....', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Slide`....', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Slide`....', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Slide), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1659): Model->find('first', Array)
+#7 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(107): Model->field('first', Array)
+#8 [internal function]: HomeController->beforeRender(Object(CakeEvent))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(933): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(75): Controller->render('home')
+#12 [internal function]: HomeController->display('home')
+#13 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#14 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#16 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2015-06-14 04:34:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Slide.first' in 'field list'
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Slide`....', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Slide`....', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Slide`....', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Slide), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(1659): Model->find('first', Array)
+#7 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(104): Model->field('first', Array)
+#8 [internal function]: HomeController->beforeRender(Object(CakeEvent))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#10 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(933): CakeEventManager->dispatch(Object(CakeEvent))
+#11 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(75): Controller->render('home')
+#12 [internal function]: HomeController->display('home')
+#13 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#14 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#15 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#16 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#17 {main}
+2015-06-14 04:34:15 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'is_draft' in 'where clause'
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(460): PDOStatement->execute(Array)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(426): DboSource->_execute('SELECT `Slide`....', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(668): DboSource->execute('SELECT `Slide`....', Array, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Slide`....', false)
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(3022): DboSource->read(Object(Slide), Array)
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php(2994): Model->_readDataSource('first', Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(107): Model->find('first', Array)
+#7 [internal function]: HomeController->beforeRender(Object(CakeEvent))
+#8 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#9 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(933): CakeEventManager->dispatch(Object(CakeEvent))
+#10 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php(75): Controller->render('home')
+#11 [internal function]: HomeController->display('home')
+#12 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#13 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#15 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}

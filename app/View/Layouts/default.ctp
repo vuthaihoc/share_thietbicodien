@@ -43,34 +43,39 @@ if (!isset($cakeTitle)) {
     <?php if($is_home_page){
         echo $this->element('shared/home_navi_slide');
     } ?>
+    <!-- show flash message if have -->
+    <?php 
+    echo $this->Session->flash();
+    ?>
+    
     <?php echo $this->element('shared/default_content_container'); ?>
     
     <?php echo $this->element('shared/bottom_menu'); ?>
     <?php echo $this->element('shared/footer'); ?>
 	<!--div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<h1><?php //echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
 		</div>
 		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
+			<?php //echo $this->Session->flash(); ?>
 
-			<?php echo $this->fetch('content'); ?>
+			<?php //echo $this->fetch('content'); ?>
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
+			<?php //echo $this->Html->link(
+				//	$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
+				//	'http://www.cakephp.org/',
+				//	array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
+				//);
 			?>
 			<p>
-				<?php echo $cakeVersion; ?>
+				<?php //echo $cakeVersion; ?>
 			</p>
 		</div>
 	</div-->
-	<?php echo pr($this->request->params); ?>
-	<?php echo $this->element('sql_dump'); ?>
+    <?php //echo pr($this->request->params); ?>
+    <?php //echo $this->element('sql_dump'); ?>
 <?php
     // include library
     echo $this->Html->script('jquery1.11.3');

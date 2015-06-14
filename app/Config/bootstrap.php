@@ -75,7 +75,6 @@ CakePlugin::load(array(
         'bootstrap' => true
     ),
     'Media',
-    'ImageCropResize',
     'BoostCake'
 ));
 /**

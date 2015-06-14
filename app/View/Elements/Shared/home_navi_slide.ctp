@@ -4,46 +4,47 @@
             <?php echo $this->element('shared/left_menu'); ?>
         </div>
         <div class="col-md-9">
+            <?php if($slides){
+                $slide_images = $slides['Media'];
+                if(count($slide_images)){
+                    $counter = 0;
+                ?>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <?php foreach ($slide_images as $key => $value) {?>
+                    <li data-target="#carousel-example-generic" 
+                        data-slide-to="<?php echo $counter; ?>" 
+                        class=" <?php echo $counter == 0 ? "active" : "" ?>"></li>
+                                    <?php $counter++;} ?>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="http://lorempixel.com/1000/400/technics" alt="Sản phẩm nổi bật 1">
+                    <?php $counter = 0;
+                    foreach ($slide_images as $key => $value) {?>
+                    <div class="item <?php echo $counter == 0 ? "active" : "" ?>">
+                        <img src="<?php echo $this->Html->assetUrl($value['file']); ?>" alt="<?php echo $value['name']; ?>">
                         <div class="carousel-caption">
-                            Sản phẩm nổi bật 1
+                            <?php echo $value['name']; ?>
                         </div>
                     </div>
-                    <div class="item">
-                        <img src="http://lorempixel.com/1000/400/food" alt="Sản phẩm nổi bật 2">
-                        <div class="carousel-caption">
-                            Sản phẩm nổi bật 2
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="http://lorempixel.com/1000/400/animals" alt="Sản phẩm nổi bật 2">
-                        <div class="carousel-caption">
-                            Sản phẩm nổi bật 3
-                        </div>
-                    </div>
+                    <?php $counter++;} ?>
                 </div>
 
                 <!-- Controls -->
                 <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <span class="sr-only"><?php echo __("Trước"); ?></span>
                 </a>
                 <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="sr-only"><?php echo __("Sau"); ?></span>
                 </a>
             </div>
+            
+                <?php
+            }} ?>
         </div>
     </div>
 </div>

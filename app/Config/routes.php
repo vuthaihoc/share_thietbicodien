@@ -31,6 +31,22 @@
 	Router::connect('/home/*', array('controller' => 'home', 'action' => 'display'));
         
         
+	Router::connect('/bai_viet/:id', 
+                array('controller' => 'bai_viet', 'action' => 'index'),
+                array('id' => '[0-9]+'));
+        
+	Router::connect('/bai_viet/:id/:slug', 
+                array('controller' => 'bai_viet', 'action' => 'index'),
+                array('id' => '[0-9]+',
+                    'slug' => '[0-9A-Za-z\-\_\.]+'
+                    ));
+	Router::connect('/san_pham/:id/:slug', 
+                array('controller' => 'san_pham', 'action' => 'index'),
+                array('id' => '[0-9]+',
+                    'slug' => '[0-9A-Za-z\-\_\.]+'
+                    ));
+        
+        
         Router::connectNamed(
             array('cat' => array('controller' => 'products')),
             array('editor' => array('controller' => 'medias')),

@@ -32,7 +32,7 @@ class AdminAppController extends AppController{
 		'Html' => array('className' => 'BoostCake.BoostCakeHtml'),
 		'Form' => array('className' => 'BoostCake.BoostCakeForm'),
                 'Paginator' => array('className' => 'BoostCake.BoostCakePaginator'),
-                'Image' => array('className' => 'ImageCropResize.Image')
+                'Tera'
 	);
 
 	/**

@@ -103,6 +103,7 @@ class PagesController extends AdminAppController
         if ( !empty( $this->request->data ) ) {
                 if ($this->Page->save($this->request->data) ) {
                         $this->Session->setFlash(__d('admin', 'Đã lưu trang.'), 'flash_success');
+                        $this->redirect(array("action" => "index"));
                 }
         }  else {
             $this->request->data = $this->Page->read(null, $id);

@@ -1,7 +1,9 @@
 <div class="container" id="page_footer">
     <div class="row">
         <div class="col-sm-6 col-xs-12">
-            <?php echo $this->Html->image('logo_lagre.png', array("height" => 100)); ?>
+            <a href="<?php echo $this->Html->url("/"); ?>">
+                <?php echo $this->Html->image('logo_lagre.png', array("height" => 100)); ?>
+            </a>
         </div>
         <div class="col-sm-6 col-xs-12 text-center" id="top_flash_item">
             <div>CÔNG TY TNHH MTV SẢN XUẤT VÀ THƯƠNG MẠI SCT</div>

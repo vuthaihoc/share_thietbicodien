@@ -17,7 +17,7 @@
                                     <th>ID</th>
                                     <th>Tiêu đề</th>
                                     <th>Hình ảnh</th>
-                                    <th>Ngày tạo</th>
+                                    <th>Ngày cập nhật</th>
                                     <th>Thao tác</th>
                                 </tr>
                             </thead>
@@ -50,7 +50,7 @@
                                             }
                                         ?>
                                     </td>
-                                    <td><?php echo $value['Page']['created_at']; ?></td>
+                                    <td><?php echo $value['Page']['updated_at']; ?></td>
                                     <td><?php echo $actions; ?></td>
                                 </tr>
                                             <?php
