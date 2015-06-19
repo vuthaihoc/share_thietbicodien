@@ -3,37 +3,46 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/ImageCropResize/README.md</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Vendor/composer.json</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/AdminAppController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/a_cat_on_home.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/SlidesController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/core.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Controller/MediasController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Helper/TeraHelper.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Model/Media.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/show_a_cat.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/SanPham/index.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/top_menu.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Home/display.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/left_menu.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/bootstrap.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Home/bai_viet.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/home_navi_slide.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/routes.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/BaiViet/index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/routes.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/PagesController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Helper/AppHelper.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/HomeController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/footer.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/css/site.css</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Manufacturer.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/header.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Dashboard/admin_index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/Schema/abc.sql</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_edit.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/FrontController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/top_bottom_line.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/AppController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Utility/Inflector.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Config/Schema/schema.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/bottom_menu.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/Controller/Component/MediaComponent.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Layouts/default.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/Shared/default_content_container.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/ProductsController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_index.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Home/home.ctp</file>
         </group>
