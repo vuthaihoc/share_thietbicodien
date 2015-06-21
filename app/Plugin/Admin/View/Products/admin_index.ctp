@@ -2,7 +2,15 @@
 	<div class="col-md-12">
 		<ul class="nav nav-pills">
 		  <li class="active">
-			<?php echo $this->Html->link(__d('admin', 'Thêm mới'), array('plugin' => 'admin', 'action'=>'add', 'admin' => true, 'cat'=>$cat)); ?>
+			<?php echo $this->Html->link(__d('admin', 'Thêm mới'), 
+                                array('plugin' => 'admin', 'action'=>'add', 'admin' => true, 'cat'=>$cat)); ?>
+		  </li>
+		  <li class="active">
+			<?php echo $this->Html->link(__d('admin', 'Nhóm sản phẩm'), 
+                                array('plugin' => 'admin', 
+                                    'controller' => "categories", 
+                                    'action'=>'index', 
+                                    'admin' => true)); ?>
 		  </li>
 		</ul>
 	</div>
@@ -15,10 +23,11 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Tên</th>
-                                    <th>Hình ảnh</th>
-                                    <th>Ngày tạo</th>
                                     <th>Thao tác</th>
+                                    <th>Hình ảnh</th>
+                                    <th>Tên</th>
+                                    <th>Giá</th>
+                                    <th>Ngày tạo</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -31,16 +40,17 @@
 						'admin' => true,
 						$value['Product']['id']
 					), array('class' => 'btn btn-primary btn-xs'));
-					$actions .= '&nbsp;'.$this->Html->link(__d('admin', 'Xóa'), array(
+					$actions .= '<br/>'.$this->Html->link(__d('admin', 'Xóa'), array(
 						'plugin' => 'admin',
 						'action' => 'delete',
 						'admin' => true,
 						$value['Product']['id']
-					), array('class' => 'btn btn-danger btn-xs'));
+					), array('class' => 'btn btn-danger btn-xs',
+                                                'confirm' => __d("admin", "Bạn muốn xóa sản phẩm ") . $value['Product']['name'] . " ?"));
                                         ?>
                                 <tr>
                                     <td><?php echo $value['Product']['id']; ?></td>
-                                    <td><?php echo $value['Product']['name']; ?></td>
+                                    <td><?php echo $actions; ?></td>
                                     <td>
                                         <?php 
                                         if (isset($value['Product']['thumb'])) {
@@ -50,8 +60,19 @@
                                         }
                                         ?>
                                     </td>
+                                    <td>
+                                        <div>
+                                            <?php echo $value['Product']['name']; ?>
+                                        </div>
+                                        <div class="text-danger">
+                                            <?php echo __d("admin", "Nhóm : ") . $value['Category']['name']; ?>
+                                        </div>
+                                        <div class="text-danger">
+                                            <?php echo __d("admin", "Hãng sản xuất : ") . $value['Manufacturer']['name']; ?>
+                                        </div>
+                                    </td>
+                                    <td><?php echo $this->Tera->priceFormat($value['Product']['price']); ?></td>
                                     <td><?php echo $value['Product']['created_at']; ?></td>
-                                    <td><?php echo $actions; ?></td>
                                 </tr>
                                             <?php
                                     }

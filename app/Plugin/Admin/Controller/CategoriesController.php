@@ -51,11 +51,21 @@ class CategoriesController extends AdminAppController{
     }
     
     public function admin_move_up($id){
-        $this->_prepair_data();
+        if ( !$id ) {
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
+			$this->redirect(array('action' => 'index'));
+		}
+        $this->Category->moveUp($id);
+        $this->redirect(array('action' => 'index'));
     }
     
     public function admin_move_down($id){
-        $this->_prepair_data();
+        if ( !$id ) {
+			$this->Session->setFlash(__d('admin', 'ID không hợp lệ'), 'flash_error');
+			$this->redirect(array('action' => 'index'));
+		}
+        $this->Category->moveDown($id);
+        $this->redirect(array('action' => 'index'));
     }
     
     private function _prepair_data($exclude = 0){

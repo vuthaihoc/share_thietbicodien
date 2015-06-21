@@ -74,7 +74,7 @@ class SanPhamController extends FrontController {
                 'Product.is_draft' => 0,
                 'Product.category_id' => $product_category
             ),
-            'order' => array("created_at" => "desc"),
+            'order' => array("Product.created_at" => "desc"),
             'limit' => 6
         ));
         

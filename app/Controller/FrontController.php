@@ -28,7 +28,8 @@ class FrontController extends AppController{
         }
         //menu
         $categories = $this->Category->find('threaded', array(
-            'recursive' => -1
+            'recursive' => -1,
+            'order' => array("lft" => "asc")
         ));
         $this->set('categories', $categories);
         

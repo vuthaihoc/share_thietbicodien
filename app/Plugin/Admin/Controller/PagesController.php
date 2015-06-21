@@ -40,6 +40,7 @@ class PagesController extends AdminAppController
     public function beforeFilter()
     {
             parent::beforeFilter();
+            $this->main_model = $this->Page;
             $this->set('title_for_layout', __d('admin', 'Trang'));
             $this->set('positions', $this->positions);
     }
@@ -115,6 +116,10 @@ class PagesController extends AdminAppController
         
         $this->set('page_id', $id);
         $this->set('all_page', $all_page);
+    }
+    
+    public function _can_delete($id) {
+        return true;
     }
 }
 

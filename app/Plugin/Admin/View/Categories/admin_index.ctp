@@ -33,9 +33,9 @@
                             <thead>
                                 <tr>
                                     <th>ID</th>
+                                    <th>Thao tác</th>
                                     <th>Tên</th>
                                     <th>Cập nhật</th>
-                                    <th>Thao tác</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -57,19 +57,34 @@
 						'admin' => true,
 						$key
 					), array('class' => 'btn btn-danger btn-xs'));
-					$actions .= '&nbsp;'.$this->Html->link(__d('admin', 'Quản lý sản phẩm'), array(
+					$actions .= '<br/>'.$this->Html->link(__d('admin', 'Lên'), array(
+						'plugin' => 'admin',
+						'controller' => 'categories',
+						'action' => 'move_up',
+						'admin' => true,
+						$key
+					), array('class' => 'btn btn-primary btn-xs'));
+					$actions .= '&nbsp;'.$this->Html->link(__d('admin', 'Xuống'), array(
+						'plugin' => 'admin',
+						'controller' => 'categories',
+						'action' => 'move_down',
+						'admin' => true,
+						$key
+					), array('class' => 'btn btn-primary btn-xs'));
+                                        ?>
+                                <tr>
+                                    <td><?php echo $all_categories[$flag]['Category']['id']; ?></td>
+                                    <td><?php echo $actions; ?></td>
+                                    <td><?php 
+                                    echo $this->Html->link("+" . $value, array(
 						'plugin' => 'admin',
 						'controller' => 'products',
 						'action' => 'index',
                                                 'cat' => $key,
 						'admin' => true
-					), array('class' => 'btn btn-default btn-xs'));
-                                        ?>
-                                <tr>
-                                    <td><?php echo $all_categories[$flag]['Category']['id']; ?></td>
-                                    <td>+<?php echo $value; ?></td>
+					));
+                                    ?></td>
                                     <td><?php echo $all_categories[$flag]['Category']['updated_at']; ?></td>
-                                    <td><?php echo $actions; ?></td>
                                 </tr>
                                             <?php
                                     $flag++;

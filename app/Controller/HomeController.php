@@ -98,11 +98,11 @@ class HomeController extends FrontController {
         //slide 
         $slides = $this->Slide->find('first', array(
             'conditions' => array(
-                "is_draft" => 0,
-                "position" => "home_main"
+                "Slide.is_draft" => 0,
+                "Slide.position" => "home_main"
             ),
             'order' => array(
-                "updated_at" => "desc"
+                "Slide.updated_at" => "desc"
             )
         ));
         $this->set("slides", $slides);
@@ -117,6 +117,7 @@ class HomeController extends FrontController {
             ),
             'contain' => "Media",
             'recursive' => -1,
+            'order' => array("lft" => "asc")
         ));
         $total_root_cat = count($root_categories);
         for ($i = 0; $i < $total_root_cat; $i++) {
@@ -129,10 +130,10 @@ class HomeController extends FrontController {
             }
             $cat_products = $this->Product->find("all", array(
                 'conditions' => array(
-                    "is_draft" => 0,
-                    "category_id" => $_cat_ids
+                    "Product.is_draft" => 0,
+                    "Product.category_id" => $_cat_ids
                 ),
-                "order" => array("updated_at" => "desc"),
+                "order" => array("Product.updated_at" => "desc"),
                 "limit" => 12
             ));
             $root_categories[$i]['products'] = $cat_products;

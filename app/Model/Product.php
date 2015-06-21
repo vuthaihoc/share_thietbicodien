@@ -11,10 +11,10 @@ App::uses('AdminAppModel', 'Admin.Model');
 
 class Product extends AdminAppModel{
     
-//    public $belongsTo = array(
-//        'Category',
-//        'Manufacturer'
-//    );
+    public $belongsTo = array(
+        'Category',
+        'Manufacturer'
+    );
 
 
     public $actsAs = array(

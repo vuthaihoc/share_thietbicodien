@@ -38,7 +38,8 @@
 						'action' => 'delete',
 						'admin' => true,
 						$value['Page']['id']
-					), array('class' => 'btn btn-danger btn-xs'));
+					), array('class' => 'btn btn-danger btn-xs',
+                                                'confirm' => __d("admin", "Bạn muốn xóa trang ") . $value['Page']['title'] . " ?"));
                                         ?>
                                 <tr>
                                     <td><?php echo $value['Page']['id']; ?></td>

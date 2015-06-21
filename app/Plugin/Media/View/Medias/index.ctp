@@ -4,6 +4,7 @@
 	<div class="tabs">
 		<a id="browse" href="#" class="tab-item"><?php echo __d('media','Upload a new file'); ?></a>
 		<div class="tab-item is-current"><?= __d('media','Gallery'); ?></div>
+                <div class="tab-item"><?= __d('media','All Image'); ?></div>
 	</div>
 
 	<div class="gallery">
