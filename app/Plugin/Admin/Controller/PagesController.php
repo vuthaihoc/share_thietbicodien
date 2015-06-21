@@ -48,12 +48,16 @@ class PagesController extends AdminAppController
      * admin_index
      */
     public function admin_index(){
-        $page = 1;
-        
-        
-        
         $this->Components->load('Paginator');
-        $pages = $this->Paginator->paginate('Page');
+        $page_tree = $this->Page->generateTreeList(
+                                                    null,
+                                                    null,
+                                                    null,
+                                                    '---');
+        $pages = $this->Page->find("all", array(
+            "order" => array("lft" => "asc")
+        ));
+        $this->set('page_tree', $page_tree);
         $this->set('pages', $pages);
     }
     

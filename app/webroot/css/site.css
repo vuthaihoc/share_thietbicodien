@@ -173,12 +173,33 @@
 .a_item .img img{
     width: 100%;
 }
+.a_item .caption a{
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    display: block;
+}
+.a_item .caption a:hover{
+    line-height: 18px;
+    background: #EEE8E8;
+    overflow: visible;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    z-index: 100;
+    height: auto;
+    width: 100%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
 .a_item .caption{
     line-height: 18px;
     height: 41px;
     text-align: center;
     display: block;
     padding-top: 5px;
+    position: relative;
 }
 .a_item .price{
     line-height: 18px;

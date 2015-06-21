@@ -30,7 +30,7 @@ if(isset($cat_info)):
         <div class="body-right <?php echo $cat_cover == "" ? "" : "col-lg-9 col-md-9"; ?>">
             <?php 
             foreach ($cat_products as $key => $value) {
-                $this->Tera->showProduct($value);
+                $this->Tera->showProduct($value, 4);
             }
             ?>
             

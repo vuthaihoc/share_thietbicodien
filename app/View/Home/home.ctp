@@ -8,7 +8,7 @@
         <div class="box_body">
             <?php 
             foreach ($new_products as $key => $value) {
-                        $this->Tera->showProduct($value); 
+                        $this->Tera->showProduct($value, 6); 
                     }
             ?>
             <div class="clear"></div>

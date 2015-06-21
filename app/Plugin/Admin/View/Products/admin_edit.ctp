@@ -46,10 +46,16 @@
                 'type' => 'textarea'
 	)); ?>
 
+    <?php echo $this->Form->input('price', array(
+		'placeholder' => __('Giá'),
+		'label' => __('Giá'),
+                'type' => 'number'
+	)); ?>
+
     <?php echo $this->Form->input('amount', array(
 		'placeholder' => __('Số lượng'),
 		'label' => __('Số lượng'),
-        'type' => 'number'
+                'type' => 'number'
 	)); ?>
 
     <?php echo $this->Form->input('color', array(
@@ -78,7 +84,7 @@
                 'type' => 'textarea'
 	)); ?>
 
-    <?php echo $this->Media->ckeditor('introduction', $options = array (
+    <?php echo $this->Media->tinymce('introduction', $options = array (
         'placeholder' => __('Giới thiệu'),
         'label' => __('Giới thiệu'),
         'type' => 'textarea' ));

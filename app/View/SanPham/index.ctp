@@ -58,7 +58,7 @@ $image = $this->Html->assetUrl($image);
                     <dt>Cường độ điện</dt><dd><?php echo $product['Product']['intensity']; ?></dd>
                     <dt>Điện áp</dt><dd><?php echo $product['Product']['voltage']; ?></dd>
                     <dt>Thông số kỹ thuật</dt><dd><?php echo $product['Product']['other_spec']; ?></dd>
-                    <dt>Tiêu chuẩn</dt><dd><?php echo $product['Product']['code']; ?></dd>
+<!--                    <dt>Tiêu chuẩn</dt><dd>< ?php echo $product['Product']['code']; ?></dd>-->
                 </dl>
                 <div class="text-right">
                     <button class="btn btn-danger">
@@ -77,7 +77,7 @@ $image = $this->Html->assetUrl($image);
             <h4 class="page-header"><?php echo __("Sản phẩm liên quan"); ?></h4>
             <?php
             foreach ($relative_products as $key => $value) {
-                $this->Tera->showProduct($value);
+                $this->Tera->showProduct($value, 4);
             }
             ?>
         </div>

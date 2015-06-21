@@ -15,10 +15,12 @@ jQuery(function($){
       ],
       gallery_path : $('#explorer').val() + '/editor:tinymce?id=' + $(this).attr('id'),
       content_css  : $('#editorcss').val(),
-      toolbar: "insertfile | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link gallery | print preview media fullpage | forecolor fullscreen",
+      toolbar: ["undo | redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link unlink gallery | print preview media fullpage | forecolor fullscreen",
+                ],
+      menubar: "tools table format view insert edit",
       image_advtab: true
     });
-  })
+  });
 
 });
 

@@ -42,7 +42,7 @@
                                         ?>
                                 <tr>
                                     <td><?php echo $value['Page']['id']; ?></td>
-                                    <td><?php echo $value['Page']['title']; ?></td>
+                                    <td><?php echo $page_tree[$value['Page']['id']]; ?></td>
                                     <td>
                                         <?php 
                                         if (isset($value['Page']['thumb'])) {
@@ -62,9 +62,9 @@
 		</div>
 	</div>
 </div>
-<?php echo $this->Paginator->pagination(array(
+<!--?php echo $this->Paginator->pagination(array(
 	'ul' => 'pagination'
-)); ?>
+)); ?-->
 <?php echo $this->Html->script('/admin/js/acl.js'); ?>
 <script type="text/javascript">
 	$(function(){

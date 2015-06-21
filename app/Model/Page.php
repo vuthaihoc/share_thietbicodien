@@ -29,6 +29,7 @@ class Page extends AdminAppModel{
     );
     
     public $actsAs = array(
+        'Tree',
         'Containable',
         'Media.Media' => array(
             // You can set up the path where your medias will be saved (optional)
