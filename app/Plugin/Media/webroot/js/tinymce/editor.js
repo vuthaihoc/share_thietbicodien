@@ -13,12 +13,23 @@ jQuery(function($){
            "searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking",
            "save table contextmenu directionality template paste textcolor fullscreen"
       ],
+      tools: "inserttable",
       gallery_path : $('#explorer').val() + '/editor:tinymce?id=' + $(this).attr('id'),
       content_css  : $('#editorcss').val(),
       toolbar: ["undo | redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link unlink gallery | print preview media fullpage | forecolor fullscreen",
                 ],
       menubar: "tools table format view insert edit",
-      image_advtab: true
+      image_advtab: true,
+      visual_table_class: "table",
+      table_default_attributes: {
+            class: 'table'
+        },
+      table_class_list: [
+            {title: 'None', value: ''},
+            {title: 'Bình thường', value: 'table'},
+            {title: 'Striped', value: 'table table-striped'},
+            {title: 'Bordered', value: 'table table-bordered'}
+        ]
     });
   });
 
