@@ -15,7 +15,12 @@ class TeraHelper extends AppHelper{
     );
 
 
-    public  function showProduct($product){
+    /**
+     * 
+     * @param type $product
+     * @param type $a_row 6 4 3 2
+     */
+    public  function showProduct($product, $a_row = 6){
         $price = $product['Product']['price'];
         $title = $product['Product']['name'];
         $image = "/img/updating.gif";
@@ -34,8 +39,14 @@ class TeraHelper extends AppHelper{
                 ));
         $image = $this->assetUrl($image);
         
+        $class_lg = " col-lg-" . intval(12/$a_row);
+        $class_md = " col-md-" . intval(12*1.5/$a_row);
+        $class_sm = " col-sm-" . intval(12*2/$a_row);
+        $class_xs = " col-xs-" . intval(12*3/$a_row);
+        $class_cols = $class_lg . $class_md . $class_sm . $class_xs;
+        
         ?>
-        <div class="a_item col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <div class="a_item <?php echo $class_cols; ?>">
             <div class="a_item_container">
                 <div class="img">
                     <a href="<?php echo $link; ?>">
@@ -58,7 +69,7 @@ class TeraHelper extends AppHelper{
             return __("Liên hệ");
         }
         $price = intval($price);
-        return number_format($price) + " " + $unit;
+        return number_format($price) . " " . $unit;
     }
     
     public function build_slug($str) {
