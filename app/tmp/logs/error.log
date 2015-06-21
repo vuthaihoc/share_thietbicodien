@@ -17089,3 +17089,90 @@ Stack Trace:
 #1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SanPhamController), Object(CakeRequest))
 #2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-06-21 20:25:10 Error: [MissingControllerException] Controller class NhomSanPhamController could not be found.
+Exception Attributes: array (
+  'class' => 'NhomSanPhamController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/nhom_san_pham/0
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-21 20:29:26 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php, line 113]
+2015-06-21 20:29:26 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /thietbidien/nhom_san_pham/19_Camera
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 113)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 113, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 113, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-21 20:30:08 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php, line 113]
+2015-06-21 20:30:08 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /thietbidien/nhom_san_pham/19_Camera
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 113)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 113, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 113, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-21 20:30:09 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php, line 113]
+2015-06-21 20:30:09 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /thietbidien/nhom_san_pham/19_Camera
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 113)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 113, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 113, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-21 20:30:36 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php, line 113]
+2015-06-21 20:30:36 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /thietbidien/nhom_san_pham/19_Camera
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/hocvt/Do...', 113)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/hocvt/Do...', 113, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/hocvt/Do...', 113, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-06-21 20:33:52 Error: [MissingControllerException] Controller class NhomSanPhamController could not be found.
+Exception Attributes: array (
+  'class' => 'NhomSanPhamController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/nhom_san_pham/19_Camera/page:2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-21 20:34:44 Error: [MissingControllerException] Controller class NhomSanPhamController could not be found.
+Exception Attributes: array (
+  'class' => 'NhomSanPhamController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/nhom_san_pham/19_Camera/page:2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-06-21 20:38:48 Error: [NotFoundException] Not Found
+Request URL: /thietbidien/nhom_san_pham/19_Camera?page=6
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php(114): PaginatorComponent->paginate('Product')
+#1 [internal function]: SanPhamController->category()
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SanPhamController), Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SanPhamController), Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2015-06-21 20:56:45 Error: [NotFoundException] Not Found
+Request URL: /thietbidien/nhom_san_pham/19_Camera?page=15
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php(114): PaginatorComponent->paginate('Product')
+#1 [internal function]: SanPhamController->category()
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SanPhamController), Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SanPhamController), Object(CakeRequest))
+#5 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

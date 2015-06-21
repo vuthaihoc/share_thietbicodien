@@ -40,8 +40,13 @@
                 array('id' => '[0-9]+',
                     'slug' => '[0-9A-Za-z\-\_\.]+'
                     ));
-	Router::connect('/san_pham/:id/:slug', 
+	Router::connect('/san_pham/:id_:slug', 
                 array('controller' => 'san_pham', 'action' => 'index'),
+                array('id' => '[0-9]+',
+                    'slug' => '[0-9A-Za-z\-\_\.]+'
+                    ));
+	Router::connect('/nhom_san_pham/:id_:slug', 
+                array('controller' => 'san_pham', 'action' => 'category'),
                 array('id' => '[0-9]+',
                     'slug' => '[0-9A-Za-z\-\_\.]+'
                     ));

@@ -52,7 +52,7 @@ if (!class_exists('AppController', false)) {
 	 *
 	 * @var array
 	 */
-		public $components = array('Cookie');
+		public $components = array('Cookie', 'Session', 'Paginator');
 
 	}
 } elseif (!defined('APP_CONTROLLER_EXISTS')) {

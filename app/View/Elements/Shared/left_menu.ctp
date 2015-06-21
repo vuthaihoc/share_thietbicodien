@@ -15,11 +15,7 @@
             foreach ($categories as $key1 => $value1) {
                 $t_child_class = "";
                 $t_caret = '';
-                $t_link_options = array(
-                    'class' => 'dropdown-toggle',
-                    'data-toggle' => 'dropdown',
-                    'escapeTitle' => false
-                );
+                $t_link_options = array();
                 $t_list_open = "";
                 $t_list_close = "";
                 if(count($value1['children']))
@@ -28,15 +24,29 @@
                     $t_caret = '<b class="caret"></b>';
                     $t_list_open = '<ul class="dropdown-menu">';
                     $t_list_close = "</ul>";
+                    $t_link_options = array(
+                        'class' => 'dropdown-toggle',
+                        'data-toggle' => 'dropdown',
+                        'escapeTitle' => false
+                    );
                 }
-                $t_link = $this->Html->link($value1['Category']['name'] . $t_caret, array(), $t_link_options);
+                $t_link = $this->Html->link(
+                        $value1['Category']['name'] . $t_caret, 
+                        array("controller" => "san_pham",
+                            "action" => "category",
+                            "id" => $value1['Category']['id'],
+                            "slug" => $this->Tera->build_slug($value1["Category"]["name"])), 
+                        $t_link_options);
                 ?>
                 <li class="<?php echo $t_child_class; ?>">
                     <?php echo $t_link; ?>
                     <?php 
                     echo $t_list_open;
                     foreach ($value1['children'] as $key2 => $value2) {
-                    $t_link = $this->Html->link($value2['Category']['name'] , array());
+                    $t_link = $this->Html->link($value2['Category']['name'] , array("controller" => "san_pham",
+                            "action" => "category",
+                            "id" => $value2['Category']['id'],
+                            "slug" => $this->Tera->build_slug($value2["Category"]["name"])) );
                         ?>
                     <li> <?php echo $t_link; ?> </li>
                     <?php

@@ -20,6 +20,13 @@ class FrontController extends AppController{
         'Manufacturer'
     );
     
+    public $components = array('Cookie', 'Session', 'Paginator');
+    
+    public $helpers = array(
+        'Html', 'Js', 'Time', 'Tera', 
+        'Paginator' => array('className' => 'BoostCake.BoostCakePaginator')
+    );
+    
     public function beforeRender() {
         parent::beforeRender();
         if ($this->request->params['action'] == "display") {

@@ -84,7 +84,38 @@ class SanPhamController extends FrontController {
     }
     
     public function category(){
+        $id = $this->request->param('id');
+        $category = $this->Category->find('first', array(
+            'conditions' => array(
+                'Category.is_draft' => 0,
+                'Category.id' => $id
+            )
+        ));
         
+        if(!$category)return $this->_not_found ();
+        
+        $child_cats = $this->Category->children($id, FALSE, "id");
+        $child_ids = array($id);
+        foreach ($child_cats as $key => $value) {
+            $child_ids[] = $value["Category"]["id"];
+        }
+        //pager
+        $this->Paginator->settings = array('limit' => 24,
+                'paramType' => 'querystring',
+                'order' => array(
+                    'Product.created_at' => 'desc',
+                    'Product.updated_at' => 'desc'
+                ),
+                'conditions' => array(
+                    'Product.is_draft' => 0,
+                    'Product.category_id' => $child_ids
+                )
+            );
+        $products = $this->Paginator->paginate('Product');
+        $this->set('products', $products);
+        
+        $this->set('products' , $products);
+        $this->set('category' , $category);
     }
 
     public function beforeRender() {
