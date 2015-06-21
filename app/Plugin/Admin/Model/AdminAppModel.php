@@ -22,8 +22,8 @@ class AdminAppModel extends AppModel{
         if($this->hasField('is_draft')){
                 $init_data['is_draft'] = 1;
             }
-        if($this->hasField('amout')){
-                $init_data['amout'] = 100;
+        if($this->hasField('amount')){
+                $init_data['amount'] = 100;
             }
         $this->save($init_data, FALSE);
     }

@@ -91,7 +91,8 @@ class HomeController extends FrontController {
             "order" => array(
                 "Product.updated_at" => "desc",
                 "Product.created_at" => "desc"
-            )
+            ),
+            "limit" => 12
         ));
         $this->set("new_products", $new_products);
         //slide 
