@@ -12,7 +12,7 @@ App::uses('AclBehavior', 'Model/Behavior');
 class AdminAppModel extends AppModel{
 	
     public function create_draft($user_id){
-        $init_data = [];
+        $init_data = array();
         if($this->hasField('created_at')){
                 $init_data['created_at'] = date('Y-m-d H:i:s', time());
             }

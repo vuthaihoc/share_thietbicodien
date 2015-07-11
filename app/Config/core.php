@@ -408,3 +408,12 @@ Configure::write('form_input_option', array(
 		'quality'			=> 100,		//Quality of the image
 		'urlOnly'			=> false	//Return only the URL or return the Image tag
         ));
+        
+        Configure::write('page_positions', array(
+            'no' => __('Không dùng'),
+            'home_bottom' => __("Menu chân trang chủ"),
+            'top_1' => __("Top link 1"),
+            'top_2' => __("Top link 2"),
+            'top_3' => __("Top link 3"),
+            'top_4' => __("Top link 4")
+        ));

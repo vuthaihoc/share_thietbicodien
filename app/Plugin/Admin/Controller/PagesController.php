@@ -11,10 +11,10 @@ App::uses('AdminAppController', 'Admin.Controller');
 class PagesController extends AdminAppController
 {
     
-    public $positions = array(
-                                'no' => 'Không dùng',
-                                'home_bottom' => "Menu chân trang chủ"
-                            );
+//    public $positions = array(
+//                                'no' => 'Không dùng',
+//                                'home_bottom' => "Menu chân trang chủ"
+//                            );
     
     
     /**
@@ -42,7 +42,7 @@ class PagesController extends AdminAppController
             parent::beforeFilter();
             $this->main_model = $this->Page;
             $this->set('title_for_layout', __d('admin', 'Trang'));
-            $this->set('positions', $this->positions);
+            $this->set('positions', Configure::read('page_positions'));
     }
     
     /**

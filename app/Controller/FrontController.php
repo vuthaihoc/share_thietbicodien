@@ -40,6 +40,25 @@ class FrontController extends AppController{
         ));
         $this->set('categories', $categories);
         
+        $top_link = Cache::read('top_menu_links');
+        if($top_link === false){
+            $top_link = array();
+            $top_link_db = $this->Page->find('all', array(
+                'conditions' => array(
+                    'is_draft' => 0,
+                    'showmenu' => array("top_1", "top_2", "top_3", "top_4")
+                ),
+                "recursive" => -1
+            ));
+            
+            foreach($top_link_db as $k=>$v){
+                $top_link[$v['Page']['showmenu']] = $v;
+            }
+            Cache::write("top_menu_links", $top_link);
+        }
+        $this->set('top_links', $top_link);
+        
+        
         // boottom menu
         $bottom_pages = $this->Page->find('all', array(
             'conditions' => array(

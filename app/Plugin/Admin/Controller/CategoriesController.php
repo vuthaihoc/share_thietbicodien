@@ -90,7 +90,7 @@ class CategoriesController extends AdminAppController{
         $this->set('all_categories', $all_categories);
         $this->set('tree_categories', $tree_categories);
         $flag = 0;
-        $options_categories = [];
+        $options_categories = array();
         foreach ($tree_categories as $key => $value) {
             if($all_categories[$flag]['Category']['is_draft'] == 0){
                 $options_categories[$key] = $value;

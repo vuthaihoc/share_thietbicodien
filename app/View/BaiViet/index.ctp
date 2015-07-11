@@ -51,5 +51,8 @@
             </div>
             <?php } ?>
         </div>
+        <div class="page-content">
+            <div class="fb-comments" data-width="100%" data-href="<?php echo $this->Html->url(null, true); ?>" data-numposts="5"></div>
+        </div>
     </div>
 </div>

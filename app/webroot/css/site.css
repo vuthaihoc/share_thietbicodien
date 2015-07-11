@@ -11,6 +11,11 @@
     margin-left: 5px;
 }
 
+h1{
+    font-size:25px;
+    margin: 5px 0 10px 0 !important;
+}
+
 #top_links{
     background: #3199e3;
 }

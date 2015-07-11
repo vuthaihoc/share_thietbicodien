@@ -68,6 +68,9 @@ class TeraHelper extends AppHelper{
         if($price == "" || $price == 0){
             return __("Liên hệ");
         }
+        if($price == -1){
+            return __("Xem báo giá");
+        }
         $price = intval($price);
         return number_format($price) . " " . $unit;
     }

@@ -49,8 +49,17 @@ $image = $this->Html->assetUrl($image);
                 <?php } ?>
                 <dl class="dl-horizontal">
                     <dt>Mã sản phẩm</dt><dd><?php echo $product['Product']['code']; ?></dd>
-                    <dt>Số lượng trong kho</dt><dd><?php echo $product['Product']['amount']; ?></dd>
-                    <dt>Hãng sản xuất</dt><dd><?php echo $product['Product']['manufacturer_id']; ?></dd>
+                    <dt>Số lượng trong kho</dt><dd><?php 
+                    if($product['Product']['amount'] < 50){
+                        echo $product['Product']['amount']; 
+                    }else if($product['Product']['amount'] <100){
+                        echo __("Còn hàng");
+                    }else{
+                        echo __("Sẵn hàng");
+                    }
+                        ?>
+                    </dd>
+                    <dt>Hãng sản xuất</dt><dd><b style="text-transform: uppercase;"><?php echo $product['Manufacturer']['name']; ?></b></dd>
                     <dt>Nhóm hàng</dt><dd><?php echo $category['Category']['name']; ?></dd>
                     <dt>Màu sắc</dt><dd><?php echo $product['Product']['color']; ?></dd>
                     <dt>Chất liệu</dt><dd><?php echo $product['Product']['made_from']; ?></dd>
@@ -80,6 +89,9 @@ $image = $this->Html->assetUrl($image);
                 $this->Tera->showProduct($value, 4);
             }
             ?>
+        </div>
+        <div class="page-content">
+            <div class="fb-comments" data-width="100%" data-href="<?php echo $this->Html->url(null, true); ?>" data-numposts="5"></div>
         </div>
     </div>
 </div>
