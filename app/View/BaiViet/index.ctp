@@ -7,7 +7,7 @@
         <h1 id="js-overview" class="page-header">
             <?php echo $page['Page']['title']; ?>
         </h1>
-        <div class="page-content">
+        <div class="page-content text-content">
             <?php echo $page['Page']['content']; ?>
         </div>
         <div class="page-content">
