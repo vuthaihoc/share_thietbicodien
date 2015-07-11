@@ -16,6 +16,10 @@ h1{
     margin: 5px 0 10px 0 !important;
 }
 
+.page-content img{
+    max-width: 100% !important;
+}
+
 #top_links{
     background: #3199e3;
 }

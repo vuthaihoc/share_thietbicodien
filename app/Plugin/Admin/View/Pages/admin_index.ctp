@@ -67,8 +67,8 @@
 	'ul' => 'pagination'
 )); ?-->
 <?php echo $this->Html->script('/admin/js/acl.js'); ?>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$(function(){
 		$('[data-rel=tooltip]').tooltip({placement: 'left'});
 	})
-</script>
+</script>-->

@@ -1,11 +1,14 @@
 <?php
 $image = "/img/updating.gif";
 $title = $product['Product']['name'];
+$have_slide = true;
 if (isset($product["Product"]['thumb'])) {
     $image = $product["Product"]['thumb'];
 } elseif (count($product["Media"])) {
     $first_image = reset($product["Media"]);
     $image = $first_image['icon'];
+}  else {
+    $have_slide = false;
 }
 $link = $this->Html->url(
         array(
@@ -36,9 +39,45 @@ $image = $this->Html->assetUrl($image);
         </h1>
         <div class="page-content product_detail">
             <div class="col-md-6 product_image_container">
+                <?php if(!$have_slide){ ?>
                 <a href="<?php echo $link; ?>">
                     <img src="<?php echo $image; ?>" class="thumb">
                 </a>
+                <?php }else{ $counter = 0;?>
+                <div id='product_detail_slide' class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <?php foreach ($product["Media"] as $key => $value) {?>
+                        <li data-target="#carousel-example-generic" 
+                            data-slide-to="<?php echo $counter; ?>" 
+                            class=" <?php echo $counter == 0 ? "active" : "" ?>"></li>
+                                        <?php $counter++;} ?>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <?php $counter = 0;
+                        foreach ($product["Media"] as $key => $value) {?>
+                        <div class="item <?php echo $counter == 0 ? "active" : "" ?>">
+                            <img src="<?php echo $this->Html->assetUrl($value['file']); ?>" alt="<?php echo $value['name']; ?>">
+                            <div class="carousel-caption">
+                                <?php echo $value['name']; ?>
+                            </div>
+                        </div>
+                        <?php $counter++;} ?>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#product_detail_slide" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only"><?php echo __("Trước"); ?></span>
+                    </a>
+                    <a class="right carousel-control" href="#product_detail_slide" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only"><?php echo __("Sau"); ?></span>
+                    </a>
+                </div>
+                <?php } ?>
             </div>
             <div class="col-md-6">
                 <h4 class="page-header text-center"><?php echo __("Thông số kỹ thuật"); ?></h4>

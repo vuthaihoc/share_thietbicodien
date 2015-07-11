@@ -47,18 +47,32 @@
 						$value['Product']['id']
 					), array('class' => 'btn btn-danger btn-xs',
                                                 'confirm' => __d("admin", "Bạn muốn xóa sản phẩm ") . $value['Product']['name'] . " ?"));
+                                        $image_manage_link = $this->Html->url(array(
+                                            'plugin' => "media",
+                                            'admin' => false,
+                                            'controller' => "medias",
+                                            'action' => "index",
+                                            'Product',
+                                            $value['Product']['id']
+                                        ));
                                         ?>
                                 <tr>
                                     <td><?php echo $value['Product']['id']; ?></td>
                                     <td><?php echo $actions; ?></td>
                                     <td>
+                                        <a href='javascript:void(0);' data-toggle='modal' 
+                                                    data-target="#imageUploadModal" data-remote='false'
+                                                    data-link='<?php echo $image_manage_link; ?>'>
                                         <?php 
                                         if (isset($value['Product']['thumb'])) {
                                                 echo $this->Html->image($value['Product']['thumb'], array("width" => 100));
                                         }elseif(count($value['Media']) > 0) {
                                             echo $this->Html->image(reset($value['Media'])['file'], array("width" => 100));
+                                        }else{
+                                            echo __("Thêm ảnh");
                                         }
                                         ?>
+                                        </a>
                                     </td>
                                     <td>
                                         <div>
@@ -87,8 +101,8 @@
 	'ul' => 'pagination'
 )); ?>
 <?php echo $this->Html->script('/admin/js/acl.js'); ?>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 	$(function(){
 		$('[data-rel=tooltip]').tooltip({placement: 'left'});
 	})
-</script>
+</script>-->

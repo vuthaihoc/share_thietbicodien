@@ -100,7 +100,7 @@
                     </li>
                     <li>
                         <?php echo $this->Html->link(__d('admin', 'Cài đặt hệ thống'), array('plugin' => 'admin', 
-                                    'controller' => 'categories', 
+                                    'controller' => 'system', 
                                     'action'=>'index', 
                                     'admin' => true)); ?>
                     </li>
@@ -138,6 +138,21 @@
           </div>
       </div>
     </div>
+    
+    <div class="modal fade" id="imageUploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel"><?php echo __("Quản lý hình ảnh của bản ghi được chọn"); ?></h4>
+            </div>
+            <div class="modal-body">
+                <iframe class="my-iframe" src=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+        
     <?php 
       echo $this->Html->script('/admin/js/bootstrap.min.js');
       echo $this->fetch('script');
@@ -148,6 +163,17 @@
           $alt = val.alt;
           $(this).parent('a').append(' '+$alt);
         });
+        $('#imageUploadModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); // Button that triggered the modal
+            var remote_url = button.data('link'); // Extract info from data-* attributes
+            console.log(remote_url);
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this);
+            modal.find('iframe').attr("src", remote_url);
+          }).on('hide.bs.modal', function(){
+                location.reload();
+            });
       });
      </script>
      <?php pr($this->params); ?>

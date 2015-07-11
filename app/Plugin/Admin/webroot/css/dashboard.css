@@ -98,3 +98,9 @@ body {
 .form-group iframe{
     min-height: 500px;
 }
+
+.my-iframe{
+    width:100%;
+    border: none;
+    min-height: 500px;
+}

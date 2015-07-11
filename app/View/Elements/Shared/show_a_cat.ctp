@@ -1,5 +1,5 @@
 <?php 
-if(isset($cat_info)):
+if(isset($cat_info) && isset($cat_info['products']) && count($cat_info['products'])):
     $cat_title = $cat_info['Category']['name'];
     //pr($cat_info);
     $cat_products = $cat_info['products'];
@@ -20,17 +20,21 @@ if(isset($cat_info)):
         <h2> <span class="glyphicon glyphicon-th"></span> <?php echo $cat_title; ?></h2>
     </div>
     <div class="box_body">
-        <?php if($cat_cover != ""){ ?>
+        <?php if($cat_cover != ""){ 
+            $a_row = 4;
+            ?>
         <div class="body-left hidden-sm hidden-xs col-lg-3 col-md-3 cat-cover-vertical">
             <div>
                 <img src="<?php echo $cat_cover; ?>"/>
             </div>
         </div>
-        <?php } ?>
+        <?php }else{
+            $a_row = 6;
+        } ?>
         <div class="body-right <?php echo $cat_cover == "" ? "" : "col-lg-9 col-md-9"; ?>">
             <?php 
             foreach ($cat_products as $key => $value) {
-                $this->Tera->showProduct($value, 4);
+                $this->Tera->showProduct($value, $a_row);
             }
             ?>
             

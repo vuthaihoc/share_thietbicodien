@@ -51,29 +51,37 @@
         <div class="col-md-8 col-sm-6" id="top_flash_item">
             <div class="col-md-3 col-xs-6">
                 <div class="item_border">
+                    <a href="<?php echo isset($top_links) && isset($top_links['top_1']) ? $this->Html->url(array("controller" => "bai_viet", "action" => "index", "id" => $top_links["top_1"]["Page"]["id"], "slug" => $this->Tera->build_slug($top_links["top_1"]["Page"]["title"]))) : "#" ?>">
                     <?php echo $this->Html->image('muahang5.png'); ?>
                     <span>Mua hàng linh hoạt</span>
+                    </a>
                 </div>
                 
             </div>
             <div class="col-md-3 col-xs-6">
                 <div class="item_border">
+                    <a href="<?php echo isset($top_links) && isset($top_links['top_2']) ? $this->Html->url(array("controller" => "bai_viet", "action" => "index", "id" => $top_links["top_2"]["Page"]["id"], "slug" => $this->Tera->build_slug($top_links["top_2"]["Page"]["title"]))) : "#" ?>">
                     <?php echo $this->Html->image('giaohang.png'); ?>
                     <span>Giao hàng nhanh chóng</span>
+                    </a>
                 </div>
                 
             </div>
             <div class="col-md-3 col-xs-6">
                 <div class="item_border">
+                    <a href="<?php echo isset($top_links) && isset($top_links['top_3']) ? $this->Html->url(array("controller" => "bai_viet", "action" => "index", "id" => $top_links["top_3"]["Page"]["id"], "slug" => $this->Tera->build_slug($top_links["top_3"]["Page"]["title"]))) : "#" ?>">
                     <?php echo $this->Html->image('thanhtoan.png'); ?>
                     <span>Thanh toán thông minh</span>
+                    </a>
                 </div>
                 
             </div>
             <div class="col-md-3 col-xs-6">
                 <div class="item_border">
+                    <a href="<?php echo isset($top_links) && isset($top_links['top_4']) ? $this->Html->url(array("controller" => "bai_viet", "action" => "index", "id" => $top_links["top_4"]["Page"]["id"], "slug" => $this->Tera->build_slug($top_links["top_4"]["Page"]["title"]))) : "#" ?>">
                     <?php echo $this->Html->image('baogia.png'); ?>
                     <span>Báo giá</span>
+                    </a>
                 </div>
                 
             </div>
