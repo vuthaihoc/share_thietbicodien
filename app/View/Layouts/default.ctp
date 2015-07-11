@@ -79,7 +79,6 @@ if (!isset($cakeTitle)) {
 	</div-->
     <?php //echo pr($this->request->params); ?>
     <?php //echo $this->element('sql_dump'); ?>
-        <?php pr($top_links); ?>
 <?php
     // include library
     echo $this->Html->script('jquery1.11.3');
