@@ -358,10 +358,10 @@ class FileEngine extends CacheEngine {
 			}
 			unset($path);
 
-			if (!$exists && !chmod($this->_File->getPathname(), (int)$this->settings['mask'])) {
-				trigger_error(__d(
-					'cake_dev', 'Could not apply permission mask "%s" on cache file "%s"',
-					array($this->_File->getPathname(), $this->settings['mask'])), E_USER_WARNING);
+			if (!$exists && !@chmod($this->_File->getPathname(), (int)$this->settings['mask'])) {
+//				trigger_error(__d(
+//					'cake_dev', 'Could not apply permission mask "%s" on cache file "%s"',
+//					array($this->_File->getPathname(), $this->settings['mask'])), E_USER_WARNING);
 			}
 		}
 		return true;
