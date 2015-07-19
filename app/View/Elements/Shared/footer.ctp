@@ -6,10 +6,9 @@
             </a>
         </div>
         <div class="col-sm-6 col-xs-12 text-center" id="top_flash_item">
-            <div>CÔNG TY TNHH MTV SẢN XUẤT VÀ THƯƠNG MẠI SCT</div>
-            <div>Địa chỉ: Lô 44.111 Khu An Phú 2 - P. Tân Bình - TP. Hải Dương</div>
-            <div>Tel: 04.62539598</div>
-            <div>Email: infoscttech@gmail.com</div>
+            <?php echo Configure::read('Config.bottom_address'); ?>
+            <div>Tel: <?php echo Configure::read('Config.admin_phone'); ?></div>
+            <div>Email: <?php echo Configure::read('Config.admin_email'); ?></div>
         </div>
         <div class="clear"></div>
         <div id="footer_counter">

@@ -47,6 +47,15 @@ class AppController extends Controller {
         parent::beforeFilter();
         $this->AclPermissions->filter();
         
+        if ( ( $settings = Cache::read('settings', "tera") ) === false ) {
+                $settings = ClassRegistry::init('Admin.Setting')->find('all');
+                Cache::write('settings', $settings, "tera");
+       }
+       foreach( $settings AS $setting )
+       {
+               Configure::write('Config.'.$setting['Setting']['setting'], $setting['Setting']['value']);
+       }
+        
         //assign some default value
         $this->set("is_home_page", false);
         

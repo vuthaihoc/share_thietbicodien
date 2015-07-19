@@ -4,12 +4,12 @@
             <div class="col-md-5 col-sm-6 col-xs-12">
                 <a href="javascript:void(0);" class="">
                     <span class="glyphicon glyphicon-phone-alt"></span>
-                    04.62539598
+                    <?php echo Configure::read('Config.admin_phone'); ?>
                 </a>
 
                 <a href="javascript:void(0);" class="">
                     <span class="glyphicon glyphicon-envelope"></span>
-                    infoscttech@gmail.com
+                    <?php echo Configure::read('Config.admin_email'); ?>
                 </a>
 
                 <!--a href="javascript:void(0);" class="">
@@ -19,7 +19,7 @@
             </div>
             <div class="col-md-5 col-sm-5 col-xs-12" id="top_search_box">
                 <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Tìm kiếm</span>
+                    <span class="input-group-addon" id="basic-addon1"><?php echo __("Tìm kiếm"); ?></span>
                     <input type="text" class="form-control" placeholder="Nhập từ khóa rồi ấn Enter" aria-describedby="basic-addon1">
                 </div>
             </div>
@@ -46,7 +46,7 @@
             <a href="<?php echo $this->Html->url("/"); ?>">
                 <?php echo $this->Html->image('logo_lagre.png', array("height" => 100)); ?>
             </a>
-            <span id="site_slogan">thietbicodienSCT.com</span>
+            <span id="site_slogan"><?php echo Configure::read('Config.site_name'); ?></span>
         </div>
         <div class="col-md-8 col-sm-6" id="top_flash_item">
             <div class="col-md-3 col-xs-6">

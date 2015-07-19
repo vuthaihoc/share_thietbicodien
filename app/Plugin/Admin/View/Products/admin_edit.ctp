@@ -26,7 +26,7 @@
 
     <?php echo $this->Form->input('category_id', array(
 		'label' => array(
-			'text' => 'Nhóm sản phẩm'
+			'text' => __('Nhóm sản phẩm')
 		),
 		'empty' => __("Chưa chọn"),
 		'options' => $options_categories
@@ -34,7 +34,7 @@
 
     <?php echo $this->Form->input('manufacturer_id', array(
 		'label' => array(
-			'text' => 'Hãng sản xuất'
+			'text' => __("Hãng sản xuất")
 		),
 		'empty' => __("Chưa chọn"),
 		'options' => $manufacturers

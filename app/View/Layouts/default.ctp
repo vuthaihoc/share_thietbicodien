@@ -89,6 +89,9 @@ if (!isset($cakeTitle)) {
     // include fly js assigned
     echo $this->fetch('script');
 ?>
+        <!-- GA -->
+        <?php echo Configure::read('Config.ga_script'); ?>
+        <!-- END GA -->
         <!-- Facebook plugin -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {

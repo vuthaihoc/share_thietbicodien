@@ -50,15 +50,6 @@ class AdminAppController extends AppController{
             parent::beforeFilter();
             if ( $this->params['plugin'] == 'admin' ) {
                     $this->layout = 'admin';
-            }
-
-            if ( ( $settings = Cache::read('settings', "admin") ) === false ) {
-                     $settings = ClassRegistry::init('Admin.Setting')->find('all');
-                     Cache::write('settings', $settings, "admin");
-            }
-            foreach( $settings AS $setting )
-            {
-                    Configure::write('Config.'.$setting['Setting']['setting'], $setting['Setting']['value']);
             }	
 	}
         
