@@ -3,10 +3,23 @@
         <h3 class="panel-title"><?php echo __("Cài đặt Cache") ?></h3>
     </div>
     <div class="panel-body">
-        <div>
+        <div class="">
             <?php echo __("Hãy thận trong với lựa chọn này khi website của bạn có lượng dữ liệu lớn.") ?>
         </div>
-        <a class="btn btn-danger" href="<?php echo $this->Html->url(array("action" => "clear_all_cache", "admin" => true)) ?>">Clear CACHE</a>
+        <div class="list-group">
+            <a class="list-group-item list-group-item-danger" 
+                href="<?php echo $this->Html->url(array(
+                                             "action" => "clear_all_cache", 
+                                             "admin" => true)) ?>">
+                <?php echo __("Xóa bộ nhớ CACHE"); ?>
+            </a>
+            <a class="list-group-item list-group-item-warning" 
+                href="<?php echo $this->Html->url(array(
+                                             "action" => "update_counter", 
+                                             "admin" => true)) ?>">
+                <?php echo __("Cập nhật bộ đếm sản phẩm"); ?>
+            </a>
+        </div>   
     </div>
 </div>
 <div class="panel panel-default">
@@ -37,15 +50,15 @@
                         $input = "";
                         if($setting['Setting']['stype'] == "text"){
                             $input = "<input type='text' class='form-control' value='" . 
-                                    $setting['Setting']['value'] . 
+                                    $setting['Setting']['svalue'] . 
                                     "' name='setting_" . $setting['Setting']['id'] . "' />";
                         }elseif ($setting['Setting']['stype'] == "select") {
                             $input = "<select  class='form-control' name='setting_" . $setting['Setting']['id'] . "'>";
 
-                            $options = explode("|",$setting['Setting']['values']);
+                            $options = explode("|",$setting['Setting']['svalues']);
 
                             foreach($options as $v){
-                                if($v == $setting['Setting']['value']){
+                                if($v == $setting['Setting']['svalue']){
                                     $input .= "<option selected='selected' value='".$v."'>" . $v . "</option>";
                                 }  else {
                                     $input .= "<option value='".$v."'>" . $v . "</option>";
@@ -56,7 +69,7 @@
                         }elseif ($setting['Setting']['stype'] == "plaintext") {
                             $input = "<textarea class='form-control' name='setting_" . 
                                             $setting['Setting']['id'] . "'>";
-                            $input .= $setting['Setting']['value'] . "</textarea>";
+                            $input .= $setting['Setting']['svalue'] . "</textarea>";
                         }
                         ?>
                     <tr>

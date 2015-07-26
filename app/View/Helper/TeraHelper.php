@@ -95,5 +95,76 @@ class TeraHelper extends AppHelper{
         return $str;
     }
     
+    /**
+     * 
+     */
+    public function get_title(){
+        if($this->getVar('force_title') !== false){
+            return $this->getVar('force_title');
+        }
+        // support site_name page_title
+        $s_array = array();
+        $r_array = array();
+        
+        $s_array[] = '{site_name}';
+        $r_array[] = Configure::read('Config.site_name');
+        
+        $s_array[] = '{page_title}';
+        $r_array[] = $this->getVar('page_title') !== false ? $this->getVar('page_title') : strtoupper($this->request->param('controller'));
+        
+        if(Configure::read('Config.title_struct') == ""){
+            $title_struct = '{site_name} : {page_title}';
+        }else{
+            $title_struct = Configure::read('Config.title_struct');
+        }
+        return str_replace($s_array, $r_array, $title_struct);
+    }
     
+    public function get_description(){
+        if($this->getVar('force_description') !== false){
+            return $this->getVar('force_description');
+        }
+        // support default_description page_description
+        $s_array = array();
+        $r_array = array();
+        
+        $s_array[] = '{default_description}';
+        $r_array[] = Configure::read('Config.default_description');
+        
+        $s_array[] = '{page_description}';
+        $r_array[] = $this->getVar('page_description') ? $this->getVar('page_description') : "";
+        
+        if(Configure::read('Config.description_struct') == ""){
+            $description_struct = '{default_description} {page_description}';
+        }else{
+            $description_struct = Configure::read('Config.description_struct');
+        }
+        return str_replace($s_array, $r_array, $description_struct);
+    }
+    
+    public function get_keywords(){
+        if($this->getVar('force_keywords') !== false){
+            return $this->getVar('force_keywords');
+        }
+        // support default_description page_description
+        $s_array = array();
+        $r_array = array();
+        
+        $s_array[] = '{default_keywords}';
+        $r_array[] = Configure::read('Config.default_keywords');
+        
+        $s_array[] = '{page_keywords}';
+        $r_array[] = $this->getVar('page_keywords') ? $this->getVar('page_keywords') : "";
+        
+        if(Configure::read('Config.description_struct') == ""){
+            $description_struct = '{default_keywords},{page_keywords}';
+        }else{
+            $description_struct = Configure::read('Config.keywords_struct');
+        }
+        return str_replace($s_array, $r_array, $description_struct);
+    }
+    
+    private function getVar($var_name){
+        return isset($this->_View->viewVars[$var_name]) ? $this->_View->viewVars[$var_name] : false;
+    }
 }

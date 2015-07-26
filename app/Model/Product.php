@@ -12,7 +12,12 @@ App::uses('AdminAppModel', 'Admin.Model');
 class Product extends AdminAppModel{
     
     public $belongsTo = array(
-        'Category',
+        'Category' => array(
+            'counterCache' => true,
+            'counterScope' => array(
+                'Product.is_draft' => 0
+                )
+        ),
         'Manufacturer'
     );
 

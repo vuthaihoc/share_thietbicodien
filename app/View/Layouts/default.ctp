@@ -13,33 +13,28 @@
  * @since         CakePHP(tm) v 0.10.0.1076
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
-if(!isset($cakeDescription)){
-    $cakeDescription = __('Thiết bị cơ điện SCT');
-}
-if (!isset($cakeTitle)) {
-    $cakeTitle = __('Thiết bị cơ điện SCT');
-}
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeTitle ?>
-	</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-	<?php
-		echo $this->Html->meta('icon');
+    <?php echo $this->Html->charset(); ?>
+    <title>
+            <?php echo $this->Tera->get_title(); ?>
+    </title>
+    <meta name="description" content="<?php echo $this->Tera->get_description(); ?>">
+    <meta name="keywords" content="<?php echo $this->Tera->get_keywords(); ?>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <?php
+        echo $this->Html->meta('icon');
 
-		echo $this->Html->css('bootstrap.min');
-		echo $this->Html->css('site');
+        echo $this->Html->css('bootstrap.min');
+        echo $this->Html->css('site');
 
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-	?>
+        echo $this->fetch('meta');
+        echo $this->fetch('css');
+    ?>
 </head>
 <body>
     <?php echo $this->element('shared/header'); ?>

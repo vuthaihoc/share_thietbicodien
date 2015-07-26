@@ -12,7 +12,9 @@ App::uses('AdminAppModel', 'Admin.Model');
 class Category extends AdminAppModel{
     
     public $hasMany = array(
-        'Product'
+        'Product' => array(
+            'dependence' => true
+        )
     );
 
 

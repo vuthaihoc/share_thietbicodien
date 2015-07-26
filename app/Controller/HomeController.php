@@ -52,6 +52,8 @@ class HomeController extends FrontController {
      * 	or MissingViewException in debug mode.
      */
     public function display() {
+        $this->set('page_title', __("Trang chủ"));
+        
         $path = func_get_args();
 
         $count = count($path);

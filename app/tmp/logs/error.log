@@ -19180,3 +19180,57 @@ Request URL: /thietbidien/Media/medias/index/Product/31
 Stack Trace:
 #0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-07-21 20:40:20 Error: [MissingViewException] View file "System/admin_update_counter.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'System/admin_update_counter.ctp',
+)
+Request URL: /thietbidien/admin/admin/system/update_counter
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SystemController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-07-21 20:40:40 Error: [MissingViewException] View file "System/admin_update_counter.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'System/admin_update_counter.ctp',
+)
+Request URL: /thietbidien/admin/admin/system/update_counter
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SystemController), Object(CakeRequest))
+#4 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-07-21 20:58:21 Error: Fatal Error (4): syntax error, unexpected '$uses' (T_VARIABLE), expecting function (T_FUNCTION) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/SystemController.php, line 14]
+2015-07-21 20:58:21 Error: [FatalErrorException] syntax error, unexpected '$uses' (T_VARIABLE), expecting function (T_FUNCTION)
+Request URL: /thietbidien/admin/admin/system/update_counter
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 14, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 14, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-21 20:58:38 Error: Fatal Error (64): Access level to SystemController::$uses must be public (as in class AdminAppController) in [/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/SystemController.php, line 12]
+2015-07-21 20:58:38 Error: [FatalErrorException] Access level to SystemController::$uses must be public (as in class AdminAppController)
+Request URL: /thietbidien/admin/admin/system/update_counter
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Access level to...', '/Users/hocvt/Do...', 12)
+#1 [internal function]: ErrorHandler::handleError(64, 'Access level to...', '/Users/hocvt/Do...', 12, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 64, 'Access level to...', '/Users/hocvt/Do...', 12, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-26 20:58:38 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php, line 83]
+2015-07-26 20:58:38 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /thietbidien/san_pham/19_CAMERA-IP-PANASONIC-BL-VT164
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/Users/hocvt/Do...', 83)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/Users/hocvt/Do...', 83, Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/Users/hocvt/Do...', 83, Array)
+#3 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

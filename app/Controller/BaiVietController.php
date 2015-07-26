@@ -72,6 +72,7 @@ class BaiVietController extends FrontController {
         ));
         
         $this->set('page' , $page);
+        $this->set('page_title', $page['Page']['title']);
         $this->set('page_children', $page_children);
     }
 

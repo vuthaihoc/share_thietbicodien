@@ -53,7 +53,11 @@ class AppController extends Controller {
        }
        foreach( $settings AS $setting )
        {
-               Configure::write('Config.'.$setting['Setting']['setting'], $setting['Setting']['value']);
+           if($setting['Setting']['svalue'] == null){
+               Configure::write('Config.'.$setting['Setting']['setting'], $setting['Setting']['sdefault']);
+           }else{
+               Configure::write('Config.'.$setting['Setting']['setting'], $setting['Setting']['svalue']);
+           }
        }
         
         //assign some default value
@@ -70,6 +74,9 @@ class AppController extends Controller {
     
     public function beforeRender() {
         parent::beforeRender();
+        
+        
+        
     }
     
     public function _build_slug($str) {

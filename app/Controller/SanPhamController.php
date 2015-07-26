@@ -79,6 +79,8 @@ class SanPhamController extends FrontController {
         ));
         
         $this->set('product' , $product);
+        $this->set('page_title', "(" . $product['Product']['code'] . ")" . $product['Product']['name']);
+        $this->set('page_keywords', $product['Category']['name'] . "," . $product['Product']['code']);
         $this->set('category' , $category);
         $this->set('relative_products', $relative_products);
     }
@@ -116,6 +118,8 @@ class SanPhamController extends FrontController {
         
         $this->set('products' , $products);
         $this->set('category' , $category);
+        $this->set('page_title', $category['Category']['name']);
+        $this->set('page_keywords', $category['Category']['name'] . "," . $category['Category']['meta_keywords']);
     }
 
     public function beforeRender() {

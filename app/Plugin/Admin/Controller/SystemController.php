@@ -11,6 +11,12 @@ App::uses('AdminAppController', 'Admin.Controller');
 class SystemController extends AdminAppController
 {
     
+    public $uses = array(
+                    'Product',
+                    'Category',
+                    'Setting'
+                );
+    
     /**
     * Controller callback - beforeFilter()
     * 
@@ -23,7 +29,7 @@ class SystemController extends AdminAppController
     }
     
     public function admin_index(){
-        $this->loadModel('Setting');
+        //$this->loadModel('Setting');
         
         if($this->request->data("submit")){
             $data_array = array();
@@ -32,13 +38,13 @@ class SystemController extends AdminAppController
                     $data_array[] = array(
                         'Setting' => array(
                             'id' => str_replace("setting_", "", $k),
-                            'value' => $v
+                            'svalue' => $v
                         )
                     );
                 }
             }
             $check_save = $this->Setting->saveAll($data_array, array(
-                                'fieldList' => array('value')
+                                'fieldList' => array('svalue')
                             ));
             if($check_save === true){
                 $this->Session->setFlash(__("Lưu thành công cài đặt, hãy xóa cache để thấy thay đổi"),'alert', array(
@@ -58,6 +64,17 @@ class SystemController extends AdminAppController
     
     public function admin_clear_all_cache(){
         Cache::clear();
+        $this->redirect(array("action" => "index", "admin" => true));
+    }
+    
+    public function admin_update_counter(){
+        // product counter for category
+        $categories = $this->Category->find('list');
+        foreach($categories as $k => $v){
+            $this->Product->updateCounterCache(array('category_id' => $k), false);
+        }
+        // product counter for manufacturer
+        
         $this->redirect(array("action" => "index", "admin" => true));
     }
     

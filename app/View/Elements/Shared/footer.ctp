@@ -12,7 +12,7 @@
         </div>
         <div class="clear"></div>
         <div id="footer_counter">
-            Lượt truy cập : 1234 | Online : 5
+            <a href="<?php echo Configure::read('Config.link_facebook'); ?>"><?php echo Configure::read('Config.site_name'); ?> on FACEBOOK</a>
         </div>
     </div>
 </div>

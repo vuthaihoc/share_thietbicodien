@@ -46,7 +46,7 @@
             <a href="<?php echo $this->Html->url("/"); ?>">
                 <?php echo $this->Html->image('logo_lagre.png', array("height" => 100)); ?>
             </a>
-            <span id="site_slogan"><?php echo Configure::read('Config.site_name'); ?></span>
+            <span id="site_slogan"><?php echo Configure::read('Config.site_slogan'); ?></span>
         </div>
         <div class="col-md-8 col-sm-6" id="top_flash_item">
             <div class="col-md-3 col-xs-6">
