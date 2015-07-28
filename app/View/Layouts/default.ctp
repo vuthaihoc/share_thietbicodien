@@ -31,6 +31,7 @@
 
         echo $this->Html->css('bootstrap.min');
         echo $this->Html->css('site');
+        echo $this->Html->css('evenZoom');
 
         echo $this->fetch('meta');
         echo $this->fetch('css');
@@ -79,6 +80,7 @@
     echo $this->Html->script('jquery1.11.3');
     echo $this->Html->script('bootstrap.min');
     // include custom js file
+    echo $this->Html->script('evenZoom');
     echo $this->Html->script('site');
 
     // include fly js assigned

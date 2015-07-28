@@ -47,10 +47,10 @@ class AppController extends Controller {
         parent::beforeFilter();
         $this->AclPermissions->filter();
         
-        if ( ( $settings = Cache::read('settings', "tera") ) === false ) {
+        if ( ( $settings = Cache::read('settings') ) === false ) {
                 $settings = ClassRegistry::init('Admin.Setting')->find('all');
-                Cache::write('settings', $settings, "tera");
-       }
+                Cache::write('settings', $settings);
+        }
        foreach( $settings AS $setting )
        {
            if($setting['Setting']['svalue'] == null){
@@ -59,7 +59,6 @@ class AppController extends Controller {
                Configure::write('Config.'.$setting['Setting']['setting'], $setting['Setting']['svalue']);
            }
        }
-        
         //assign some default value
         $this->set("is_home_page", false);
         

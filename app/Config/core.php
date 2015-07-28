@@ -31,7 +31,12 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	Configure::write('debug', 2);
+if($_SERVER['SERVER_NAME'] != 'thietbicodiensct.com' && $_SERVER['SERVER_NAME'] != 'www.thietbicodiensct.com'){
+    Configure::write('debug', 2);
+}else{
+    Configure::write('debug', 0);
+}
+	
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
@@ -283,18 +288,17 @@
  *
  * File storage engine.
  *
- */
-        Cache::config('default', array(
- 		'engine' => 'File', //[required]
- 		'duration' => 3600, //[optional]
- 		'probability' => 100, //[optional]
-  		'path' => CACHE, //[optional] use system tmp directory - remember to use absolute path
-  		'prefix' => 'cake_', //[optional]  prefix every cache file with this string
-  		'lock' => false, //[optional]  use file locking
-  		'serialize' => true, //[optional]
-  		'mask' => 0644, //[optional]
- 	));
- /*
+ * 	 Cache::config('default', array(
+ *		'engine' => 'File', //[required]
+ *		'duration' => 3600, //[optional]
+ *		'probability' => 100, //[optional]
+ * 		'path' => CACHE, //[optional] use system tmp directory - remember to use absolute path
+ * 		'prefix' => 'cake_', //[optional]  prefix every cache file with this string
+ * 		'lock' => false, //[optional]  use file locking
+ * 		'serialize' => true, //[optional]
+ * 		'mask' => 0664, //[optional]
+ *	));
+ *
  * APC (http://pecl.php.net/package/APC)
  *
  * 	 Cache::config('default', array(
@@ -371,8 +375,7 @@ Cache::config('_cake_core_', array(
 	'prefix' => $prefix . 'cake_core_',
 	'path' => CACHE . 'persistent' . DS,
 	'serialize' => ($engine === 'File'),
-	'duration' => $duration,
-        'mask' => 0644
+	'duration' => $duration
 ));
 
 /**
@@ -384,8 +387,7 @@ Cache::config('_cake_model_', array(
 	'prefix' => $prefix . 'cake_model_',
 	'path' => CACHE . 'models' . DS,
 	'serialize' => ($engine === 'File'),
-	'duration' => $duration,
-        'mask' => 0644
+	'duration' => $duration
 ));
 
 

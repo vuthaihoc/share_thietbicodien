@@ -44,24 +44,13 @@ class TeraHelper extends AppHelper{
         $class_sm = " col-sm-" . intval(12*2/$a_row);
         $class_xs = " col-xs-" . intval(12*3/$a_row);
         $class_cols = $class_lg . $class_md . $class_sm . $class_xs;
-        
-        ?>
-        <div class="a_item <?php echo $class_cols; ?>">
-            <div class="a_item_container">
-                <div class="img">
-                    <a href="<?php echo $link; ?>">
-                        <div class="vimage" style="background-image: url(<?php echo $image; ?>)"></div>
-                    </a>
-                </div>
-                <div class="caption">
-                    <a href="<?php echo $link; ?>"><?php echo $title; ?></a>
-                </div>
-                <div class="price">
-                    <?php echo $this->priceFormat($price); ?>
-                </div>
-            </div>
-        </div>    
-        <?php
+        echo $this->_View->element('/shared/a_product', array(
+            'class_cols' => $class_cols,
+            'link' => $link,
+            'title' => $title,
+            'image' => $image,
+            'price' => $price
+        ));
     }
     
     public function priceFormat($price = 0, $unit = "VND"){
