@@ -29,7 +29,8 @@ class FrontController extends AppController{
     
     public function beforeRender() {
         parent::beforeRender();
-        if ($this->request->params['action'] == "display") {
+        if ($this->request->params['controller'] == 'home' 
+                && $this->request->params['action'] == "display") {
             //mark this page as homepage
             $this->set("is_home_page", true);
         }

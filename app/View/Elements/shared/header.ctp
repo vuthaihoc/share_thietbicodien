@@ -18,10 +18,18 @@
                 </a-->
             </div>
             <div class="col-md-5 col-sm-5 col-xs-12" id="top_search_box">
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1"><?php echo __("Tìm kiếm"); ?></span>
-                    <input type="text" class="form-control" placeholder="Nhập từ khóa rồi ấn Enter" aria-describedby="basic-addon1">
-                </div>
+                <form action="<?php echo $this->Html->url(array('controller'=>'home', 'action' => 'search')); ?>" method="get">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1"><?php echo __("Tìm kiếm"); ?></span>
+                        <input type="text" 
+                               name="q" 
+                               class="form-control" 
+                               placeholder="<?php echo __("Nhập từ khóa rồi ấn Enter"); ?>" 
+                               aria-describedby="basic-addon1"
+                               value="<?php echo $this->request->query('q'); ?>">
+                    </div>
+                </form>
+                    
             </div>
             <div class="col-md-2 text-right col-sm-1 col-xs-12">
                 <?php if($this->Session->read('Auth.User.id') != null && $this->Session->read('Auth.User.id') > 0){ ?>

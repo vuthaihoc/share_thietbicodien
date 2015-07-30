@@ -158,5 +158,8 @@ class ProductsController extends AdminAppController
         }
         return $this->cat;
     }
+    public function _quickedit_fields(){
+        return array('price', 'amount');
+    }
 }
 

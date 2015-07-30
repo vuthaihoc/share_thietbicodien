@@ -25,14 +25,14 @@ class LanguagesController extends AdminAppController{
 		if ( !empty( $value ) ) {
 			if ( $id = $this->Setting->field('id', array('setting' => 'language')) ) {
 				$this->Setting->id = $id;
-				if ( $this->Setting->saveField('value', $value) ) {
+				if ( $this->Setting->saveField('svalue', $value) ) {
 					Cache::delete('settings', "admin");
 					$this->redirect(array('controller' => 'dashboard', 'action' => 'index', 'admin' => true));
 				}
 			}else{
 				$this->Setting->set(array(
 					'setting' => 'language',
-					'value' => $value
+					'svalue' => $value
 				));
 				if ( $this->Setting->save() ) {
 					$this->redirect(array('controller' => 'dashboard', 'action' => 'index', 'admin' => true));	

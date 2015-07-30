@@ -82,6 +82,10 @@ class HomeController extends FrontController {
             throw new NotFoundException();
         }
     }
+    
+    public function search(){
+        $this->set("is_home_page", FALSE);
+    }
 
     public function beforeRender() {
         parent::beforeRender();

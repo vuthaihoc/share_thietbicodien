@@ -73,7 +73,7 @@
 			</p>
 		</div>
 	</div-->
-    <?php //echo pr($this->request->params); ?>
+    <?php echo pr($this->request->params); ?>
     <?php //echo $this->element('sql_dump'); ?>
 <?php
     // include library
