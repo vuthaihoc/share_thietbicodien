@@ -57,12 +57,25 @@ class BaiVietController extends FrontController {
      */
     public function index() {
         $id = $this->request->param('id');
+        $slug = $this->request->param('slug');
         $page = $this->Page->find('first', array(
             'conditions' => array(
                 'Page.is_draft' => 0,
                 'Page.id' => $id
             )
         ));
+        // check page exist
+        if(!$page){
+            $this->redirect("/", 404);
+        }
+        // check slug
+        $page_slug = slug($page['Page']['title']);
+        if( $page_slug != $slug){
+            $this->redirect(array(
+                'id' => $id,
+                'slug' => $page_slug
+            ), 404);
+        }
         $page_children = $this->Page->find('all', array(
             'conditions' => array(
                 'Page.is_draft' => 0,

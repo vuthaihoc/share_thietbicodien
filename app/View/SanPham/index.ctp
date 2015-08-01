@@ -12,6 +12,7 @@ if (isset($product["Product"]['thumb'])) {
 }
 $link = $this->Html->url(
         array(
+            'plugin' => null,
             'controller' => "san_pham",
             "action" => 'index',
             "id" => $product['Product']['id'],

@@ -29,6 +29,7 @@
                     }else $image = "";
                 }
                 $link = $this->Html->url(array(
+                    'plugin' => null,
                     "controller" => "bai_viet",
                     "action" => "index",
                     "id" => $value['Page']["id"],

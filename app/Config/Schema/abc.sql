@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:3306
--- Generation Time: Jul 26, 2015 at 09:38 PM
+-- Generation Time: Aug 01, 2015 at 03:57 PM
 -- Server version: 5.5.42
 -- PHP Version: 5.5.23
 
@@ -28,116 +28,129 @@ CREATE TABLE `acos` (
   `alias` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=106 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=119 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `acos`
 --
 
 INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `rght`) VALUES
-(1, NULL, NULL, NULL, 'controllers', 1, 206),
-(2, 1, NULL, NULL, 'Home', 2, 7),
+(1, NULL, NULL, NULL, 'controllers', 1, 232),
+(2, 1, NULL, NULL, 'Home', 2, 9),
 (3, 2, NULL, NULL, 'display', 3, 4),
 (4, 2, NULL, NULL, 'canUploadMedias', 5, 6),
-(5, 1, NULL, NULL, 'Admin', 8, 153),
-(6, 5, NULL, NULL, 'Dashboard', 9, 16),
-(7, 6, NULL, NULL, 'admin_index', 10, 11),
-(8, 6, NULL, NULL, 'canUploadMedias', 12, 13),
-(9, 5, NULL, NULL, 'Groups', 17, 28),
-(10, 9, NULL, NULL, 'admin_index', 18, 19),
-(11, 9, NULL, NULL, 'admin_add', 20, 21),
-(12, 9, NULL, NULL, 'admin_edit', 22, 23),
-(13, 9, NULL, NULL, 'admin_delete', 24, 25),
-(14, 9, NULL, NULL, 'canUploadMedias', 26, 27),
-(15, 5, NULL, NULL, 'Languages', 29, 36),
-(16, 15, NULL, NULL, 'admin_set', 30, 31),
-(17, 15, NULL, NULL, 'canUploadMedias', 32, 33),
-(18, 5, NULL, NULL, 'Pages', 37, 50),
-(19, 18, NULL, NULL, 'admin_index', 38, 39),
-(20, 18, NULL, NULL, 'index', 40, 41),
-(21, 18, NULL, NULL, 'admin_add', 42, 43),
-(22, 18, NULL, NULL, 'admin_edit', 44, 45),
-(23, 18, NULL, NULL, 'canUploadMedias', 46, 47),
-(24, 5, NULL, NULL, 'Permissions', 51, 62),
-(25, 24, NULL, NULL, 'admin_index', 52, 53),
-(26, 24, NULL, NULL, 'admin_change', 54, 55),
-(27, 24, NULL, NULL, 'admin_sync', 56, 57),
-(28, 24, NULL, NULL, 'canUploadMedias', 58, 59),
-(29, 5, NULL, NULL, 'Users', 63, 84),
-(30, 29, NULL, NULL, 'admin_index', 64, 65),
-(31, 29, NULL, NULL, 'admin_add', 66, 67),
-(32, 29, NULL, NULL, 'admin_edit', 68, 69),
-(33, 29, NULL, NULL, 'admin_login', 70, 71),
-(34, 29, NULL, NULL, 'admin_logout', 72, 73),
-(35, 29, NULL, NULL, 'admin_reset_password', 74, 75),
-(36, 29, NULL, NULL, 'admin_delete', 76, 77),
-(37, 29, NULL, NULL, 'canUploadMedias', 78, 79),
-(38, 1, NULL, NULL, 'Media', 154, 173),
-(39, 38, NULL, NULL, 'Medias', 155, 172),
-(40, 39, NULL, NULL, 'isAuthorized', 156, 157),
-(41, 39, NULL, NULL, 'canUploadMedias', 158, 159),
-(42, 39, NULL, NULL, 'index', 160, 161),
-(43, 39, NULL, NULL, 'upload', 162, 163),
-(44, 39, NULL, NULL, 'delete', 164, 165),
-(45, 39, NULL, NULL, 'thumb', 166, 167),
-(46, 39, NULL, NULL, 'update', 168, 169),
-(47, 39, NULL, NULL, 'order', 170, 171),
-(48, 29, NULL, NULL, 'admin_lock', 80, 81),
-(49, 29, NULL, NULL, 'admin_unlock', 82, 83),
-(51, 5, NULL, NULL, 'Categories', 85, 100),
-(53, 51, NULL, NULL, 'canUploadMedias', 86, 87),
-(54, 1, NULL, NULL, 'BoostCake', 174, 185),
-(55, 54, NULL, NULL, 'BoostCake', 175, 184),
-(56, 55, NULL, NULL, 'index', 176, 177),
-(57, 55, NULL, NULL, 'bootstrap2', 178, 179),
-(58, 55, NULL, NULL, 'bootstrap3', 180, 181),
-(59, 55, NULL, NULL, 'canUploadMedias', 182, 183),
-(60, 51, NULL, NULL, 'admin_index', 88, 89),
-(61, 51, NULL, NULL, 'admin_add', 90, 91),
-(62, 51, NULL, NULL, 'admin_edit', 92, 93),
-(63, 51, NULL, NULL, 'admin_move_up', 94, 95),
-(64, 51, NULL, NULL, 'admin_move_down', 96, 97),
-(65, 1, NULL, NULL, 'BaiViet', 186, 193),
-(66, 65, NULL, NULL, 'index', 187, 188),
-(67, 65, NULL, NULL, 'category', 189, 190),
-(68, 65, NULL, NULL, 'canUploadMedias', 191, 192),
-(69, 1, NULL, NULL, 'Front', 194, 197),
-(70, 69, NULL, NULL, 'canUploadMedias', 195, 196),
-(71, 1, NULL, NULL, 'SanPham', 198, 205),
-(72, 71, NULL, NULL, 'index', 199, 200),
-(73, 71, NULL, NULL, 'category', 201, 202),
-(74, 71, NULL, NULL, 'canUploadMedias', 203, 204),
-(75, 51, NULL, NULL, 'admin_delete', 98, 99),
-(76, 6, NULL, NULL, 'admin_delete', 14, 15),
-(77, 15, NULL, NULL, 'admin_delete', 34, 35),
-(78, 5, NULL, NULL, 'Manufacturers', 101, 114),
-(79, 78, NULL, NULL, 'admin_index', 102, 103),
-(80, 78, NULL, NULL, 'index', 104, 105),
-(81, 78, NULL, NULL, 'admin_add', 106, 107),
-(82, 78, NULL, NULL, 'admin_edit', 108, 109),
-(83, 78, NULL, NULL, 'admin_delete', 110, 111),
-(84, 78, NULL, NULL, 'canUploadMedias', 112, 113),
-(85, 18, NULL, NULL, 'admin_delete', 48, 49),
-(86, 24, NULL, NULL, 'admin_delete', 60, 61),
-(87, 5, NULL, NULL, 'Products', 115, 128),
-(88, 87, NULL, NULL, 'admin_index', 116, 117),
-(89, 87, NULL, NULL, 'index', 118, 119),
-(90, 87, NULL, NULL, 'admin_add', 120, 121),
-(91, 87, NULL, NULL, 'admin_edit', 122, 123),
-(92, 87, NULL, NULL, 'admin_delete', 124, 125),
-(93, 87, NULL, NULL, 'canUploadMedias', 126, 127),
-(94, 5, NULL, NULL, 'Slides', 129, 142),
-(95, 94, NULL, NULL, 'admin_index', 130, 131),
-(96, 94, NULL, NULL, 'index', 132, 133),
-(97, 94, NULL, NULL, 'admin_add', 134, 135),
-(98, 94, NULL, NULL, 'admin_edit', 136, 137),
-(99, 94, NULL, NULL, 'admin_delete', 138, 139),
-(100, 94, NULL, NULL, 'canUploadMedias', 140, 141),
-(101, 5, NULL, NULL, 'System', 143, 152),
-(102, 101, NULL, NULL, 'admin_index', 144, 145),
-(103, 101, NULL, NULL, 'admin_clear_all_cache', 146, 147),
-(104, 101, NULL, NULL, 'admin_delete', 148, 149),
-(105, 101, NULL, NULL, 'canUploadMedias', 150, 151);
+(5, 1, NULL, NULL, 'Admin', 10, 179),
+(6, 5, NULL, NULL, 'Dashboard', 11, 20),
+(7, 6, NULL, NULL, 'admin_index', 12, 13),
+(8, 6, NULL, NULL, 'canUploadMedias', 14, 15),
+(9, 5, NULL, NULL, 'Groups', 21, 34),
+(10, 9, NULL, NULL, 'admin_index', 22, 23),
+(11, 9, NULL, NULL, 'admin_add', 24, 25),
+(12, 9, NULL, NULL, 'admin_edit', 26, 27),
+(13, 9, NULL, NULL, 'admin_delete', 28, 29),
+(14, 9, NULL, NULL, 'canUploadMedias', 30, 31),
+(15, 5, NULL, NULL, 'Languages', 35, 44),
+(16, 15, NULL, NULL, 'admin_set', 36, 37),
+(17, 15, NULL, NULL, 'canUploadMedias', 38, 39),
+(18, 5, NULL, NULL, 'Pages', 45, 60),
+(19, 18, NULL, NULL, 'admin_index', 46, 47),
+(20, 18, NULL, NULL, 'index', 48, 49),
+(21, 18, NULL, NULL, 'admin_add', 50, 51),
+(22, 18, NULL, NULL, 'admin_edit', 52, 53),
+(23, 18, NULL, NULL, 'canUploadMedias', 54, 55),
+(24, 5, NULL, NULL, 'Permissions', 61, 74),
+(25, 24, NULL, NULL, 'admin_index', 62, 63),
+(26, 24, NULL, NULL, 'admin_change', 64, 65),
+(27, 24, NULL, NULL, 'admin_sync', 66, 67),
+(28, 24, NULL, NULL, 'canUploadMedias', 68, 69),
+(29, 5, NULL, NULL, 'Users', 75, 98),
+(30, 29, NULL, NULL, 'admin_index', 76, 77),
+(31, 29, NULL, NULL, 'admin_add', 78, 79),
+(32, 29, NULL, NULL, 'admin_edit', 80, 81),
+(33, 29, NULL, NULL, 'admin_login', 82, 83),
+(34, 29, NULL, NULL, 'admin_logout', 84, 85),
+(35, 29, NULL, NULL, 'admin_reset_password', 86, 87),
+(36, 29, NULL, NULL, 'admin_delete', 88, 89),
+(37, 29, NULL, NULL, 'canUploadMedias', 90, 91),
+(38, 1, NULL, NULL, 'Media', 180, 199),
+(39, 38, NULL, NULL, 'Medias', 181, 198),
+(40, 39, NULL, NULL, 'isAuthorized', 182, 183),
+(41, 39, NULL, NULL, 'canUploadMedias', 184, 185),
+(42, 39, NULL, NULL, 'index', 186, 187),
+(43, 39, NULL, NULL, 'upload', 188, 189),
+(44, 39, NULL, NULL, 'delete', 190, 191),
+(45, 39, NULL, NULL, 'thumb', 192, 193),
+(46, 39, NULL, NULL, 'update', 194, 195),
+(47, 39, NULL, NULL, 'order', 196, 197),
+(48, 29, NULL, NULL, 'admin_lock', 92, 93),
+(49, 29, NULL, NULL, 'admin_unlock', 94, 95),
+(51, 5, NULL, NULL, 'Categories', 99, 116),
+(53, 51, NULL, NULL, 'canUploadMedias', 100, 101),
+(54, 1, NULL, NULL, 'BoostCake', 200, 211),
+(55, 54, NULL, NULL, 'BoostCake', 201, 210),
+(56, 55, NULL, NULL, 'index', 202, 203),
+(57, 55, NULL, NULL, 'bootstrap2', 204, 205),
+(58, 55, NULL, NULL, 'bootstrap3', 206, 207),
+(59, 55, NULL, NULL, 'canUploadMedias', 208, 209),
+(60, 51, NULL, NULL, 'admin_index', 102, 103),
+(61, 51, NULL, NULL, 'admin_add', 104, 105),
+(62, 51, NULL, NULL, 'admin_edit', 106, 107),
+(63, 51, NULL, NULL, 'admin_move_up', 108, 109),
+(64, 51, NULL, NULL, 'admin_move_down', 110, 111),
+(65, 1, NULL, NULL, 'BaiViet', 212, 219),
+(66, 65, NULL, NULL, 'index', 213, 214),
+(67, 65, NULL, NULL, 'category', 215, 216),
+(68, 65, NULL, NULL, 'canUploadMedias', 217, 218),
+(69, 1, NULL, NULL, 'Front', 220, 223),
+(70, 69, NULL, NULL, 'canUploadMedias', 221, 222),
+(71, 1, NULL, NULL, 'SanPham', 224, 231),
+(72, 71, NULL, NULL, 'index', 225, 226),
+(73, 71, NULL, NULL, 'category', 227, 228),
+(74, 71, NULL, NULL, 'canUploadMedias', 229, 230),
+(75, 51, NULL, NULL, 'admin_delete', 112, 113),
+(76, 6, NULL, NULL, 'admin_delete', 16, 17),
+(77, 15, NULL, NULL, 'admin_delete', 40, 41),
+(78, 5, NULL, NULL, 'Manufacturers', 117, 132),
+(79, 78, NULL, NULL, 'admin_index', 118, 119),
+(80, 78, NULL, NULL, 'index', 120, 121),
+(81, 78, NULL, NULL, 'admin_add', 122, 123),
+(82, 78, NULL, NULL, 'admin_edit', 124, 125),
+(83, 78, NULL, NULL, 'admin_delete', 126, 127),
+(84, 78, NULL, NULL, 'canUploadMedias', 128, 129),
+(85, 18, NULL, NULL, 'admin_delete', 56, 57),
+(86, 24, NULL, NULL, 'admin_delete', 70, 71),
+(87, 5, NULL, NULL, 'Products', 133, 148),
+(88, 87, NULL, NULL, 'admin_index', 134, 135),
+(89, 87, NULL, NULL, 'index', 136, 137),
+(90, 87, NULL, NULL, 'admin_add', 138, 139),
+(91, 87, NULL, NULL, 'admin_edit', 140, 141),
+(92, 87, NULL, NULL, 'admin_delete', 142, 143),
+(93, 87, NULL, NULL, 'canUploadMedias', 144, 145),
+(94, 5, NULL, NULL, 'Slides', 149, 164),
+(95, 94, NULL, NULL, 'admin_index', 150, 151),
+(96, 94, NULL, NULL, 'index', 152, 153),
+(97, 94, NULL, NULL, 'admin_add', 154, 155),
+(98, 94, NULL, NULL, 'admin_edit', 156, 157),
+(99, 94, NULL, NULL, 'admin_delete', 158, 159),
+(100, 94, NULL, NULL, 'canUploadMedias', 160, 161),
+(101, 5, NULL, NULL, 'System', 165, 178),
+(102, 101, NULL, NULL, 'admin_index', 166, 167),
+(103, 101, NULL, NULL, 'admin_clear_all_cache', 168, 169),
+(104, 101, NULL, NULL, 'admin_delete', 170, 171),
+(105, 101, NULL, NULL, 'canUploadMedias', 172, 173),
+(106, 2, NULL, NULL, 'search', 7, 8),
+(107, 51, NULL, NULL, 'admin_quick_edit', 114, 115),
+(108, 6, NULL, NULL, 'admin_quick_edit', 18, 19),
+(109, 9, NULL, NULL, 'admin_quick_edit', 32, 33),
+(110, 15, NULL, NULL, 'admin_quick_edit', 42, 43),
+(111, 78, NULL, NULL, 'admin_quick_edit', 130, 131),
+(112, 18, NULL, NULL, 'admin_quick_edit', 58, 59),
+(113, 24, NULL, NULL, 'admin_quick_edit', 72, 73),
+(114, 87, NULL, NULL, 'admin_quick_edit', 146, 147),
+(115, 94, NULL, NULL, 'admin_quick_edit', 162, 163),
+(116, 101, NULL, NULL, 'admin_update_counter', 174, 175),
+(117, 101, NULL, NULL, 'admin_quick_edit', 176, 177),
+(118, 29, NULL, NULL, 'admin_quick_edit', 96, 97);
 
 -- --------------------------------------------------------
 
@@ -180,7 +193,7 @@ CREATE TABLE `aros_acos` (
   `_read` varchar(2) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `_update` varchar(2) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
   `_delete` varchar(2) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `aros_acos`
@@ -242,7 +255,10 @@ INSERT INTO `aros_acos` (`id`, `aro_id`, `aco_id`, `_create`, `_read`, `_update`
 (53, 5, 73, '1', '1', '1', '1'),
 (54, 5, 20, '1', '1', '1', '1'),
 (55, 5, 85, '1', '1', '1', '1'),
-(56, 5, 39, '1', '1', '1', '1');
+(56, 5, 39, '1', '1', '1', '1'),
+(57, 3, 106, '1', '1', '1', '1'),
+(58, 4, 106, '1', '1', '1', '1'),
+(59, 5, 106, '1', '1', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -631,7 +647,7 @@ CREATE TABLE `settings` (
   `svalues` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `sdefault` text COLLATE utf8_unicode_ci NOT NULL,
   `comment` text COLLATE utf8_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `settings`
@@ -648,7 +664,7 @@ INSERT INTO `settings` (`id`, `setting`, `stype`, `svalue`, `svalues`, `sdefault
 (8, 'ga_script', 'plaintext', '<script>\r\n  (function(i,s,o,g,r,a,m){i[''GoogleAnalyticsObject'']=r;i[r]=i[r]||function(){\r\n  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\r\n  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\r\n  })(window,document,''script'',''//www.google-analytics.com/analytics.js'',''ga'');\r\n\r\n  ga(''create'', ''UA-65305014-1'', ''auto'');\r\n  ga(''send'', ''pageview'');\r\n</script>', '', '', 'Mã theo dõi GA'),
 (9, 'default_keywords', 'plaintext', 'thiết bị cơ điện, SCT, điện nhẹ, dây điện giá rẻ, cáp điện giá rẻ', '', '', 'Keyword mặc định'),
 (10, 'default_description', 'plaintext', '', '', '', 'Mô tả mặc định'),
-(11, 'title_struct', 'text', '{site_name} : {page_title}', '', '{site_name} - {page_title}', 'Cấu trúc tiêu đề'),
+(11, 'title_struct', 'text', '{page_title} - {site_name}', '', '{site_name} - {page_title}', 'Cấu trúc tiêu đề'),
 (12, 'description_struct', 'text', '{default_description} {page_description}', '', '{default_description} {page_description}', 'Cấu trúc mô tả'),
 (13, 'keywords_struct', 'text', '{default_keywords},{page_keywords}', '', '{default_keywords},{page_keywords}', 'Cấu trúc keywords');
 
@@ -795,7 +811,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `acos`
 --
 ALTER TABLE `acos`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=106;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=119;
 --
 -- AUTO_INCREMENT for table `aros`
 --
@@ -805,7 +821,7 @@ ALTER TABLE `aros`
 -- AUTO_INCREMENT for table `aros_acos`
 --
 ALTER TABLE `aros_acos`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=57;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=60;
 --
 -- AUTO_INCREMENT for table `categories`
 --
@@ -840,7 +856,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `settings`
 --
 ALTER TABLE `settings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT for table `slides`
 --

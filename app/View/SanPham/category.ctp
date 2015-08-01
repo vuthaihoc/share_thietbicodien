@@ -20,6 +20,7 @@
             <?php 
             $this->Paginator->options(array(
                 'url' => array(
+                    'plugin' => null,
                     "id" => $category["Category"]['id'],
                     "slug" => $this->Tera->build_slug($category["Category"]["name"]),
                     "controller" => "san_pham",

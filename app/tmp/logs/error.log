@@ -19375,3 +19375,270 @@ Request URL: /thietbidien/search?q=hello
 Stack Trace:
 #0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-08-01 13:32:15 Error: [MissingActionException] Action BaiVietController::2() could not be found.
+Exception Attributes: array (
+  'controller' => 'BaiVietController',
+  'action' => '2',
+)
+Request URL: /thietbidien/bai_viet/2
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(BaiVietController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 13:38:07 Error: [MissingControllerException] Controller class Nhom-san-phamController could not be found.
+Exception Attributes: array (
+  'class' => 'Nhom-san-phamController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/nhom-san-pham/16
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 14:24:02 Error: [MissingActionException] Action SanPhamController::44_Cap-dong-don-boc-cach-dien-PVC() could not be found.
+Exception Attributes: array (
+  'controller' => 'SanPhamController',
+  'action' => '44_Cap-dong-don-boc-cach-dien-PVC',
+)
+Request URL: /thietbidien/san_pham/44_Cap-dong-don-boc-cach-dien-PVC
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SanPhamController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 14:24:04 Error: [UnexpectedValueException] DirectoryIterator::__construct(/Users/hocvt/Documents/webroot/thietbidien/app/View/Pages/): failed to open dir: No such file or directory
+Request URL: /thietbidien/sitemap
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/ExtFilteredDirIterator.php(32): DirectoryIterator->__construct('/Users/hocvt/Do...')
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/PagesIterator.php(69): ExtFilteredDirIterator->__construct('/Users/hocvt/Do...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(127): PagesIterator->__construct('/Users/hocvt/Do...', Array, '/thietbidien/')
+#3 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(91): SitemapsController->_generateListOfStaticPages()
+#4 [internal function]: SitemapsController->display()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SitemapsController), Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SitemapsController), Object(CakeRequest))
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-08-01 14:25:26 Error: [UnexpectedValueException] DirectoryIterator::__construct(/Users/hocvt/Documents/webroot/thietbidien/app/View/Pages/): failed to open dir: No such file or directory
+Request URL: /thietbidien/sitemap
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/ExtFilteredDirIterator.php(32): DirectoryIterator->__construct('/Users/hocvt/Do...')
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/PagesIterator.php(69): ExtFilteredDirIterator->__construct('/Users/hocvt/Do...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(127): PagesIterator->__construct('/Users/hocvt/Do...', Array, '/thietbidien/')
+#3 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(91): SitemapsController->_generateListOfStaticPages()
+#4 [internal function]: SitemapsController->display()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SitemapsController), Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SitemapsController), Object(CakeRequest))
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-08-01 14:25:52 Error: [MissingActionException] Action SanPhamController::44_Cap-dong-don-boc-cach-dien-PVC() could not be found.
+Exception Attributes: array (
+  'controller' => 'SanPhamController',
+  'action' => '44_Cap-dong-don-boc-cach-dien-PVC',
+)
+Request URL: /thietbidien/san_pham/44_Cap-dong-don-boc-cach-dien-PVC
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SanPhamController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 14:25:52 Error: [UnexpectedValueException] DirectoryIterator::__construct(/Users/hocvt/Documents/webroot/thietbidien/app/View/Pages/): failed to open dir: No such file or directory
+Request URL: /thietbidien/sitemap
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/ExtFilteredDirIterator.php(32): DirectoryIterator->__construct('/Users/hocvt/Do...')
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/PagesIterator.php(69): ExtFilteredDirIterator->__construct('/Users/hocvt/Do...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(127): PagesIterator->__construct('/Users/hocvt/Do...', Array, '/thietbidien/')
+#3 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(91): SitemapsController->_generateListOfStaticPages()
+#4 [internal function]: SitemapsController->display()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SitemapsController), Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SitemapsController), Object(CakeRequest))
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-08-01 14:25:54 Error: [UnexpectedValueException] DirectoryIterator::__construct(/Users/hocvt/Documents/webroot/thietbidien/app/View/Pages/): failed to open dir: No such file or directory
+Request URL: /thietbidien/sitemap
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/ExtFilteredDirIterator.php(32): DirectoryIterator->__construct('/Users/hocvt/Do...')
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/PagesIterator.php(69): ExtFilteredDirIterator->__construct('/Users/hocvt/Do...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(127): PagesIterator->__construct('/Users/hocvt/Do...', Array, '/thietbidien/')
+#3 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(91): SitemapsController->_generateListOfStaticPages()
+#4 [internal function]: SitemapsController->display()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SitemapsController), Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SitemapsController), Object(CakeRequest))
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-08-01 14:26:00 Error: [UnexpectedValueException] DirectoryIterator::__construct(/Users/hocvt/Documents/webroot/thietbidien/app/View/Pages/): failed to open dir: No such file or directory
+Request URL: /thietbidien/sitemap.xml
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/ExtFilteredDirIterator.php(32): DirectoryIterator->__construct('/Users/hocvt/Do...')
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/PagesIterator.php(69): ExtFilteredDirIterator->__construct('/Users/hocvt/Do...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(127): PagesIterator->__construct('/Users/hocvt/Do...', Array, '/thietbidien/')
+#3 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(91): SitemapsController->_generateListOfStaticPages()
+#4 [internal function]: SitemapsController->display()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SitemapsController), Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SitemapsController), Object(CakeRequest))
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-08-01 14:26:22 Error: [UnexpectedValueException] DirectoryIterator::__construct(/Users/hocvt/Documents/webroot/thietbidien/app/View/Pages/): failed to open dir: No such file or directory
+Request URL: /thietbidien/sitemap
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/ExtFilteredDirIterator.php(32): DirectoryIterator->__construct('/Users/hocvt/Do...')
+#1 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Lib/Iterators/PagesIterator.php(69): ExtFilteredDirIterator->__construct('/Users/hocvt/Do...', Array)
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(127): PagesIterator->__construct('/Users/hocvt/Do...', Array, '/thietbidien/')
+#3 /Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Sitemap/Controller/SitemapsController.php(91): SitemapsController->_generateListOfStaticPages()
+#4 [internal function]: SitemapsController->display()
+#5 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(SitemapsController), Array)
+#6 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#7 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SitemapsController), Object(CakeRequest))
+#8 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2015-08-01 14:31:16 Error: [MissingActionException] Action SanPhamController::44_Cap-dong-don-boc-cach-dien-PVC() could not be found.
+Exception Attributes: array (
+  'controller' => 'SanPhamController',
+  'action' => '44_Cap-dong-don-boc-cach-dien-PVC',
+)
+Request URL: /thietbidien/san_pham/44_Cap-dong-don-boc-cach-dien-PVC
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SanPhamController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 14:31:24 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/pages/display/bai_viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 14:32:55 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/pages/display/home
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 14:42:53 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/pages/view/13
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 15:05:00 Error: [MissingActionException] Action HomeController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'home',
+)
+Request URL: /thietbidien/home/home
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 15:38:37 Error: [MissingActionException] Action HomeController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'home',
+)
+Request URL: /thietbidien/home/home
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 15:41:36 Error: [MissingActionException] Action HomeController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'home',
+)
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 15:42:06 Error: [MissingActionException] Action HomeController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'home',
+)
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 15:42:09 Error: [MissingActionException] Action HomeController::home() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomeController',
+  'action' => 'home',
+)
+Request URL: /thietbidien/
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#2 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-01 15:46:00 Error: [MissingControllerException] Controller class SanPhamController could not be found.
+Exception Attributes: array (
+  'class' => 'SanPhamController',
+  'plugin' => 'Sitemap',
+)
+Request URL: /thietbidien/sitemap/san_pham/category/id:16/slug:Dien-lanh
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 15:46:20 Error: [MissingControllerException] Controller class SanPhamController could not be found.
+Exception Attributes: array (
+  'class' => 'SanPhamController',
+  'plugin' => 'Sitemap',
+)
+Request URL: /thietbidien/sitemap/san_pham/category/id:19/slug:Camera
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 15:47:29 Error: [MissingControllerException] Controller class BaiVietController could not be found.
+Exception Attributes: array (
+  'class' => 'BaiVietController',
+  'plugin' => 'Sitemap',
+)
+Request URL: /thietbidien/sitemap/bai_viet/index/id:4/slug:Huong-dan-mua-hang
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 15:48:47 Error: [MissingControllerException] Controller class BaiVietController could not be found.
+Exception Attributes: array (
+  'class' => 'BaiVietController',
+  'plugin' => 'Sitemap',
+)
+Request URL: /thietbidien/sitemap/bai_viet/index/id:4/slug:Huong-dan-mua-hang
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 15:48:53 Error: [MissingControllerException] Controller class BaiVietController could not be found.
+Exception Attributes: array (
+  'class' => 'BaiVietController',
+  'plugin' => 'Sitemap',
+)
+Request URL: /thietbidien/sitemap/bai_viet/index/id:12/slug:Giao-hang-nhanh-chong
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-01 15:51:04 Error: [MissingControllerException] Controller class BaiVietController could not be found.
+Exception Attributes: array (
+  'class' => 'BaiVietController',
+  'plugin' => 'Sitemap',
+)
+Request URL: /thietbidien/sitemap/bai_viet/index/id:12/slug:Giao-hang-nhanh-chong
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

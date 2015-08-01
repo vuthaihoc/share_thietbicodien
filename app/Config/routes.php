@@ -31,21 +31,21 @@
 	Router::connect('/tim_kiem', array('controller' => 'home', 'action' => 'search'));
         
         
-	Router::connect('/bai_viet/:id', 
+	Router::connect('/bai-viet/:id', 
                 array('controller' => 'bai_viet', 'action' => 'index'),
                 array('id' => '[0-9]+'));
         
-	Router::connect('/bai_viet/:id/:slug', 
+	Router::connect('/bai-viet/:id-:slug.html', 
                 array('controller' => 'bai_viet', 'action' => 'index'),
                 array('id' => '[0-9]+',
                     'slug' => '[0-9A-Za-z\-\_\.]+'
                     ));
-	Router::connect('/san_pham/:id_:slug', 
+	Router::connect('/san-pham/:id-:slug.html', 
                 array('controller' => 'san_pham', 'action' => 'index'),
                 array('id' => '[0-9]+',
                     'slug' => '[0-9A-Za-z\-\_\.]+'
                     ));
-	Router::connect('/nhom_san_pham/:id_:slug', 
+	Router::connect('/nhom-san-pham/:id-:slug.html', 
                 array('controller' => 'san_pham', 'action' => 'category'),
                 array('id' => '[0-9]+',
                     'slug' => '[0-9A-Za-z\-\_\.]+'

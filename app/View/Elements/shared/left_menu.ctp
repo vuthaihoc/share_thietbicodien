@@ -32,7 +32,8 @@
                 }
                 $t_link = $this->Html->link(
                         $value1['Category']['name'] . $t_caret, 
-                        array("controller" => "san_pham",
+                        array(
+                    'plugin' => null,"controller" => "san_pham",
                             "action" => "category",
                             "id" => $value1['Category']['id'],
                             "slug" => $this->Tera->build_slug($value1["Category"]["name"])), 
@@ -43,7 +44,8 @@
                     <?php 
                     echo $t_list_open;
                     foreach ($value1['children'] as $key2 => $value2) {
-                    $t_link = $this->Html->link($value2['Category']['name'] , array("controller" => "san_pham",
+                    $t_link = $this->Html->link($value2['Category']['name'] , array(
+                    'plugin' => null,"controller" => "san_pham",
                             "action" => "category",
                             "id" => $value2['Category']['id'],
                             "slug" => $this->Tera->build_slug($value2["Category"]["name"])) );

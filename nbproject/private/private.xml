@@ -7,19 +7,21 @@
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/BaiVietController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Products/admin_edit.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/AdminAppController.php</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/core.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/System/admin_index.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/AppModel.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/core.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Media/View/Medias/index.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Helper/TeraHelper.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/lib/Cake/Model/Model.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Products/admin_index.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/js/evenZoom.js</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/lib/Cake/basics.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/js/evenZoom.js</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Home/display.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/shared/header.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/css/evenZoom.css</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/BaiViet/index.ctp</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Config/routes.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Model/Setting.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/SystemController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/LanguagesController.php</file>
@@ -36,6 +38,7 @@
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/index.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/AppController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/webroot/css/dashboard.css</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Home/search.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Controller/SanPhamController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/shared/footer.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/webroot/js/site.js</file>
@@ -43,8 +46,9 @@
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Model/AdminAppModel.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/View/Pages/admin_index.ctp</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Elements/shared/left_menu.ctp</file>
-            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/ProductsController.php</file>
             <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Model/Product.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/Plugin/Admin/Controller/ProductsController.php</file>
+            <file>file:/Users/hocvt/Documents/webroot/thietbidien/app/View/Home/home.ctp</file>
         </group>
     </open-files>
 </project-private>

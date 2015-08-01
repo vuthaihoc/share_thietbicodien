@@ -94,7 +94,7 @@ class AppController extends Controller {
         $str = preg_replace('/(Ỳ|Ý|Ỵ|Ỷ|Ỹ)/', 'Y', $str);
         $str = preg_replace('/(Đ)/', 'D', $str);
         $str = str_replace(' ', '-', str_replace('&*#39;','',$str));
-        $str = preg_filter('/[^a-zA-Z0-9\-_.]/', '', $str);
+        $str = preg_replace('/[^a-zA-Z0-9\-_.]/', '', $str);
         return $str;
     }
     
