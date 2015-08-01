@@ -19,6 +19,7 @@ class ProductsController extends AdminAppController
      **/
     public $uses = array('Admin.User', 'Admin.Group', 'Product', 'Category', 'Manufacturer');
     private $cat = null;
+    private $child_cat = array();
 
 
     /**
@@ -45,8 +46,10 @@ class ProductsController extends AdminAppController
         
         $named_params = $this->request->param('named');
         
-        if(isset($named_params['cat'])){
-            $conditions['category_id'] = $named_params['cat'];
+        if($this->cat !== null){
+            $cats = $this->child_cat;
+            $cats[] = $this->cat;
+            $conditions['Product.category_id'] = $cats;
             $cat_name = $this->Category->field('name', array('id' => $named_params['cat']));
             $this->set('title_for_layout', __d('admin', 'Sản phẩm :: ' . $cat_name));
         }
@@ -153,9 +156,26 @@ class ProductsController extends AdminAppController
         
         if(isset($named_params['cat'])){
             $this->cat = $named_params['cat'];
+            
+            $cat = $this->Category->findById($this->cat);
+            if($cat){
+                $child_cats = $this->Category->find("list",array(
+                    'conditions' => array(
+                        'rght <' => $cat['Category']['rght'],
+                        'lft >' => $cat['Category']['lft']
+                    ),
+                    'fields' => array('id')
+                ));
+                if($child_cats){
+                    $this->child_cat = $child_cats;
+                }
+            }
+            
+            
         }else{
             $this->cat = null;
         }
+        
         return $this->cat;
     }
     public function _quickedit_fields(){

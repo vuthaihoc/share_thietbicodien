@@ -345,6 +345,23 @@ if($_SERVER['SERVER_NAME'] != 'thietbicodiensct.com' && $_SERVER['SERVER_NAME'] 
  *	));
  */
 
+Cache::config('daily', array(
+		'engine' => 'File', //[required]
+		'duration' => 8640, //[optional]
+	));
+Cache::config('hour', array(
+		'engine' => 'File', //[required]
+		'duration' => 3600, //[optional]
+	));
+Cache::config('minute', array(
+		'engine' => 'File', //[required]
+		'duration' => 60, //[optional]
+	));
+Cache::config('30minutes', array(
+		'engine' => 'File', //[required]
+		'duration' => 1800, //[optional]
+	));
+        
 /**
  * Configure the cache handlers that CakePHP will use for internal
  * metadata like class maps, and model schema.

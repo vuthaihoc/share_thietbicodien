@@ -55,17 +55,19 @@ class AdminAppController extends AppController{
         
         public function admin_quick_edit(){
             $return = array("success" => false, "message" => __("Lỗi!"));
-            $id = $this->request->param('id');
+            $id = $this->request->data('id');
             
-            if($id === FALSE){
-                $id = $this->request->params['pass'][0];
+            if(empty($id)){
+                $id = $this->request->query('id');
             }
             
             if($this->main_model == NULL){
+                $return['message'] = __("Chưa cài đặt model");
                 echo json_encode($return);
                 exit();
             }
-            if(method_exists($this, '_quickedit_fields')){
+            if(!$this->_quickedit_fields()){
+                $return['message'] = __("Chưa hỗ trợ");
                 echo json_encode($return);
                 exit();
             }
@@ -73,8 +75,8 @@ class AdminAppController extends AppController{
             $fieldList = is_array($fieldList) ? $fieldList : array($fieldList);
             $data = array('id' => $id);
             foreach ($fieldList as $v){
-                if(!$this->request->param($v) === false){
-                    $data[$v] = $this->request->param($v);
+                if($this->request->data($v) !== false){
+                    $data[$v] = $this->request->data($v);
                 }
             }
             $save_check = $this->main_model->save($data, true, $fieldList);
@@ -84,6 +86,9 @@ class AdminAppController extends AppController{
                 $return['data'] = $data;
                 echo json_encode($return);
             }  else {
+                $return['message'] = __("Không lưu được bản ghi");
+                $return['data'] = $data;
+                $return['data1'] = $this->request->data;
                 echo json_encode($return); 
             }
             exit();
@@ -145,6 +150,10 @@ class AdminAppController extends AppController{
 
         public function _can_delete($id){
             return FALSE;
+        }
+        
+        public function _quickedit_fields(){
+            return false;
         }
 }
 

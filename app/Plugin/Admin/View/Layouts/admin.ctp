@@ -10,6 +10,7 @@
     <?php 
       echo $this->Html->css(array(
         '/admin/css/bootstrap.min.css',
+        '/admin/css/bootstrap_editable.css',
         '/admin/css/dashboard.css',
         ));
       echo $this->Html->script('jquery1.11.3');
@@ -155,6 +156,8 @@
         
     <?php 
       echo $this->Html->script('/admin/js/bootstrap.min.js');
+      echo $this->Html->script('/admin/js/bootstrap_editable.js');
+      echo $this->Html->script('/admin/js/tera.vn.js');
       echo $this->fetch('script');
      ?>
      <script type="text/javascript">
@@ -177,5 +180,6 @@
       });
      </script>
      <?php pr($this->params); ?>
+     <?php echo $this->element('sql_dump');?>
   </body>
 </html>

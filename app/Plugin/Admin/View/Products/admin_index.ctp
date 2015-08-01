@@ -18,15 +18,18 @@
 <div style="height: 8px;"></div>
 <div class="row">
 	<div class="col-md-12">
+            <?php echo $this->Paginator->pagination(array(
+                    'ul' => 'pagination'
+            )); ?>
 		<div class="table-responsive">
 			<table class="table table-hover table-bordered">
                             <thead>
                                 <tr>
-                                    <th>ID</th>
+                                    <th><?php echo $this->Paginator->sort('id', __("ID"), array()); ?></th>
                                     <th>Thao tác</th>
                                     <th>Hình ảnh</th>
-                                    <th>Tên</th>
-                                    <th>Giá</th>
+                                    <th><?php echo $this->Paginator->sort('name', __("Tên"), array()); ?></th>
+                                    <th><?php echo $this->Paginator->sort('price', __("Giá"), array()); ?></th>
                                     <th>Ngày tạo</th>
                                 </tr>
                             </thead>
@@ -55,6 +58,14 @@
                                             'Product',
                                             $value['Product']['id']
                                         ));
+                                        $view_link = $this->Html->url(array(
+                                            'plugin' => '',
+                                            'admin' => false,
+                                            'controller' => 'san_pham',
+                                            'id' => $value['Product']['id'],
+                                            'action' => 'index',
+                                            'slug' => slug($value['Product']['name'])
+                                            ), true);
                                         ?>
                                 <tr>
                                     <td><?php echo $value['Product']['id']; ?></td>
@@ -76,7 +87,9 @@
                                     </td>
                                     <td>
                                         <div>
-                                            <?php echo $value['Product']['name']; ?>
+                                            <a target="_blank" href="<?php echo $view_link; ?>">
+                                                <?php echo $value['Product']['name']; ?>
+                                            </a>
                                         </div>
                                         <div class="text-danger">
                                             <?php echo __d("admin", "Nhóm : ") . $value['Category']['name']; ?>
@@ -85,7 +98,16 @@
                                             <?php echo __d("admin", "Hãng sản xuất : ") . $value['Manufacturer']['name']; ?>
                                         </div>
                                     </td>
-                                    <td><?php echo $this->Tera->priceFormat($value['Product']['price']); ?></td>
+                                    <td>
+                                        <a href="javascript:void(0);" 
+                                           data-id="<?php echo $value['Product']['id']; ?>" 
+                                           class="edit_price"
+                                           data-link="<?php echo $this->Html->url(array('action' => 'quick_edit')); ?>">
+                                            <?php echo $value['Product']['price']; ?>
+                                        </a><br/>
+                                        <span class="small">
+                                            <?php echo __("0: Liên hệ<br/>-1: Xem báo giá<br/>"); ?>
+                                        </span></td>
                                     <td><?php echo $value['Product']['created_at']; ?></td>
                                 </tr>
                                             <?php
@@ -95,11 +117,11 @@
 			
 			</table>
 		</div>
+            <?php echo $this->Paginator->pagination(array(
+                    'ul' => 'pagination'
+            )); ?>
 	</div>
 </div>
-<?php echo $this->Paginator->pagination(array(
-	'ul' => 'pagination'
-)); ?>
 <?php echo $this->Html->script('/admin/js/acl.js'); ?>
 <!--<script type="text/javascript">
 	$(function(){
