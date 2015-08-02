@@ -17,7 +17,7 @@
  * @since         CakePHP(tm) v 0.2.9
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
-
+$start_time = microtime(true);
 /**
  * Use the DS to separate the directories in other defines
  */

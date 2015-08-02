@@ -147,3 +147,8 @@ if (!function_exists('slug')) {
         return $str;
     }
 }
+
+function show_time_and_memory(){
+    global $start_time;
+    return "Time: " . (microtime(true) - $start_time) . ". RAM: " . memory_get_usage(true) / 1000000; 
+}

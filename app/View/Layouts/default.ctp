@@ -16,7 +16,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="vi">
     <?php echo $this->Html->charset(); ?>
     <title>
             <?php echo $this->Tera->get_title(); ?>

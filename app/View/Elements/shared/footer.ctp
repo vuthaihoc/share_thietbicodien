@@ -12,7 +12,14 @@
         </div>
         <div class="clear"></div>
         <div id="footer_counter">
-            <a href="<?php echo Configure::read('Config.link_facebook'); ?>"><?php echo Configure::read('Config.site_name'); ?> on FACEBOOK</a>
+            <div class="col-sm-6">
+                <a href="<?php echo Configure::read('Config.link_facebook'); ?>"><?php echo Configure::read('Config.site_name'); ?> on FACEBOOK</a>
+            
+            </div>
+            <div class="col-sm-6 text-right">
+                <?php echo show_time_and_memory(); ?>
+            </div>
+            <div class="clear"></div>
         </div>
     </div>
 </div>
