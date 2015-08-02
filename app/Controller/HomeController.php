@@ -53,34 +53,6 @@ class HomeController extends FrontController {
      */
     public function display() {
         $this->set('page_title', __("Trang chủ"));
-        
-//        $path = func_get_args();
-//
-//        $count = count($path);
-//        if (!$count) {
-//            return $this->redirect('/');
-//        }
-//        $page = $subpage = $title_for_layout = null;
-//
-//        if (!empty($path[0])) {
-//            $page = $path[0];
-//        }
-//        if (!empty($path[1])) {
-//            $subpage = $path[1];
-//        }
-//        if (!empty($path[$count - 1])) {
-//            $title_for_layout = Inflector::humanize($path[$count - 1]);
-//        }
-//        $this->set(compact('page', 'subpage', 'title_for_layout'));
-//
-//        try {
-//            $this->render(implode('/', $path));
-//        } catch (MissingViewException $e) {
-//            if (Configure::read('debug')) {
-//                throw $e;
-//            }
-//            throw new NotFoundException();
-//        }
     }
     
     public function search(){
@@ -90,16 +62,20 @@ class HomeController extends FrontController {
     public function beforeRender() {
         parent::beforeRender();
         // new product 
-        $new_products = $this->Product->find("all", array(
-            "conditions" => array(
-                "Product.is_draft" => 0
-            ),
-            "order" => array(
-                "Product.updated_at" => "desc",
-                "Product.created_at" => "desc"
-            ),
-            "limit" => 12
-        ));
+        $new_products = Cache::read('new_products');
+        if($new_products === false){
+            $new_products = $this->Product->find("all", array(
+                "conditions" => array(
+                    "Product.is_draft" => 0
+                ),
+                "order" => array(
+                    "Product.updated_at" => "desc",
+                    "Product.created_at" => "desc"
+                ),
+                "limit" => 12
+            ));
+            Cache::write('new_products', $new_products);
+        } 
         $this->set("new_products", $new_products);
         //slide 
         $slides = $this->Slide->find('first', array(
@@ -113,38 +89,41 @@ class HomeController extends FrontController {
         ));
         $this->set("slides", $slides);
         // category
-        $root_categories = $this->Category->find("all", array(
-            'conditions' => array(
-                'OR' => array(
-                    "Category.parent_id" => 0,
-                    "Category.parent_id is NULL"
-                ),
-                "is_draft" => 0
-            ),
-            'contain' => "Media",
-            'recursive' => -1,
-            'order' => array("lft" => "asc")
-        ));
-        $total_root_cat = count($root_categories);
-        for ($i = 0; $i < $total_root_cat; $i++) {
-            $curent_cat = $root_categories[$i];
-            $_cat_ids = array($curent_cat['Category']['id']);
-            $cat_childrent = $this->Category->children($curent_cat['Category']['id'], false, "id");
-            //pr($cat_childrent);die();
-            foreach ($cat_childrent as $key => $value) {
-                $_cat_ids[] = $value['Category']['id'];
-            }
-            $cat_products = $this->Product->find("all", array(
+        $root_categories = Cache::read('root_categories');
+        if($root_categories === false){
+            $root_categories = $this->Category->find("all", array(
                 'conditions' => array(
-                    "Product.is_draft" => 0,
-                    "Product.category_id" => $_cat_ids
+                    'OR' => array(
+                        "Category.parent_id" => 0,
+                        "Category.parent_id is NULL"
+                    ),
+                    "is_draft" => 0
                 ),
-                "order" => array("Product.updated_at" => "desc"),
-                "limit" => 12
+                'contain' => "Media",
+                'recursive' => -1,
+                'order' => array("lft" => "asc")
             ));
-            $root_categories[$i]['products'] = $cat_products;
+            $total_root_cat = count($root_categories);
+            for ($i = 0; $i < $total_root_cat; $i++) {
+                $curent_cat = $root_categories[$i];
+                $_cat_ids = array($curent_cat['Category']['id']);
+                $cat_childrent = $this->Category->children($curent_cat['Category']['id'], false, "id");
+                //pr($cat_childrent);die();
+                foreach ($cat_childrent as $key => $value) {
+                    $_cat_ids[] = $value['Category']['id'];
+                }
+                $cat_products = $this->Product->find("all", array(
+                    'conditions' => array(
+                        "Product.is_draft" => 0,
+                        "Product.category_id" => $_cat_ids
+                    ),
+                    "order" => array("Product.updated_at" => "desc"),
+                    "limit" => 12
+                ));
+                $root_categories[$i]['products'] = $cat_products;
+            }
+            Cache::write('root_categories', $root_categories);
         }
-
         $this->set("root_categories", $root_categories);
     }
 

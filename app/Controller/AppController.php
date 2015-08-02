@@ -35,7 +35,8 @@ class AppController extends Controller {
         'Auth',
         'Acl',
         'Admin.AclPermissions',
-        'Session'
+        'Session',
+        'DebugKit.Toolbar'
     );
     
     public $helpers = array(

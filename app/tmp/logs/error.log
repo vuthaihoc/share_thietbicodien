@@ -19777,3 +19777,48 @@ Request URL: /thietbidien/admin/san_pham/index/id:26/slug:BEN-6026AHD
 Stack Trace:
 #0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2015-08-02 17:31:38 Error: [MissingControllerException] Controller class ThietbidienController could not be found.
+Exception Attributes: array (
+  'class' => 'ThietbidienController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/thietbidien/bai_viet/index/12-Giao-hang-nhanh-chong.html
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-02 17:32:07 Error: [MissingControllerException] Controller class ThietbidienController could not be found.
+Exception Attributes: array (
+  'class' => 'ThietbidienController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/thietbidien/bai_viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-02 17:32:12 Error: [MissingControllerException] Controller class ThietbidienController could not be found.
+Exception Attributes: array (
+  'class' => 'ThietbidienController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/thietbidien/bai-viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-02 17:32:18 Error: [MissingControllerException] Controller class Bai-vietController could not be found.
+Exception Attributes: array (
+  'class' => 'Bai-vietController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/bai-viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-08-02 17:32:19 Error: [MissingControllerException] Controller class Bai-vietController could not be found.
+Exception Attributes: array (
+  'class' => 'Bai-vietController',
+  'plugin' => NULL,
+)
+Request URL: /thietbidien/bai-viet
+Stack Trace:
+#0 /Users/hocvt/Documents/webroot/thietbidien/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

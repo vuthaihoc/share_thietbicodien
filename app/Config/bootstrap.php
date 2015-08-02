@@ -76,7 +76,8 @@ CakePlugin::load(array(
     ),
     'Media',
     'BoostCake',
-    'Sitemap' => array('routes' => true, 'bootstrap' => true)
+    'Sitemap' => array('routes' => true, 'bootstrap' => true),
+    'DebugKit' => array('boootstrap' => true)
 ));
 /**
  * To prefer app translation over plugin translation, you can set

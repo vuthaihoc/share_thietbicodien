@@ -61,13 +61,17 @@ class FrontController extends AppController{
         
         
         // boottom menu
-        $bottom_pages = $this->Page->find('all', array(
-            'conditions' => array(
-                'is_draft' => 0,
-                'showmenu' => "home_bottom"
-            ),
-            "recursive" => -1
-        ));
+        $bottom_pages = Cache::read('bottom_pages');
+        if($bottom_pages === false){
+            $bottom_pages = $this->Page->find('all', array(
+                'conditions' => array(
+                    'is_draft' => 0,
+                    'showmenu' => "home_bottom"
+                ),
+                "recursive" => -1
+            ));
+            Cache::write('bottom_pages', $bottom_pages);
+        } 
         $this->set("bottom_pages", $bottom_pages);
         
         //new product
